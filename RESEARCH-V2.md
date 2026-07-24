@@ -33,19 +33,59 @@ Second rule learned the hard way: **any pain point that maps to an existing medi
 
 ---
 
-## 3. Full saturation sweep
+## 3. Full saturation sweep — 37 keywords
 
-| Query | Results | Median rev | >1,000 rev | Price range | Verdict |
+Measured with `amzsat.py`. Sorted most-enterable first. `median` = median review count of organic p1 listings; `>1k rev` = how many organic listings have over 1,000 reviews.
+
+| keyword | results | median | >1k rev | price | verdict |
 |---|---|---|---|---|---|
-| `pilates grip socks women` | 2,000 | 1,076 | 31/53 | $6.99–12.99 | **Dead.** Saturated + floor pricing |
-| `menopause hand pain compression gloves` | 352 | 1,427 | 27/48 | $9.95–25.95 | **Dead.** Medical category |
-| `hyrox knee sleeves` | 280 | 2,037 | 31/48 | $12.99–59.99 | **Dead.** Entrenched |
-| `shoulder pulley frozen shoulder` | 127 | 359 | 19/48 | $8.79–26.99 | **Dead.** Medical, floor priced |
-| `pelvic floor trainer women` | 449 | 123 | 12/48 | $19.78–119.20 | Crowded; regulated/insertable |
-| `hip thrust belt` | 180 | **48** | 3/48 | $9.99–49.99 | **Open-ish**, but price war starting at $9.99 |
-| `sled push harness resistance trainer` | 107 | **66** | **0/48** | $17.98–44.99 | **Open** |
-| `carpet sled turf drag` | 150 | **30** | 2/48 | $132–189 | **Open + high price** |
-| `sled mat weight plate push` | **41** | **20** | **0/41** | $39–133 | **Most open found** |
+| sled mat weight plate push | 41 | 20 | 0/41 | $39-133 | **OPEN** |
+| carpet sled turf drag | 150 | 30 | 2/48 | $132-189 | **OPEN** |
+| turf mat home gym sled | 83 | 30 | 6/41 | $37-2174 | **OPEN** |
+| weight sled push pull | 242 | 35 | 0/43 | $27-799 | **OPEN** |
+| sauna blanket infrared | 210 | 38 | 3/20 | $80-699 | **OPEN** |
+| sled harness shoulder strap | 180 | 43 | 0/51 | $14-65 | **OPEN** |
+| plate loaded sled home gym | 132 | 45 | 1/37 | $45-4170 | **OPEN** |
+| drag sled fitness portable | 102 | 47 | 2/58 | $20-799 | **OPEN** |
+| steel mace club fitness | 133 | 62 | 8/38 | $19-358 | **OPEN** |
+| sled push harness resistance trainer | 107 | 66 | 0/48 | $18-45 | **OPEN** |
+| portable weight sled any surface | 124 | 66 | 4/53 | $37-160 | **OPEN** |
+| kettlebell farmers carry handles | 59 | 98 | 7/43 | $15-150 | **OPEN** |
+| sled pull rope gym | 344 | 82 | 5/44 | $5-153 | OPEN but low-ticket |
+| workout cards dumbbell women | 114 | 99 | 3/47 | $4-30 | OPEN but low-ticket |
+| hip thrust belt | 187 | 103 | 3/50 | $6-80 | CONTESTED |
+| pelvic floor trainer women | 449 | 123 | 12/48 | $20-119 | CONTESTED |
+| cable machine attachment set home gym | 1,000 | 152 | 8/57 | $7-220 | CONTESTED |
+| balance trainer board women | 1,000 | 173 | 7/47 | $10-200 | CONTESTED |
+| sandbag training workout adjustable | 538 | 377 | 4/47 | $14-140 | CROWDED |
+| gym phone holder magnetic | 40,000 | 263 | 2/16 | $6-20 | CLOSED - price war |
+| body fat caliper tape measure kit | 193 | 289 | 15/43 | $4-259 | CLOSED - price war |
+| running resistance parachute | 157 | 320 | 15/52 | $9-47 | CLOSED - price war |
+| wall ball medicine ball | 446 | 329 | 10/46 | $10-230 | CLOSED - price war |
+| shoulder pulley frozen shoulder | 127 | 359 | 19/48 | $9-27 | CLOSED - price war |
+| weighted vest women adjustable | 2,000 | 429 | 17/48 | $8-115 | CLOSED - price war |
+| hyrox training equipment | 191 | 520 | 20/53 | $12-153 | CLOSED - price war |
+| cooling towel menopause hot flash | 210 | 669 | 19/48 | $4-53 | CLOSED - price war |
+| lymphatic drainage massager body | 2,000 | 292 | 21/48 | $6-899 | CLOSED - entrenched |
+| grip strength trainer adjustable | 1,000 | 688 | 23/53 | $6-77 | CLOSED - entrenched |
+| lifting straps women | 10,000 | 757 | 22/47 | $6-80 | CLOSED - entrenched |
+| barefoot shoes women wide toe | 20,000 | 1,067 | 28/53 | $14-70 | CLOSED - entrenched |
+| pilates grip socks women | 2,000 | 1,076 | 31/53 | $7-13 | CLOSED - entrenched |
+| ankle strap cable machine glute | 418 | 1,220 | 26/48 | $5-35 | CLOSED - entrenched |
+| barbell pad hip thrust | 222 | 1,353 | 27/47 | $9-60 | CLOSED - entrenched |
+| menopause hand pain compression gloves | 352 | 1,427 | 27/48 | $10-26 | CLOSED - entrenched |
+| hyrox knee sleeves | 280 | 2,037 | 31/48 | $13-60 | CLOSED - entrenched |
+| wrist wraps women weightlifting | 1,000 | 2,130 | 32/53 | $4-34 | CLOSED - entrenched |
+
+### The pattern
+
+**Eleven of the twelve OPEN categories are sleds or heavy functional-strength gear.** Every conventional women's gym accessory is closed — wrist wraps (median 2,130), barbell pads (1,353), ankle straps (1,220), lifting straps (757), magnetic phone mounts (40,000 results).
+
+The reason the sled cluster stayed open is **shipping weight**. Steel sleds are heavy, bulky and expensive to fulfil, so Amazon sellers avoided them — which is exactly why review counts never accumulated. Prices held at $45–800 because nobody raced to the bottom.
+
+That makes the packable fabric/HDPE sled a genuine arbitrage: **it inherits an open category while escaping the shipping cost that kept the category open.** Under 4 lbs, folds flat, and sits in a price band where incumbents charge $133–190.
+
+The one non-sled OPEN result, `sauna blanket infrared` (median 38, $80–699), should be treated with caution: Sims explicitly rejects infrared in the source video — *"it warms the skin but not the core... I'm not a big fan of infrared sauna cuz it doesn't get hot enough."* Same trap as the weighted vest — the client's own material contradicts the pitch. It also carries electrical certification and 5–7kg shipping.
 
 ---
 
