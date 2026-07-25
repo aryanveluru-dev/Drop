@@ -1,0 +1,82 @@
+[
+  {
+    "product": "red light therapy hair cap",
+    "n": 9,
+    "max": 835201,
+    "p90": 835201,
+    "median": 848,
+    "verdict": "GOOD - demos well"
+  },
+  {
+    "product": "jaw exerciser",
+    "n": 8,
+    "max": 401456,
+    "p90": 401456,
+    "median": 15298,
+    "verdict": "GOOD - demos well"
+  },
+  {
+    "product": "anti wrinkle beauty pillow",
+    "n": 6,
+    "max": 132398,
+    "p90": 132398,
+    "median": 7574,
+    "verdict": "MODERATE - works with good creative"
+  },
+  {
+    "product": "scalp massager brush",
+    "n": 7,
+    "max": 779977,
+    "p90": 779977,
+    "median": 61508,
+    "verdict": "GOOD - demos well"
+  },
+  {
+    "product": "cellulite cupping massage",
+    "n": 7,
+    "max": 242700,
+    "p90": 242700,
+    "median": 5590,
+    "verdict": "MODERATE - works with good creative"
+  },
+  {
+    "product": "lymphatic drainage massager",
+    "n": 3,
+    "max": 129044,
+    "p90": 129044,
+    "median": 50774,
+    "verdict": "MODERATE - works with good creative"
+  },
+  {
+    "product": "tib bar tibialis trainer",
+    "n": 11,
+    "max": 19186,
+    "p90": 19186,
+    "median": 1337,
+    "verdict": "WEAK - does not demo"
+  },
+  {
+    "product": "cordless automatic hair curler",
+    "n": 7,
+    "max": 151558,
+    "p90": 151558,
+    "median": 560,
+    "verdict": "MODERATE - works with good creative"
+  },
+  {
+    "product": "led ripple wall light",
+    "n": 19,
+    "max": 121392,
+    "p90": 121392,
+    "median": 320,
+    "verdict": "MODERATE - works with good creative"
+  },
+  {
+    "product": "electric body brush",
+    "n": 11,
+    "max": 4308,
+    "p90": 4308,
+    "median": 496,
+    "verdict": "WEAK - does not demo"
+  }
+]

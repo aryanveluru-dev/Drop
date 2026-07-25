@@ -682,5 +682,65 @@
     "price_lo": 15.99,
     "price_hi": 349.0,
     "verdict": "CLOSED - entrenched incumbents"
+  },
+  {
+    "kw": "led ripple wall light",
+    "total": "5,000",
+    "organic": 48,
+    "median": 49,
+    "max": 4510,
+    "big": 3,
+    "n": 42,
+    "price_lo": 5.99,
+    "price_hi": 343.99,
+    "verdict": "OPEN but low-ticket"
+  },
+  {
+    "kw": "rotating serving tray snack",
+    "total": "5,000",
+    "organic": 53,
+    "median": 51,
+    "max": 4726,
+    "big": 4,
+    "n": 50,
+    "price_lo": 10.99,
+    "price_hi": 119.99,
+    "verdict": "OPEN but low-ticket"
+  },
+  {
+    "kw": "electric body brush exfoliating",
+    "total": "2,000",
+    "organic": 48,
+    "median": 60,
+    "max": 14168,
+    "big": 8,
+    "n": 45,
+    "price_lo": 5.49,
+    "price_hi": 179.99,
+    "verdict": "OPEN but low-ticket"
+  },
+  {
+    "kw": "cordless automatic hair curler",
+    "total": "979",
+    "organic": 48,
+    "median": 222,
+    "max": 32950,
+    "big": 16,
+    "n": 48,
+    "price_lo": 14.99,
+    "price_hi": 129.99,
+    "verdict": "CONTESTED"
+  },
+  {
+    "kw": "rotating spice rack organizer",
+    "total": "1,000",
+    "organic": 48,
+    "median": 1479,
+    "max": 55565,
+    "big": 28,
+    "n": 48,
+    "price_lo": 6.99,
+    "price_hi": 59.99,
+    "verdict": "CLOSED - entrenched incumbents"
   }
 ]
