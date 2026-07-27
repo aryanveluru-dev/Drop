@@ -278,5 +278,110 @@
     "g5": 1232.5,
     "current": null,
     "verdict": "NO DATA"
+  },
+  {
+    "kw": "gut health bloating",
+    "g12": 88.8,
+    "g5": 166.0,
+    "current": 31,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "snoring solution",
+    "g12": 1065.2,
+    "g5": 165.5,
+    "current": 9,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "teeth whitening kit",
+    "g12": 441.1,
+    "g5": 45.3,
+    "current": 7,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "height insoles",
+    "g12": 165.7,
+    "g5": 133.9,
+    "current": 12,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "beard growth",
+    "g12": 53.4,
+    "g5": 5.9,
+    "current": 29,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "mewing",
+    "g12": -21.4,
+    "g5": 64.5,
+    "current": 38,
+    "verdict": "COOLING"
+  },
+  {
+    "kw": "red light therapy",
+    "g12": null,
+    "g5": 597.6,
+    "current": null,
+    "verdict": "NO DATA"
+  },
+  {
+    "kw": "nasal breathing strips",
+    "g12": 136.5,
+    "g5": 4198.4,
+    "current": 35,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "vagus nerve stimulator",
+    "g12": 111.7,
+    "g5": 635.6,
+    "current": 32,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "hair loss men",
+    "g12": 81.9,
+    "g5": 114.5,
+    "current": 34,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "eye bags treatment",
+    "g12": 54.9,
+    "g5": 75.9,
+    "current": 41,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "cortisol belly",
+    "g12": 49.8,
+    "g5": 961.6,
+    "current": 80,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "sleep apnea mouthpiece",
+    "g12": 28.1,
+    "g5": 83.5,
+    "current": 23,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "toenail fungus laser",
+    "g12": 23.0,
+    "g5": 4.6,
+    "current": 49,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "excessive sweating",
+    "g12": 7.5,
+    "g5": -1.3,
+    "current": 72,
+    "verdict": "FLAT"
   }
 ]
