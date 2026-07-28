@@ -104,28 +104,64 @@ def classify(g12, peak):
     return "DECLINING"
 
 
+# Priority order: health/insecurity devices first, niche hobby last.
+# Google Trends rate-limits hard, so if the sweep stalls the rows we already
+# have should be the ones most likely to matter.
+PRIORITY = ["chronic","skin","face","sleep","body","pain","recovery","womens","hair",
+            "mens","nerve","mood","metab","medical","beauty","oral","eyes","ear",
+            "allergy","gut","senior","fit","sport","focus","home","nails","work",
+            "creator","pet","desk","kitchen","garden","home2","rv","moto","music",
+            "maker","aqua","security","yoga","learn","baby2","clean2","car","outdoor",
+            "hobby","event","habit"]
+
+def niche_of(prod):
+    try:
+        for line in open('/home/user/Drop/survivors.txt'):
+            parts = line.rstrip("\n").split("\t")
+            if parts and parts[0] == prod:
+                return parts[1]
+    except Exception:
+        pass
+    return "zz"
+
+
+BASE_DELAY = 65      # seconds between products
+COOLDOWN   = 600     # initial wait for the 429 window to clear
+
+
 def main():
+    import random
     done = {}
     if os.path.exists(OUT):
         done = {r["product"]: r for r in json.load(open(OUT))}
-    pt = TrendReq(hl="en-US", tz=360)
     items = [(p, t) for p, t in TERMS.items() if p not in done]
+    rank = {n: i for i, n in enumerate(PRIORITY)}
+    items.sort(key=lambda pt_: rank.get(niche_of(pt_[0]), 99))
     print(f"{len(done)} already done · {len(items)} to go", flush=True)
+    print(f"cooling down {COOLDOWN}s for the 429 window to clear...", flush=True)
+    time.sleep(COOLDOWN)
+    pt = TrendReq(hl="en-US", tz=360)
 
     for i, (prod, term) in enumerate(items, 1):
         rec = {"product": prod, "term": term}
         for label, tf in (("s12", "today 12-m"), ("s5", "today 5-y")):
             series = None
-            for attempt in range(4):
+            for attempt in range(5):
                 try:
                     pt.build_payload([term], timeframe=tf, geo="US")
                     df = pt.interest_over_time()
                     series = [int(v) for v in df[term].tolist()] if not df.empty else None
                     break
-                except Exception:
-                    time.sleep(10*(attempt+1))
+                except Exception as e:
+                    if "429" in str(e) or "TooMany" in type(e).__name__:
+                        back = 180*(attempt+1) + random.randint(0,60)
+                    else:
+                        back = 20*(attempt+1)
+                    print(f"    retry {attempt+1} on {term} ({type(e).__name__}) sleep {back}s", flush=True)
+                    time.sleep(back)
+                    pt = TrendReq(hl="en-US", tz=360)
             rec[label] = series
-            time.sleep(2)
+            time.sleep(8)
         s12, s5 = rec.get("s12"), rec.get("s5")
         rec["g12"], rec["g5"] = slope(s12), slope(s5)
         peak = bool(s5 and max(s5[-8:]) >= 0.85*max(s5))
@@ -135,7 +171,7 @@ def main():
         done[prod] = rec
         json.dump(list(done.values()), open(OUT, "w"), indent=2)
         print(f"[{i}/{len(items)}] {prod[:38]:38} {str(rec['g12']):>8}% {rec['verdict']}", flush=True)
-        time.sleep(2)
+        time.sleep(BASE_DELAY + random.randint(0, 20))
 
     rows = list(done.values())
     order = {"BREAKOUT":0,"RISING":1,"FLAT":2,"COOLING":3,"DECLINING":4,"NO DATA":9}
