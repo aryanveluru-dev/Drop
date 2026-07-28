@@ -1,0 +1,48 @@
+[
+  {
+    "product": "Diabetic foot inspection mirror",
+    "niche": "chronic",
+    "term": "foot inspection mirror",
+    "n": 8,
+    "max": 1161,
+    "p90": 1161,
+    "median": 308,
+    "total": 4178,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "ZJLrNwH8t7k",
+        "views": 1161,
+        "title": "Examination of Sole Of Foot With Mirror"
+      },
+      {
+        "id": "rgOFWmcwaTQ",
+        "views": 1161,
+        "title": "Telescoping Inspection Mirrors - Unboxing & Review"
+      }
+    ]
+  },
+  {
+    "product": "Migraine cooling head wrap",
+    "niche": "chronic",
+    "term": "migraine cap",
+    "n": 9,
+    "max": 31192,
+    "p90": 31192,
+    "median": 257,
+    "total": 38857,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "1PQxdESNpO4",
+        "views": 31192,
+        "title": "Migraine PAIN relief: INSTANT RESULTS"
+      },
+      {
+        "id": "v2v3YlOU3Pg",
+        "views": 3715,
+        "title": "Do Migraine Headache Caps Work?"
+      }
+    ]
+  }
+]
