@@ -44,5 +44,225 @@
         "title": "Do Migraine Headache Caps Work?"
       }
     ]
+  },
+  {
+    "product": "Chronic fatigue shower chair",
+    "niche": "chronic",
+    "term": "shower chair",
+    "n": 8,
+    "max": 55338,
+    "p90": 55338,
+    "median": 5060,
+    "total": 102501,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "QwkQsbNuPvQ",
+        "views": 55338,
+        "title": "Drive Medical Folding Universal Sliding Transfer Bench - Bath & Shower"
+      },
+      {
+        "id": "ONFQdokkEn4",
+        "views": 22456,
+        "title": "Liberty Folding Shower Chair with Swivel Seat - Platinum Health"
+      }
+    ]
+  },
+  {
+    "product": "IBS heat + vibration pad",
+    "niche": "chronic",
+    "term": "stomach heating pad",
+    "n": 15,
+    "max": 251659,
+    "p90": 251659,
+    "median": 3164,
+    "total": 313631,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "-A-NNGQgL_0",
+        "views": 251659,
+        "title": "How to Make an Easy Homemade Heating Pad"
+      },
+      {
+        "id": "Al-tyBswZTU",
+        "views": 21711,
+        "title": "Dr Trust USA Orthopaedic Electric Heating Pad with Belt 346"
+      }
+    ]
+  },
+  {
+    "product": "Incontinence bed pad washable",
+    "niche": "chronic",
+    "term": "washable bed pads",
+    "n": 10,
+    "max": 68986,
+    "p90": 68986,
+    "median": 393,
+    "total": 128562,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "C_W3tuYtKxo",
+        "views": 68986,
+        "title": "DIY Make Your Own Reusable Waterproof Bed Pad Elderly Bedwetting Incon"
+      },
+      {
+        "id": "uW6_w1UArQE",
+        "views": 50589,
+        "title": "MEDPRO\u2122 Reusable Washable Incontinence Bed Pad for Patients/ Elderly/ "
+      }
+    ]
+  },
+  {
+    "product": "Eczema wet-wrap sleeve set",
+    "niche": "skin",
+    "term": "eczema sleeves",
+    "n": 5,
+    "max": 75683,
+    "p90": 75683,
+    "median": 386,
+    "total": 77463,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "nQimo9nQNEA",
+        "views": 75683,
+        "title": "Wet Wrap Therapy"
+      },
+      {
+        "id": "_ogdHlT5aMI",
+        "views": 921,
+        "title": "Avoid skin problems and eczema"
+      }
+    ]
+  },
+  {
+    "product": "Rosacea LED redness device",
+    "niche": "skin",
+    "term": "led mask rosacea",
+    "n": 1,
+    "max": 34738,
+    "p90": 34738,
+    "median": 34738,
+    "total": 34738,
+    "verdict": "NO SIGNAL",
+    "top": [
+      {
+        "id": "YZDAbHmAabk",
+        "views": 34738,
+        "title": "Treating rosacea with an LED light mask?!"
+      }
+    ]
+  },
+  {
+    "product": "Silicone scar sheets",
+    "niche": "skin",
+    "term": "silicone scar sheets",
+    "n": 10,
+    "max": 158338,
+    "p90": 158338,
+    "median": 43091,
+    "total": 606186,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "3k2Iu2ipZO8",
+        "views": 158338,
+        "title": "Silicone Strips for Scar Treatment"
+      },
+      {
+        "id": "9OgSyGBwJSM",
+        "views": 127622,
+        "title": "How to apply silicone sheet to scars? | Topical Silicone Sheet Therapy"
+      }
+    ]
+  },
+  {
+    "product": "Keratosis pilaris body kit",
+    "niche": "skin",
+    "term": "keratosis pilaris treatment",
+    "n": 2,
+    "max": 167821,
+    "p90": 167821,
+    "median": 158154,
+    "total": 316308,
+    "verdict": "NO SIGNAL",
+    "top": [
+      {
+        "id": "rtVETZij2fM",
+        "views": 167821,
+        "title": "How to treat keratosis pilaris at home"
+      },
+      {
+        "id": "MKXxcCyzr6M",
+        "views": 148487,
+        "title": "Keratosis Pilaris Clear + Brilliant Treatment FT. Eric Smith | BLUSH B"
+      }
+    ]
+  },
+  {
+    "product": "Hyperpigmentation LED spot device",
+    "niche": "skin",
+    "term": "dark spot device",
+    "n": 3,
+    "max": 92976,
+    "p90": 92976,
+    "median": 92816,
+    "total": 270668,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "7hk0OuerKW8",
+        "views": 92976,
+        "title": "Aesthetic Myth: Can pigmentation be removed with just one laser sessio"
+      },
+      {
+        "id": "X9115Xci5Lg",
+        "views": 92816,
+        "title": "How to use the Neatcell Picosecond Laser"
+      }
+    ]
+  },
+  {
+    "product": "Tattoo aftercare film kit",
+    "niche": "skin",
+    "term": "tattoo aftercare film",
+    "n": 2,
+    "max": 253680,
+    "p90": 253680,
+    "median": 197506,
+    "total": 395013,
+    "verdict": "NO SIGNAL",
+    "top": [
+      {
+        "id": "R6Xn48KpPUY",
+        "views": 253680,
+        "title": "How Long Should You Keep Your Tattoo Wrapped? *Cling vs Tattoo Film* |"
+      },
+      {
+        "id": "hQU5HMqPsE4",
+        "views": 141333,
+        "title": "How to apply tattoo aftercare bandage FixDerm bandage"
+      }
+    ]
+  },
+  {
+    "product": "Microcurrent facial device",
+    "niche": "face",
+    "term": "microcurrent facial device",
+    "n": 1,
+    "max": 46334,
+    "p90": 46334,
+    "median": 46334,
+    "total": 46334,
+    "verdict": "NO SIGNAL",
+    "top": [
+      {
+        "id": "rxIIvOh_sDs",
+        "views": 46334,
+        "title": "Microcurrent facial giving faces a workout"
+      }
+    ]
   }
 ]
