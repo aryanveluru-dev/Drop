@@ -1,0 +1,116 @@
+FIELD SIZE            : 254
+killed on flags       : 107
+failed 6-angle gate   : 42
+SURVIVORS             : 105  (41%)
+
+kill-flag counts      : {'policy': 34, 'retail': 40, 'old': 27, 'size': 20}
+survivors by niche    : {'sleep': 9, 'hair': 4, 'mens': 2, 'face': 7, 'body': 7, 'recovery': 4, 'oral': 2, 'fit': 3, 'pain': 5, 'nerve': 3, 'gut': 2, 'eyes': 1, 'nails': 1, 'womens': 3, 'senior': 2, 'pet': 2, 'home': 4, 'kitchen': 2, 'car': 1, 'desk': 1, 'outdoor': 1, 'hobby': 1, 'skin': 6, 'ear': 4, 'sport': 4, 'work': 1, 'creator': 2, 'habit': 1, 'metab': 3, 'medical': 4, 'garden': 4, 'allergy': 3, 'beauty': 3, 'focus': 3}
+
+========================================================================
+SURVIVORS (105)
+========================================================================
+  1. Magnetic nasal dilator                 [sleep   ] 6 angles
+  2. Internal nasal vent                    [sleep   ] 6 angles
+  3. Jaw support strap                      [sleep   ] 6 angles
+  4. Cooling mattress topper                [sleep   ] 6 angles
+  5. Smart sleep tracker mat                [sleep   ] 6 angles
+  6. Bed wedge pillow                       [sleep   ] 6 angles
+  7. CPAP cleaning device                   [sleep   ] 6 angles
+  8. Knee pillow side sleeper               [sleep   ] 6 angles
+  9. Sleep headphone headband               [sleep   ] 6 angles
+ 10. Derma stamp scalp roller               [hair    ] 6 angles
+ 11. Scalp SPF spray                        [hair    ] 6 angles
+ 12. Hair steamer cap                       [hair    ] 6 angles
+ 13. Scalp exfoliating serum applicator     [hair    ] 6 angles
+ 14. Beard growth roller                    [mens    ] 6 angles
+ 15. Microcurrent facial device             [face    ] 6 angles
+ 16. Red light face mask                    [face    ] 6 angles
+ 17. Under-eye microcurrent wand            [face    ] 6 angles
+ 18. Jaw exerciser                          [face    ] 6 angles
+ 19. Facial steamer                         [face    ] 6 angles
+ 20. Face yoga tool kit                     [face    ] 6 angles
+ 21. LED neck & décolleté device            [face    ] 6 angles
+ 22. Lymphatic drainage body tool           [body    ] 6 angles
+ 23. Ice bath tub                           [body    ] 6 angles
+ 24. Sauna blanket                          [body    ] 6 angles
+ 25. Stretch mark microneedle roller        [body    ] 6 angles
+ 26. Back acne treatment applicator         [body    ] 6 angles
+ 27. Ingrown hair treatment roller          [body    ] 6 angles
+ 28. Hand & foot paraffin bath              [body    ] 6 angles
+ 29. Compression recovery boots             [recovery] 6 angles
+ 30. Heated shiatsu neck massager           [recovery] 6 angles
+ 31. Foot circulation massager              [recovery] 6 angles
+ 32. Contrast therapy foot spa              [recovery] 6 angles
+ 33. LED teeth whitening kit                [oral    ] 6 angles
+ 34. Teeth-grinding night guard             [oral    ] 6 angles
+ 35. Forearm/grip trainer                   [mens    ] 6 angles
+ 36. Adjustable kettlebell                  [fit     ] 6 angles
+ 37. Resistance band door anchor system     [fit     ] 6 angles
+ 38. Balance board trainer                  [fit     ] 6 angles
+ 39. Neck traction device                   [pain    ] 6 angles
+ 40. TMJ jaw massage device                 [pain    ] 6 angles
+ 41. Spinal decompression back stretcher    [pain    ] 6 angles
+ 42. Sciatica seat cushion                  [pain    ] 6 angles
+ 43. Heat + vibration back belt             [pain    ] 6 angles
+ 44. Breathwork/CO2 trainer                 [nerve   ] 6 angles
+ 45. Red light + sound meditation lamp      [nerve   ] 6 angles
+ 46. Biofeedback stress ring                [nerve   ] 6 angles
+ 47. Heated abdominal belt                  [gut     ] 6 angles
+ 48. Posture + core breathing trainer       [gut     ] 6 angles
+ 49. Heated eye mask                        [eyes    ] 6 angles
+ 50. Hand therapy putty + grip kit          [nails   ] 6 angles
+ 51. Menstrual heat patch belt              [womens  ] 6 angles
+ 52. Breast pump wearable                   [womens  ] 6 angles
+ 53. Menopause cooling neck wrap            [womens  ] 6 angles
+ 54. Bed rail assist handle                 [senior  ] 6 angles
+ 55. Shower grab bar suction                [senior  ] 6 angles
+ 56. Pet deshedding vacuum attachment       [pet     ] 6 angles
+ 57. Pet stroller                           [pet     ] 6 angles
+ 58. Dehumidifier compact                   [home    ] 6 angles
+ 59. Wireless portable humidifier           [home    ] 6 angles
+ 60. Steam cleaner handheld                 [home    ] 6 angles
+ 61. Mattress vacuum UV                     [home    ] 6 angles
+ 62. Food dehydrator                        [kitchen ] 6 angles
+ 63. Kitchen composter electric             [kitchen ] 6 angles
+ 64. Tyre inflator portable                 [car     ] 6 angles
+ 65. Under-desk treadmill                   [desk    ] 6 angles
+ 66. Portable power station                 [outdoor ] 6 angles
+ 67. Diamond painting kit                   [hobby   ] 6 angles
+ 68. Eczema wet-wrap sleeve set             [skin    ] 6 angles
+ 69. Rosacea LED redness device             [skin    ] 6 angles
+ 70. Silicone scar sheets                   [skin    ] 6 angles
+ 71. Keratosis pilaris body kit             [skin    ] 6 angles
+ 72. Hyperpigmentation LED spot device      [skin    ] 6 angles
+ 73. Tattoo aftercare film kit              [skin    ] 6 angles
+ 74. Ear wax removal camera tool            [ear     ] 6 angles
+ 75. Musician ear plugs                     [ear     ] 6 angles
+ 76. Ear dryer for swimmers                 [ear     ] 6 angles
+ 77. Kids noise-cancelling earmuffs         [ear     ] 6 angles
+ 78. Golf swing tempo trainer               [sport   ] 6 angles
+ 79. Running gait sensor insole             [sport   ] 6 angles
+ 80. Climbing hangboard portable            [sport   ] 6 angles
+ 81. Ski/snowboard boot dryer               [sport   ] 6 angles
+ 82. Truck driver lumbar cushion            [work    ] 6 angles
+ 83. Teleprompter phone rig                 [creator ] 6 angles
+ 84. Lavalier wireless mic                  [creator ] 6 angles
+ 85. Alcohol-free spirit sampler            [habit   ] 6 angles
+ 86. Smart body composition scale           [metab   ] 6 angles
+ 87. Food scale nutrition tracker           [metab   ] 6 angles
+ 88. Calf/leg elevation wedge               [metab   ] 6 angles
+ 89. Post-op shower cast cover              [medical ] 6 angles
+ 90. Sock aid + dressing stick              [medical ] 6 angles
+ 91. Ice therapy shoulder wrap              [medical ] 6 angles
+ 92. Leg elevation post-surgery pillow      [medical ] 6 angles
+ 93. Garden kneeler seat                    [garden  ] 6 angles
+ 94. Soil moisture/pH meter                 [garden  ] 6 angles
+ 95. Electric weed burner                   [garden  ] 6 angles
+ 96. Hose splitter smart timer              [garden  ] 6 angles
+ 97. Nasal irrigation system                [allergy ] 6 angles
+ 98. Dust mite mattress encasement          [allergy ] 6 angles
+ 99. Steam inhaler                          [allergy ] 6 angles
+100. Lip plumping device                    [beauty  ] 6 angles
+101. Eyebrow microblading pen kit           [beauty  ] 6 angles
+102. Hair removal IPL device                [beauty  ] 6 angles
+103. Pomodoro focus timer cube              [focus   ] 6 angles
+104. Phone lockbox timer                    [focus   ] 6 angles
+105. Noise-masking desk speaker             [focus   ] 6 angles

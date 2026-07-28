@@ -1,14 +1,105 @@
-Magnetic nasal dilator
-Internal nasal vent
-Jaw support strap
-Microcurrent facial device
-Red light face mask
-Jaw exerciser
-Lymphatic drainage body tool
-Sauna blanket
-Compression recovery boots
-LED teeth whitening kit
-Breathwork/CO2 trainer
-Heated eye mask
-Neck traction device
-Wireless portable humidifier
+Magnetic nasal dilator	sleep	partner snoring; energy & brain fog; jawline/mouth-breathing; athletic performance; dry mouth; sleep quality
+Internal nasal vent	sleep	snoring; deviated septum; athletic breathing; allergy season; travel sleep; dry mouth
+Jaw support strap	sleep	mouth breathing; snoring; face shape; dry mouth; CPAP adjunct; travel
+Cooling mattress topper	sleep	night sweats; menopause; partner temp war; sleep quality; hot climate; memory foam heat
+Smart sleep tracker mat	sleep	sleep score; snoring detection; recovery; longevity; partner; shift work
+Bed wedge pillow	sleep	reflux; snoring; congestion; post-surgery; reading; circulation
+CPAP cleaning device	sleep	hygiene; odour; compliance; travel; infection; partner
+Knee pillow side sleeper	sleep	hip pain; back pain; pregnancy; sciatica; posture; partner disturbance
+Sleep headphone headband	sleep	insomnia; travel; partner noise; meditation; side sleeper; tinnitus
+Derma stamp scalp roller	hair	thinning; serum absorption; beard; scars; confidence; eyebrows
+Scalp SPF spray	hair	part-line burn; hair loss; aging; outdoor sport; bald head; kids
+Hair steamer cap	hair	deep conditioning; curly care; dryness; salon cost; scalp health; colour retention
+Scalp exfoliating serum applicator	hair	dandruff; buildup; growth; itch; oily roots; colour prep
+Beard growth roller	mens	patchy beard; density; confidence; scars; masculinity; grooming
+Microcurrent facial device	face	jawline lift; aging; puffiness; makeup prep; filler alternative; confidence
+Red light face mask	face	wrinkles; acne; aging; pores; glow; botox alternative
+Under-eye microcurrent wand	face	dark circles; bags; tired look; aging; video calls; hangover
+Jaw exerciser	face	jawline; double chin; mewing; confidence; TMJ; facial symmetry
+Facial steamer	face	congestion; pores; skincare absorption; sinus; dry skin; at-home facial
+Face yoga tool kit	face	jawline; wrinkles; puffiness; TMJ; confidence; drug-free
+LED neck & décolleté device	face	neck lines; tech neck; sun damage; aging; chest wrinkles; confidence
+Lymphatic drainage body tool	body	bloating; cellulite; puffiness; post-op; circulation; detox
+Ice bath tub	body	recovery; mood; discipline; inflammation; metabolism; sleep
+Sauna blanket	body	detox; recovery; weight; menopause; relaxation; skin
+Stretch mark microneedle roller	body	stretch marks; postpartum; scars; cellulite; absorption; confidence
+Back acne treatment applicator	body	bacne; reach; confidence; summer; shoulders; scarring
+Ingrown hair treatment roller	body	ingrowns; razor bumps; bikini line; beard; legs; confidence
+Hand & foot paraffin bath	body	arthritis; dry skin; circulation; salon cost; nails; relaxation
+Compression recovery boots	recovery	recovery; circulation; swelling; endurance athletes; travel legs; varicose
+Heated shiatsu neck massager	recovery	neck pain; desk work; tension headache; stress; gift; driving
+Foot circulation massager	recovery	diabetic feet; standing job; swelling; plantar; elderly; circulation
+Contrast therapy foot spa	recovery	standing job; circulation; plantar; swelling; relaxation; diabetic
+LED teeth whitening kit	oral	stains; confidence; dating; photos; coffee/wine; wedding
+Teeth-grinding night guard	oral	bruxism; jaw pain; headache; dental cost; partner noise; TMJ
+Forearm/grip trainer	mens	forearm size; grip strength; climbing; tennis elbow; aesthetics; rehab
+Adjustable kettlebell	fit	space; home gym; travel; cost vs set; beginner; progression
+Resistance band door anchor system	fit	home gym; travel; rehab; glutes; apartment; beginner
+Balance board trainer	fit	ankle rehab; core; ski prep; surf; desk; proprioception
+Neck traction device	pain	neck pain; tech neck; posture; headache; disc; desk work
+TMJ jaw massage device	pain	clenching; headache; dental cost; stress; jawline; ear pain
+Spinal decompression back stretcher	pain	back pain; sciatica; desk work; posture; disc; drug-free
+Sciatica seat cushion	pain	sciatica; driving; desk; pregnancy; tailbone; haemorrhoids
+Heat + vibration back belt	pain	back pain; period cramps; kidney; desk; driving; cold weather
+Breathwork/CO2 trainer	nerve	anxiety; athletic; sleep; focus; lung capacity; HRV
+Red light + sound meditation lamp	nerve	sleep; anxiety; focus; circadian; mood; evening wind-down
+Biofeedback stress ring	nerve	anxiety; HRV; focus; sleep; burnout; wearable tracking
+Heated abdominal belt	gut	bloating; cramps; IBS; back; cold; post-meal
+Posture + core breathing trainer	gut	bloating; diaphragm; posture; anxiety; pelvic floor; singing
+Heated eye mask	eyes	dry eye; screen fatigue; sleep; migraine; styes; puffiness
+Hand therapy putty + grip kit	nails	arthritis; post-op; climbing; stress; kids OT; typing
+Menstrual heat patch belt	womens	cramps; back; work; drug-free; travel; endometriosis
+Breast pump wearable	womens	hands-free; work; discretion; supply; travel; comfort
+Menopause cooling neck wrap	womens	hot flushes; night sweats; work; sleep; travel; exercise
+Bed rail assist handle	senior	falls; getting up; post-op; confidence; caregiver; disability
+Shower grab bar suction	senior	falls; renters; travel; post-op; pregnancy; disability
+Pet deshedding vacuum attachment	pet	shedding; allergies; grooming cost; mess; bonding; car
+Pet stroller	pet	elderly dogs; post-op; small breeds; travel; anxiety; multi-pet
+Dehumidifier compact	home	mould; damp; allergies; laundry drying; musty smell; renters
+Wireless portable humidifier	home	dry air; skin; sleep; desk; travel; plants
+Steam cleaner handheld	home	sanitising; grout; mattress; pets; allergies; chemical-free
+Mattress vacuum UV	home	dust mites; allergies; asthma; bed bugs; odour; kids
+Food dehydrator	kitchen	snacks; jerky; waste; camping; herbs; pet treats
+Kitchen composter electric	kitchen	smell; waste; garden; eco; apartment; council rules
+Tyre inflator portable	car	flat tyre; safety; bikes; sports balls; fuel economy; RV
+Under-desk treadmill	desk	steps; WFH; weight; energy; back; focus
+Portable power station	outdoor	camping; blackout; RV; work site; photography; emergency
+Diamond painting kit	hobby	relaxation; anxiety; gifting; seniors; kids; screen-free
+Eczema wet-wrap sleeve set	skin	eczema; kids scratching; sleep; steroid reduction; winter; sensitive skin
+Rosacea LED redness device	skin	rosacea; flushing; confidence; makeup reduction; sensitivity; winter
+Silicone scar sheets	skin	surgery scars; C-section; acne scars; burns; tattoo removal; keloids
+Keratosis pilaris body kit	skin	chicken skin; arms; confidence; summer; exfoliation; kids
+Hyperpigmentation LED spot device	skin	dark spots; melasma; acne marks; aging; confidence; sun damage
+Tattoo aftercare film kit	skin	healing; colour retention; infection; showering; artist recommendation; fading
+Ear wax removal camera tool	ear	wax; hearing; doctor cost; satisfying demo; kids; hearing aid users
+Musician ear plugs	ear	concerts; tinnitus prevention; drummers; motorcycles; sleep; sensory
+Ear dryer for swimmers	ear	swimmers ear; infections; kids; hearing aid moisture; showering; surfers
+Kids noise-cancelling earmuffs	ear	autism/sensory; concerts; fireworks; study; flights; lawnmower
+Golf swing tempo trainer	sport	slice fix; tempo; indoor practice; winter; handicap; warm-up
+Running gait sensor insole	sport	injury prevention; cadence; form; shin splints; marathon training; shoe choice
+Climbing hangboard portable	sport	finger strength; home training; travel; tendon; plateau; warm-up
+Ski/snowboard boot dryer	sport	wet boots; odour; blisters; frostbite; hockey; work boots
+Truck driver lumbar cushion	work	long haul; sciatica; posture; fatigue; desk; flights
+Teleprompter phone rig	creator	scripts; eye contact; UGC; courses; interviews; confidence
+Lavalier wireless mic	creator	audio quality; interviews; UGC; courses; vlogging; podcasts
+Alcohol-free spirit sampler	habit	dry january; sober curious; pregnancy; driving; gifting; hosting
+Smart body composition scale	metab	body fat; muscle; progress tracking; family; GLP-1 users; longevity
+Food scale nutrition tracker	metab	macros; baking; portions; diabetes; meal prep; GLP-1
+Calf/leg elevation wedge	metab	swelling; circulation; varicose; post-op; pregnancy; back
+Post-op shower cast cover	medical	showering; casts; PICC lines; wound care; swimming; kids
+Sock aid + dressing stick	medical	hip replacement; back; pregnancy; arthritis; disability; independence
+Ice therapy shoulder wrap	medical	post-op; rotator cuff; athletes; arthritis; swelling; migraine
+Leg elevation post-surgery pillow	medical	post-op; swelling; varicose; pregnancy; back; circulation
+Garden kneeler seat	garden	knees; back; getting up; seniors; planting; tool storage
+Soil moisture/pH meter	garden	plant death; overwatering; lawn; houseplants; veg; beginners
+Electric weed burner	garden	chemical-free; pets; kids; paving; time; eco
+Hose splitter smart timer	garden	holidays; water bill; consistency; lawn; veg; forgetfulness
+Nasal irrigation system	allergy	allergies; sinusitis; congestion; kids; post-nasal drip; dry air
+Dust mite mattress encasement	allergy	allergies; asthma; eczema; bed bugs; kids; odour
+Steam inhaler	allergy	congestion; sinus; cold season; kids; asthma; dry air
+Lip plumping device	beauty	lip volume; filler alternative; aging; confidence; photos; lipstick
+Eyebrow microblading pen kit	beauty	sparse brows; salon cost; aging; alopecia; confidence; symmetry
+Hair removal IPL device	beauty	shaving time; ingrowns; salon cost; PCOS; sensitive skin; confidence
+Pomodoro focus timer cube	focus	ADHD; procrastination; study; WFH; screen-free; meetings
+Phone lockbox timer	focus	screen addiction; study; family dinner; sleep; kids; work
+Noise-masking desk speaker	focus	open office; WFH; tinnitus; study; privacy; sleep
