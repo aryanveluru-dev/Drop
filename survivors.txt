@@ -103,3 +103,35 @@ Hair removal IPL device	beauty	shaving time; ingrowns; salon cost; PCOS; sensiti
 Pomodoro focus timer cube	focus	ADHD; procrastination; study; WFH; screen-free; meetings
 Phone lockbox timer	focus	screen addiction; study; family dinner; sleep; kids; work
 Noise-masking desk speaker	focus	open office; WFH; tinnitus; study; privacy; sleep
+Diabetic foot inspection mirror	chronic	neuropathy; ulcers; independence; caregiver; daily check; vision loss
+Migraine cooling head wrap	chronic	migraine; hangover; fever; sinus; stress; light sensitivity
+Chronic fatigue shower chair	chronic	ME/CFS; long covid; post-op; pregnancy; disability; elderly
+IBS heat + vibration pad	chronic	IBS; cramps; bloating; stress; travel; period
+Incontinence bed pad washable	chronic	incontinence; elderly; kids bedwetting; post-op; pets; caregiver
+SAD light therapy lamp	mood	winter blues; shift work; jet lag; energy; sleep; focus
+Mood tracking journal + prompts	mood	anxiety; therapy adjunct; habit; gratitude; self-awareness; ADHD
+Anxiety weighted lap pad	mood	anxiety; autism; flights; desk; kids; dentist
+Motorcycle bluetooth helmet intercom	moto	group rides; GPS; calls; music; safety; passenger
+Bike seat pressure-relief saddle	moto	numbness; prostate; long rides; commuting; spin class; saddle sores
+RV tank level monitor	rv	black tank; boondocking; guesswork; full-timers; rentals; maintenance
+Van life diesel heater	rv	winter camping; condensation; cost vs propane; boondocking; pets; full-timers
+Portable compost toilet	rv	van life; boondocking; off grid; tiny home; emergency; festivals
+12V portable fridge	rv	van life; camping; fishing; road trips; medication; overlanding
+Automatic chicken coop door	home2	predators; early mornings; holidays; flock safety; egg production; winter
+Water storage + filter kit	home2	emergency; camping; boil notices; hurricane; off-grid; travel
+Seed starting heat mat	home2	germination; early season; greenhouse; peppers; microgreens; cost saving
+Solar generator panel kit	home2	blackout; camping; RV; work site; eco; emergency
+Silent practice drum pad set	music	neighbours; apartment; practice time; kids; travel; warm-up
+Vocal steam inhaler	music	singers; teachers; podcasters; dry throat; performance; cold season
+3D printer filament dryer	maker	humidity; failed prints; filament cost; PETG; storage; print quality
+Airbrush cleaning station	maker	models; nails; cake; mess; clogging; paint cost
+Aquarium auto water changer	aqua	water changes; time; fish stress; heavy buckets; vacations; nitrates
+Reptile thermostat controller	aqua	overheating; burns; breeding; power cuts; vet cost; species accuracy
+Bridal emergency kit	event	stains; blisters; hem; makeup; nerves; gifting
+Smart water leak sensor	security	burst pipes; insurance; holidays; basements; washing machines; rentals
+Window vibration alarm	security	renters; ground floor; holidays; elderly; dorms; cheap
+Pilates reformer bar home	yoga	studio cost; small space; rehab; core; postpartum; strength
+Splits/flexibility trainer	yoga	flexibility; martial arts; dance; rehab; hips; kids
+Spaced repetition flashcard box	learn	medical school; language; exams; kids; screen-free; retention
+Toddler step stool foldable	baby2	independence; handwashing; kitchen; potty; travel; small bathroom
+Ultrasonic cleaner	clean2	jewellery; glasses; carburettors; dentures; watch bands; tools

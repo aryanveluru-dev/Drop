@@ -1,13 +1,13 @@
-FIELD SIZE            : 254
-killed on flags       : 107
-failed 6-angle gate   : 42
-SURVIVORS             : 105  (41%)
+FIELD SIZE            : 347
+killed on flags       : 132
+failed 6-angle gate   : 78
+SURVIVORS             : 137  (39%)
 
-kill-flag counts      : {'policy': 34, 'retail': 40, 'old': 27, 'size': 20}
-survivors by niche    : {'sleep': 9, 'hair': 4, 'mens': 2, 'face': 7, 'body': 7, 'recovery': 4, 'oral': 2, 'fit': 3, 'pain': 5, 'nerve': 3, 'gut': 2, 'eyes': 1, 'nails': 1, 'womens': 3, 'senior': 2, 'pet': 2, 'home': 4, 'kitchen': 2, 'car': 1, 'desk': 1, 'outdoor': 1, 'hobby': 1, 'skin': 6, 'ear': 4, 'sport': 4, 'work': 1, 'creator': 2, 'habit': 1, 'metab': 3, 'medical': 4, 'garden': 4, 'allergy': 3, 'beauty': 3, 'focus': 3}
+kill-flag counts      : {'policy': 40, 'retail': 50, 'old': 28, 'size': 29}
+survivors by niche    : {'sleep': 9, 'hair': 4, 'mens': 2, 'face': 7, 'body': 7, 'recovery': 4, 'oral': 2, 'fit': 3, 'pain': 5, 'nerve': 3, 'gut': 2, 'eyes': 1, 'nails': 1, 'womens': 3, 'senior': 2, 'pet': 2, 'home': 4, 'kitchen': 2, 'car': 1, 'desk': 1, 'outdoor': 1, 'hobby': 1, 'skin': 6, 'ear': 4, 'sport': 4, 'work': 1, 'creator': 2, 'habit': 1, 'metab': 3, 'medical': 4, 'garden': 4, 'allergy': 3, 'beauty': 3, 'focus': 3, 'chronic': 5, 'mood': 3, 'moto': 2, 'rv': 4, 'home2': 4, 'music': 2, 'maker': 2, 'aqua': 2, 'event': 1, 'security': 2, 'yoga': 2, 'learn': 1, 'baby2': 1, 'clean2': 1}
 
 ========================================================================
-SURVIVORS (105)
+SURVIVORS (137)
 ========================================================================
   1. Magnetic nasal dilator                 [sleep   ] 6 angles
   2. Internal nasal vent                    [sleep   ] 6 angles
@@ -114,3 +114,35 @@ SURVIVORS (105)
 103. Pomodoro focus timer cube              [focus   ] 6 angles
 104. Phone lockbox timer                    [focus   ] 6 angles
 105. Noise-masking desk speaker             [focus   ] 6 angles
+106. Diabetic foot inspection mirror        [chronic ] 6 angles
+107. Migraine cooling head wrap             [chronic ] 6 angles
+108. Chronic fatigue shower chair           [chronic ] 6 angles
+109. IBS heat + vibration pad               [chronic ] 6 angles
+110. Incontinence bed pad washable          [chronic ] 6 angles
+111. SAD light therapy lamp                 [mood    ] 6 angles
+112. Mood tracking journal + prompts        [mood    ] 6 angles
+113. Anxiety weighted lap pad               [mood    ] 6 angles
+114. Motorcycle bluetooth helmet intercom   [moto    ] 6 angles
+115. Bike seat pressure-relief saddle       [moto    ] 6 angles
+116. RV tank level monitor                  [rv      ] 6 angles
+117. Van life diesel heater                 [rv      ] 6 angles
+118. Portable compost toilet                [rv      ] 6 angles
+119. 12V portable fridge                    [rv      ] 6 angles
+120. Automatic chicken coop door            [home2   ] 6 angles
+121. Water storage + filter kit             [home2   ] 6 angles
+122. Seed starting heat mat                 [home2   ] 6 angles
+123. Solar generator panel kit              [home2   ] 6 angles
+124. Silent practice drum pad set           [music   ] 6 angles
+125. Vocal steam inhaler                    [music   ] 6 angles
+126. 3D printer filament dryer              [maker   ] 6 angles
+127. Airbrush cleaning station              [maker   ] 6 angles
+128. Aquarium auto water changer            [aqua    ] 6 angles
+129. Reptile thermostat controller          [aqua    ] 6 angles
+130. Bridal emergency kit                   [event   ] 6 angles
+131. Smart water leak sensor                [security] 6 angles
+132. Window vibration alarm                 [security] 6 angles
+133. Pilates reformer bar home              [yoga    ] 6 angles
+134. Splits/flexibility trainer             [yoga    ] 6 angles
+135. Spaced repetition flashcard box        [learn   ] 6 angles
+136. Toddler step stool foldable            [baby2   ] 6 angles
+137. Ultrasonic cleaner                     [clean2  ] 6 angles

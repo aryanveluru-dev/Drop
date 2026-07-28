@@ -347,7 +347,144 @@ Phone lockbox timer|focus|screen addiction;study;family dinner;sleep;kids;work|
 Noise-masking desk speaker|focus|open office;WFH;tinnitus;study;privacy;sleep|
 """
 
-RAW = RAW + RAW2
+RAW3 = """
+# ---------------- CHRONIC CONDITIONS ----------------
+Diabetic foot inspection mirror|chronic|neuropathy;ulcers;independence;caregiver;daily check;vision loss|
+Migraine cooling head wrap|chronic|migraine;hangover;fever;sinus;stress;light sensitivity|
+Arthritis compression gloves warming|chronic|arthritis;typing;knitting;cold;grip;night pain|size
+Raynaud's heated gloves|chronic|Raynaud's;circulation;winter;outdoor work;photography;fishing|size
+Chronic fatigue shower chair|chronic|ME/CFS;long covid;post-op;pregnancy;disability;elderly|
+IBS heat + vibration pad|chronic|IBS;cramps;bloating;stress;travel;period|
+Lymphedema compression wrap|chronic|lymphedema;post-mastectomy;swelling;travel;circulation|policy
+Neuropathy foot massager|chronic|neuropathy;diabetes;circulation;pain;sleep;elderly|policy
+Vertigo balance training kit|chronic|vertigo;BPPV;falls;elderly;post-concussion;confidence|policy
+Incontinence bed pad washable|chronic|incontinence;elderly;kids bedwetting;post-op;pets;caregiver|
+
+# ---------------- MENTAL HEALTH & MOOD ----------------
+SAD light therapy lamp|mood|winter blues;shift work;jet lag;energy;sleep;focus|
+Mood tracking journal + prompts|mood|anxiety;therapy adjunct;habit;gratitude;self-awareness;ADHD|
+Anxiety weighted lap pad|mood|anxiety;autism;flights;desk;kids;dentist|
+Sunrise + sound therapy alarm|mood|winter;anxiety;waking;shift work;sleep quality|
+
+# ---------------- FERTILITY & MEN'S HEALTH ----------------
+Basal thermometer + tracker|fertility|conception;cycle tracking;natural contraception;PCOS;IVF prep|policy
+Sperm-friendly cooling underwear|fertility|male fertility;heat exposure;cyclists;drivers;sauna users|policy size
+Ovulation test + app kit|fertility|conception;cycle;PCOS;IVF;irregular cycles|policy
+
+# ---------------- MOTORCYCLE & CYCLING ----------------
+Motorcycle bluetooth helmet intercom|moto|group rides;GPS;calls;music;safety;passenger|
+Bike seat pressure-relief saddle|moto|numbness;prostate;long rides;commuting;spin class;saddle sores|
+Motorcycle phone mount vibration-damped|moto|GPS;camera damage;commuting;delivery;touring|
+Bike chain cleaning tool|moto|drivetrain wear;mess;shop cost;commuting;winter|
+Cycling knee warmers|moto|cold starts;joint health;spring/autumn;commuting;recovery|size
+
+# ---------------- RV / VAN / MARINE ----------------
+RV tank level monitor|rv|black tank;boondocking;guesswork;full-timers;rentals;maintenance|
+Van life diesel heater|rv|winter camping;condensation;cost vs propane;boondocking;pets;full-timers|
+Marine bilge alarm|rv|sinking;insurance;absent owners;maintenance;peace of mind|
+Portable compost toilet|rv|van life;boondocking;off grid;tiny home;emergency;festivals|
+12V portable fridge|rv|van life;camping;fishing;road trips;medication;overlanding|
+
+# ---------------- HOMESTEAD & PREPPER ----------------
+Automatic chicken coop door|home2|predators;early mornings;holidays;flock safety;egg production;winter|
+Water storage + filter kit|home2|emergency;camping;boil notices;hurricane;off-grid;travel|
+Seed starting heat mat|home2|germination;early season;greenhouse;peppers;microgreens;cost saving|
+Hand-crank emergency radio|home2|blackout;hurricane;camping;phone charging;alerts|retail
+Solar generator panel kit|home2|blackout;camping;RV;work site;eco;emergency|
+
+# ---------------- MUSIC & PERFORMANCE ----------------
+Silent practice drum pad set|music|neighbours;apartment;practice time;kids;travel;warm-up|
+Guitar humidifier|music|cracking;dry climate;expensive instruments;winter;storage|
+Vocal steam inhaler|music|singers;teachers;podcasters;dry throat;performance;cold season|
+Instrument travel case humidity|music|flights;touring;insurance;temperature;valuable instruments|
+Metronome + tuner clip|music|timing;tuning;students;practice;live|retail
+
+# ---------------- ART, CRAFT & MAKER ----------------
+3D printer filament dryer|maker|humidity;failed prints;filament cost;PETG;storage;print quality|
+Sewing machine LED strip|maker|eyesight;dark rooms;detail work;seniors;quilting|
+Knitting tension tracker|maker|gauge;wrists;consistency;beginners;projects|
+Airbrush cleaning station|maker|models;nails;cake;mess;clogging;paint cost|
+Laser engraver honeycomb bed|maker|scorch marks;airflow;cutting;small business;precision|
+Pottery wheel splash pan|maker|mess;apartment;beginners;cleanup;kids|
+
+# ---------------- AQUARIUM & EXOTIC PETS ----------------
+Aquarium auto water changer|aqua|water changes;time;fish stress;heavy buckets;vacations;nitrates|
+Reptile thermostat controller|aqua|overheating;burns;breeding;power cuts;vet cost;species accuracy|
+Aquarium algae scraper magnet|aqua|algae;wet arms;scratching glass;time;deep tanks|
+Automatic fish feeder|aqua|holidays;overfeeding;work trips;consistency;multiple tanks|
+
+# ---------------- EQUESTRIAN & LIVESTOCK ----------------
+Horse hoof boot|equine|abscess;barefoot transition;trail;lameness;vet cost;turnout|size
+Automatic livestock waterer|equine|freezing;time;hydration;holidays;multiple animals|
+Horse grooming vacuum|equine|shedding;dust;show prep;allergies;time|
+
+# ---------------- WEDDING & EVENTS ----------------
+Wedding dress steamer travel|event|creases;destination weddings;photos;hire dresses;bridesmaids|
+Bridal emergency kit|event|stains;blisters;hem;makeup;nerves;gifting|
+Photo booth backdrop stand|event|weddings;parties;content;small business;birthdays|
+
+# ---------------- STUDENT & DORM ----------------
+Under-bed storage risers|student|dorm space;small apartment;renters;moving;seasonal|retail
+Portable study lamp clip|student|dorm roommates;late study;travel;reading;kids|retail
+Noise-cancelling study headphones|student|dorm;library;ADHD;exams;shared housing|retail
+
+# ---------------- HOME SECURITY & SMART ----------------
+Door reinforcement kit|security|break-ins;renters;peace of mind;elderly parents;insurance|
+Smart water leak sensor|security|burst pipes;insurance;holidays;basements;washing machines;rentals|
+Fake TV light burglar deterrent|security|holidays;empty home;cheap security;elderly;renters|
+Window vibration alarm|security|renters;ground floor;holidays;elderly;dorms;cheap|
+
+# ---------------- EV & MODERN CAR ----------------
+EV portable charger adapter|ev|road trips;rentals;home charging;emergencies;compatibility|
+Car sunshade custom fit|ev|heat;dashboard cracking;pets;kids;battery drain;resale|retail
+Tesla-style screen sun visor|ev|glare;heat;resale;driving safety|
+
+# ---------------- BBQ, COFFEE & BAR ----------------
+Meat thermometer wireless|bbq|overcooking;BBQ;roasts;food safety;smoking;sous vide|retail
+Pellet grill temp controller|bbq|temperature swings;overnight smokes;fuel;consistency;competition|
+Espresso puck screen + tamper|bbq|channeling;shot quality;cafe cost;beginners;machine care|
+Cocktail smoker kit|bbq|entertaining;gifting;home bar;presentation;content|
+Whiskey ice ball press|bbq|dilution;entertaining;gifting;presentation;home bar|
+
+# ---------------- SWIM, WATER & WINTER SPORT ----------------
+Swim training snorkel|water|technique;breathing;triathlon;stroke;shoulder|
+Wetsuit change robe|water|cold;privacy;surfers;open water;kids;triathlon|size
+Snow grips for shoes|water|ice falls;elderly;dog walking;commuting;winter travel|size
+Heated ski socks|water|cold feet;Raynaud's;skiing;fishing;circulation|size
+Surfboard traction pad|water|grip;control;board resale;beginners|
+
+# ---------------- YOGA, PILATES & DANCE ----------------
+Pilates reformer bar home|yoga|studio cost;small space;rehab;core;postpartum;strength|
+Yoga wheel|yoga|backbends;back pain;desk posture;chest opening;beginners|old
+Ballet turning board|yoga|pirouettes;home practice;kids;balance;technique|
+Splits/flexibility trainer|yoga|flexibility;martial arts;dance;rehab;hips;kids|
+
+# ---------------- PHOTOGRAPHY & DRONE ----------------
+Lens cleaning pen kit|photo|dust;travel;expensive glass;phone lenses;telescopes|retail
+Camera rain cover|photo|weather;wildlife;sport;travel;insurance|
+Drone landing pad|photo|dust;propeller damage;grass;beach;professional look|
+ND filter variable|photo|bright light;video;waterfalls;drone;cinematic|
+
+# ---------------- LANGUAGE & TEST PREP ----------------
+Spaced repetition flashcard box|learn|medical school;language;exams;kids;screen-free;retention|
+Pronunciation feedback mic|learn|accent;ESL;confidence;interviews;presentations|
+
+# ---------------- BABY & TODDLER (extended) ----------------
+Toddler step stool foldable|baby2|independence;handwashing;kitchen;potty;travel;small bathroom|
+Baby carrier hip seat|baby2|back pain;fussy baby;travel;hands-free;toddler;grandparents|size
+Bottle prep machine|baby2|night feeds;consistency;temperature;twins;time|
+Toddler anti-tip furniture straps|baby2|tipping deaths;renters;earthquake;pets;insurance|retail
+Silicone bib + suction plate|baby2|mess;weaning;travel;dishwasher;highchair|retail
+
+# ---------------- CLEANING (extended) ----------------
+Ultrasonic cleaner|clean2|jewellery;glasses;carburettors;dentures;watch bands;tools|
+Gutter cleaning attachment|clean2|ladders safety;blockages;roof damage;autumn;contractor cost|
+Oven rack cleaning bag|clean2|scrubbing;chemicals;deposit return;BBQ grates;time|
+Radiator cleaning brush|clean2|dust;allergies;heating efficiency;unreachable gaps;pets|
+Blind cleaning tool|clean2|dust;allergies;time;awkward slats;rentals|
+"""
+
+RAW = RAW + RAW2 + RAW3
 
 
 def parse():
