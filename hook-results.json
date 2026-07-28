@@ -264,5 +264,104 @@
         "title": "Microcurrent facial giving faces a workout"
       }
     ]
+  },
+  {
+    "product": "Red light face mask",
+    "niche": "face",
+    "term": "led face mask",
+    "n": 2,
+    "max": 82613,
+    "p90": 82613,
+    "median": 47383,
+    "total": 94767,
+    "verdict": "NO SIGNAL",
+    "top": [
+      {
+        "id": "WWh8eaYGL3s",
+        "views": 82613,
+        "title": "TheraFace Mask Quick Start Guide"
+      },
+      {
+        "id": "hYV-H1tGtLo",
+        "views": 12154,
+        "title": "Dr. Anthony Youn Explains Why iRESTORE Illumina Is His Favorite LED Ma"
+      }
+    ]
+  },
+  {
+    "product": "Under-eye microcurrent wand",
+    "niche": "face",
+    "term": "under eye wand",
+    "n": 7,
+    "max": 24942,
+    "p90": 24942,
+    "median": 633,
+    "total": 32266,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "mKLicJTE9yA",
+        "views": 24942,
+        "title": "How To: Use The Peep Club Eye Wand"
+      },
+      {
+        "id": "zmm_kB5ahGg",
+        "views": 4230,
+        "title": "GLO24K Triple Action LED Eye Care Therapy Wand"
+      }
+    ]
+  },
+  {
+    "product": "Jaw exerciser",
+    "niche": "face",
+    "term": "jaw exerciser",
+    "n": 8,
+    "max": 401524,
+    "p90": 401524,
+    "median": 26018,
+    "total": 869012,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "qAmpyMlaOAI",
+        "views": 401524,
+        "title": "JAWLINER Jaw muscle workout - how it works - mewing"
+      },
+      {
+        "id": "9xMt8-yGkX8",
+        "views": 348124,
+        "title": "Jawzrsize Before & After | Eric West's Jawline Transformation | Do Jaw"
+      }
+    ]
+  },
+  {
+    "product": "Facial steamer",
+    "niche": "face",
+    "term": "facial steamer",
+    "n": 8,
+    "max": 730069,
+    "p90": 730069,
+    "median": 140673,
+    "total": 1537620,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "ERWqwMvfD3k",
+        "views": 730069,
+        "title": "Dr Trust USA HomeSpa Facial Steamer and Vaporizer/Vapourizer Machine 9"
+      },
+      {
+        "id": "piYisAOetcA",
+        "views": 273655,
+        "title": "How to Naturally Remove Blackheads (Steam and Towel Method)"
+      }
+    ]
+  },
+  {
+    "product": "Face yoga tool kit",
+    "niche": "face",
+    "term": "face yoga tool",
+    "n": 0,
+    "verdict": "NO SIGNAL"
   }
 ]
