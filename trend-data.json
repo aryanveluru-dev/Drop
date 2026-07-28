@@ -383,5 +383,89 @@
     "g5": -1.3,
     "current": 72,
     "verdict": "FLAT"
+  },
+  {
+    "kw": "chin strap snoring",
+    "g12": 479.0,
+    "g5": 48.9,
+    "current": 12,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "led face mask",
+    "g12": 429.7,
+    "g5": 676.1,
+    "current": 11,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "lymphatic drainage tool",
+    "g12": 174.5,
+    "g5": 7003.8,
+    "current": 17,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "nasal dilator",
+    "g12": 100.0,
+    "g5": 225.3,
+    "current": 25,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "anti snoring device",
+    "g12": 89.7,
+    "g5": 119.5,
+    "current": 15,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "compression boots recovery",
+    "g12": 751.0,
+    "g5": 3455.2,
+    "current": 24,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "sauna blanket",
+    "g12": 268.9,
+    "g5": 160.4,
+    "current": 7,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "breathing trainer device",
+    "g12": 999.0,
+    "g5": 999.0,
+    "current": 11,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "portable humidifier",
+    "g12": 970.4,
+    "g5": 463.2,
+    "current": 2,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "teeth whitening led",
+    "g12": 590.5,
+    "g5": 211.1,
+    "current": 4,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "heated eye mask",
+    "g12": 185.2,
+    "g5": null,
+    "current": 23,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "neck traction device",
+    "g12": 121.2,
+    "g5": 36.3,
+    "current": 18,
+    "verdict": "RISING"
   }
 ]
