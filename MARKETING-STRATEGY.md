@@ -1,7 +1,52 @@
 # Channel Strategy — Platforms, Economics, and the AI-Creative Question
 
-**Date:** 2026-07-25
+**Date:** 2026-07-25 (campaign-execution section added 2026-08-09)
 **Scope:** both products side by side, minimum viable budget per channel, platform mix, MCP tooling assessment.
+
+---
+
+## Addendum — campaign execution mechanics (applied to the hangboard, transfers to any product)
+
+Two source videos, applied and corrected against each other rather than taken at face value.
+
+### Image ads, not video, as the default format
+
+Image ads on Meta run roughly **3x cheaper CPM/CPC than video**. One creator's own account (a hobbyist-apparel niche — golf, structurally similar to climbing gear: enthusiast audience, not mass-market) ran 95% image ads over 18 months, $1.7M spend, at **$10 CPM / $0.91 CPC** against a $12.68 niche-average CPM. Cheaper impressions compound into cheaper cost-per-purchase, and the stated reasoning tracks: short-form video is oversaturated across every platform, so a static image with bold text is now the pattern-interrupt, not the hook-driven video.
+
+Redoing this project's CAC estimate with an image-ad-forward assumption instead of the blended-video-and-image benchmark used earlier: **CAC likely lands closer to $20-25** rather than the ~$30 estimated from blended-format benchmarks. This is directionally supported, not niche-verified — no climbing-specific ad-cost data exists — but the format-cost multiplier is a property of the ad type, not the vertical, so it should transfer.
+
+### Creative production workflow (concrete, replaces "make a few ads")
+
+1. Search Meta Ad Library (or the free wrapper adlibrary.io) for competitor or adjacent-brand ads. Filter to "winners" — ads that have run for a long time, which is presumptive evidence of profitability, since brands don't keep paying for ads that lose money.
+2. Pick a structurally strong one (clear product shot, room for bold headline text, not overly busy).
+3. Recreate it with an image-gen model, explicitly changing the avatar, scene, and removing all original text — not a copy, a same-structure original.
+4. Finish in Canva: add your own headline, logo, and CTA text.
+
+### The AI-disclosure tension — do not resolve this the easy way
+
+The workflow above surfaces exactly the compliance risk flagged in the platform-policy section of this document. One tactic seen in the source material: export the AI-generated image from ChatGPT and it carries metadata that flags it as AI to Meta (weaker delivery, possible AI-content labeling); routing it through Canva before upload strips that metadata.
+
+**Do not adopt this as "strip the metadata to dodge detection."** Meta's stated policy requires a visible label on AI-generated content depicting realistic scenarios or synthetic people; evading that detection is a different act than the legitimate reason to touch the image in Canva anyway (adding your own text and branding, which every ad needs regardless of how the base image was produced). The compliant and the good-creative paths are the same path here: substantially transform the AI output — new avatar, new scene, real composited text and branding — rather than lightly editing an otherwise-unmodified generation. If the image is genuinely transformed, the disclosure question resolves itself along with it; if it is not, stripping the metadata does not make the underlying issue go away, it just makes it undetected.
+
+### Creative volume and diversity — 25 minimum, not 4
+
+A four-ad test (one campaign, one ad set, two image, two video) is the right scale for a small local-lead-gen account with warm, search-driven intent. It is **not enough for a cold national ecommerce audience**, per how Meta's delivery pipeline actually works:
+
+1. **Retrieval** (internally "Andromeda") filters tens of millions of active ads down to a few thousand candidates per auction — a gatekeeper stage your ad has to clear before it's even scored.
+2. **Ranking** scores the survivors on bid × estimated action rate (Meta's prediction of conversion likelihood) × ad quality (hide-rate, clickbait signals, landing-page load speed and message-to-landing-page congruence).
+3. **Auction** sets winners and price from the ranked pool.
+
+The practical takeaway: **you need real volume (≥25 creatives) to compete at the retrieval stage at all**, and real *diversity* — ads that share a format/background/style get pooled together and effectively treated as duplicates and suppressed, even when the underlying content differs. Volume without diversity does close to nothing; the two requirements are separate and both mandatory. As spend scales, creative needs to refresh continuously — rising cost-per-conversion on an ad set is the signal that its creative has fatigued and the pool needs new inputs, not a signal to raise the bid.
+
+### Awareness-stage messaging — the more important half of this
+
+Most advertisers, per this source, only produce ads aimed at the "most aware" audience segment — people who already recognize the brand — which is typically only **3-5% of the addressable market** for an established brand, and is close to zero for a brand-new store with no organic following. The classic five-stage breakdown (unaware → problem-aware → solution-aware → product-aware → most-aware) means a cold audience for a new brand needs creative that **educates and introduces**, not creative that assumes recognition.
+
+Applied to the hangboard: cold Meta traffic is realistically problem-aware (they know their finger strength has plateaued) or solution-aware (they know training tools for this exist) at best — never product-aware or most-aware, because nobody has heard of this specific store yet. The 25-creative minimum above should be built across these stages deliberately, not as 25 versions of the same "buy this" offer ad — mix in educational/problem-aware creative (why plateaus happen, what actually builds finger strength) alongside straightforward product and offer ads. This is also the argument, independently, for the organic-first phase already in this plan: organic community content is what moves a niche audience from problem-aware to product-aware cheaply, before paid spend tries to convert them.
+
+### Net effect on the phased plan
+
+The gated structure (bundle to raise AOV → organic validation → capped paid test → $25 CAC decision gate) is unchanged by any of this — this addendum is entirely about how Phase 4 (the paid test) should be executed once the earlier phases justify reaching it. Revise Phase 4's creative brief to: image-ad-forward, 25 creatives minimum sourced via the Ad Library → AI-recreate → Canva workflow above, spread deliberately across awareness stages rather than concentrated on product/most-aware messaging.
 
 ---
 
