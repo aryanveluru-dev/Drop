@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Coupon Wallet &amp; Validator</title>
+<title>Couponly — Public Coupon Directory &amp; Wallet</title>
 <style>
   :root {
     --bg: #faf7f0;
@@ -22,146 +22,97 @@
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #14171c;
-      --card: #1c2129;
-      --card-2: #242b35;
-      --text: #eef1f5;
-      --muted: #8b93a3;
-      --accent: #2ee6a0;
-      --accent-2: #2ee6a0;
-      --on-accent: #0d1a14;
-      --danger: #ff5b48;
-      --warn: #ffcf6b;
-      --border: #2c333d;
+      --bg: #14171c; --card: #1c2129; --card-2: #242b35; --text: #eef1f5;
+      --muted: #8b93a3; --accent: #2ee6a0; --accent-2: #2ee6a0; --on-accent: #0d1a14;
+      --danger: #ff5b48; --warn: #ffcf6b; --border: #2c333d;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #14171c;
-    --card: #1c2129;
-    --card-2: #242b35;
-    --text: #eef1f5;
-    --muted: #8b93a3;
-    --accent: #2ee6a0;
-    --accent-2: #2ee6a0;
-    --on-accent: #0d1a14;
-    --danger: #ff5b48;
-    --warn: #ffcf6b;
-    --border: #2c333d;
+    --bg: #14171c; --card: #1c2129; --card-2: #242b35; --text: #eef1f5;
+    --muted: #8b93a3; --accent: #2ee6a0; --accent-2: #2ee6a0; --on-accent: #0d1a14;
+    --danger: #ff5b48; --warn: #ffcf6b; --border: #2c333d;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    -webkit-font-smoothing: antialiased;
+    background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased;
   }
-  header {
-    padding: 18px 16px 8px;
-    text-align: center;
-  }
+  header { padding: 18px 16px 4px; text-align: center; }
   header h1 {
-    margin: 0; font-size: 21px; font-weight: 800;
-    font-family: var(--font-display); letter-spacing: .5px; text-transform: uppercase;
+    margin: 0; font-size: 24px; font-weight: 800;
+    font-family: var(--font-display); letter-spacing: 1px; text-transform: uppercase;
   }
-  header p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 12px 14px 60px; }
+  header h1 .tk { color: var(--accent); }
+  header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 8px 14px 70px; }
 
-  .toolbar {
-    display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
-    margin: 10px 0 16px;
-  }
+  /* Tabs */
+  .tabs { display: flex; gap: 6px; background: var(--card-2); border: 1px solid var(--border);
+          border-radius: 999px; padding: 4px; margin: 14px auto 16px; max-width: 340px; }
+  .tabs button { flex: 1; background: transparent; color: var(--muted); border: none;
+                 border-radius: 999px; padding: 9px 12px; font-weight: 700; font-size: 13px; cursor: pointer; }
+  .tabs button.active { background: var(--accent); color: var(--on-accent); }
+
   input, select, textarea, button {
-    font: inherit;
-    color: var(--text);
-    background: var(--card-2);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 12px;
-    outline: none;
+    font: inherit; color: var(--text); background: var(--card-2);
+    border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; outline: none;
   }
   input::placeholder, textarea::placeholder { color: var(--muted); }
   input:focus, select:focus, textarea:focus { border-color: var(--accent-2); }
-  button {
-    cursor: pointer;
-    background: var(--accent-2);
-    color: var(--on-accent);
-    border: none;
-    font-weight: 700;
-  }
-  button.secondary { background: var(--card-2); color: var(--text); border: 1px solid var(--border); font-weight: 500; }
-  button.ghost { background: transparent; border: 1px solid var(--border); color: var(--muted); }
+  button { cursor: pointer; }
+  .btn-primary { background: var(--accent-2); color: var(--on-accent); border: none; font-weight: 700; }
+  .btn-secondary { background: var(--card-2); color: var(--text); border: 1px solid var(--border); font-weight: 500; }
+  .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--muted); }
   button:active { transform: translateY(1px); }
+
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 0 0 14px; }
   .search { flex: 1 1 180px; }
 
-  .form {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px;
-    margin-bottom: 18px;
-    display: none;
-  }
-  .form.open { display: block; }
-  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .grid .full { grid-column: 1 / -1; }
-  label { display: block; font-size: 12px; color: var(--muted); margin: 0 0 4px 2px; }
-  .form input, .form select, .form textarea { width: 100%; }
-  .form-actions { display: flex; gap: 8px; margin-top: 12px; }
-
   .stats { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
-  .pill {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 999px; padding: 6px 12px; font-size: 12px; color: var(--muted);
-  }
+  .pill { background: var(--card); border: 1px solid var(--border); border-radius: 999px;
+          padding: 6px 12px; font-size: 12px; color: var(--muted); }
   .pill b { color: var(--text); }
 
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 14px;
-    margin-bottom: 12px;
-  }
-  .card.expired { opacity: .62; }
+  .hint { font-size: 12px; color: var(--muted); background: var(--card); border: 1px solid var(--border);
+          border-left: 3px solid var(--warn); border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; line-height: 1.5; }
+
+  /* Store group */
+  .store-group { margin-bottom: 18px; }
+  .store-head { display: flex; align-items: baseline; gap: 8px; margin: 0 2px 8px; }
+  .store-head h2 { margin: 0; font-family: var(--font-display); text-transform: uppercase;
+                   letter-spacing: .5px; font-size: 17px; font-weight: 800; }
+  .store-head .count { font-size: 12px; color: var(--muted); }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+          padding: 14px; margin-bottom: 12px; }
+  .card.expired { opacity: .6; }
   .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
   .store { font-size: 16px; font-weight: 800; font-family: var(--font-display); letter-spacing: .3px; text-transform: uppercase; }
   .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
-  .badge {
-    font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
-    white-space: nowrap;
-  }
+  .badge { font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px; white-space: nowrap; }
   .badge.valid { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
   .badge.soon { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
   .badge.expired { background: color-mix(in srgb, var(--danger) 16%, transparent); color: var(--danger); }
   .badge.nodate { background: color-mix(in srgb, var(--muted) 16%, transparent); color: var(--muted); }
+  .badge.online { background: color-mix(in srgb, var(--accent-2) 14%, transparent); color: var(--accent-2); }
 
-  .code-row {
-    display: flex; align-items: center; gap: 8px; margin: 12px 0 6px;
-  }
-  .code {
-    font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
-    font-size: 20px; letter-spacing: 2px; font-weight: 700;
-    background: var(--card-2); border: 1px dashed var(--border);
-    border-radius: 8px; padding: 8px 12px; flex: 1; text-align: center;
-    word-break: break-all;
-  }
+  .code-row { display: flex; align-items: center; gap: 8px; margin: 12px 0 6px; }
+  .code { font-family: "SF Mono", ui-monospace, Menlo, Consolas, monospace; font-size: 20px;
+          letter-spacing: 2px; font-weight: 700; background: var(--card-2); border: 1px dashed var(--border);
+          border-radius: 8px; padding: 8px 12px; flex: 1; text-align: center; word-break: break-all; }
+  .code.nocode { font-style: italic; letter-spacing: 0; font-size: 14px; color: var(--muted); font-weight: 500; }
   .meta { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 8px; }
   .meta span b { color: var(--text); font-weight: 600; }
-  .tear {
-    position: relative;
-    height: 1px;
-    margin: 14px -14px 12px;
-    background-image: linear-gradient(to right, var(--border) 60%, transparent 0%);
-    background-size: 10px 1px;
-    background-repeat: repeat-x;
-  }
-  .tear::before, .tear::after {
-    content: ""; position: absolute; top: 50%; width: 16px; height: 16px;
-    background: var(--bg); border-radius: 50%; transform: translateY(-50%);
-  }
-  .tear::before { left: -8px; }
-  .tear::after { right: -8px; }
+  .meta a { color: var(--accent-2); text-decoration: none; }
+  .meta a:hover { text-decoration: underline; }
+
+  .tear { position: relative; height: 1px; margin: 14px -14px 12px;
+          background-image: linear-gradient(to right, var(--border) 60%, transparent 0%);
+          background-size: 10px 1px; background-repeat: repeat-x; }
+  .tear::before, .tear::after { content: ""; position: absolute; top: 50%; width: 16px; height: 16px;
+          background: var(--bg); border-radius: 50%; transform: translateY(-50%); }
+  .tear::before { left: -8px; } .tear::after { right: -8px; }
   .card-actions { display: flex; gap: 8px; flex-wrap: wrap; }
   .card-actions button { padding: 8px 12px; font-size: 13px; }
 
@@ -169,93 +120,104 @@
   .barcode-wrap svg { display: block; margin: 0 auto; width: 100%; max-width: 340px; height: 90px; }
   .barcode-caption { color: #111; font-family: ui-monospace, monospace; letter-spacing: 3px; font-size: 14px; margin-top: 4px; }
 
-  .empty { text-align: center; color: var(--muted); padding: 40px 20px; }
+  .empty { text-align: center; color: var(--muted); padding: 44px 20px; }
   .empty svg { opacity: .4; }
 
-  .hint { font-size: 12px; color: var(--muted); background: var(--card); border: 1px solid var(--border);
-          border-left: 3px solid var(--accent-2); border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; }
+  /* Add form */
+  .form { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+          padding: 14px; margin-bottom: 18px; display: none; }
+  .form.open { display: block; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .grid .full { grid-column: 1 / -1; }
+  label { display: block; font-size: 12px; color: var(--muted); margin: 0 0 4px 2px; }
+  .form input, .form select { width: 100%; }
+  .form-actions { display: flex; gap: 8px; margin-top: 12px; }
 
   dialog { border: none; background: transparent; padding: 0; }
   dialog::backdrop { background: rgba(0,0,0,.72); }
   .modal { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px;
            width: min(94vw, 420px); text-align: center; }
   .modal .barcode-wrap svg { max-width: 300px; height: 120px; }
-  .modal .big-code { font-size: 26px; font-family: ui-monospace, monospace; letter-spacing: 3px; font-weight: 800; margin: 6px 0; word-break: break-all; }
+  .modal .big-code { font-size: 26px; font-family: ui-monospace, monospace; letter-spacing: 3px;
+           font-weight: 800; margin: 6px 0; word-break: break-all; }
   .modal .store { margin-bottom: 4px; }
-  .close-x { position: relative; }
+
+  .view { display: none; }
+  .view.active { display: block; }
   @media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
 <header>
-  <h1>🎟️ Coupon Wallet &amp; Validator</h1>
-  <p>Save codes you find, check validity, scan at the register.</p>
+  <h1>Coupon<span class="tk">ly</span></h1>
+  <p>A public directory of store coupon codes — plus your own scannable wallet.</p>
 </header>
 
 <div class="wrap">
-  <div class="hint">
-    Add coupon codes you collect from <b>legitimate public sources</b> — retailer promo pages, your email
-    offers, store flyers, or coupon aggregator sites. This wallet checks each code's <b>validity by expiry
-    date</b> and renders a <b>scannable barcode</b>. It works fully offline, so it's ready at the checkout.
+  <div class="tabs">
+    <button id="tab-discover" class="active" onclick="switchView('discover')">🔎 Discover</button>
+    <button id="tab-wallet" onclick="switchView('wallet')">👛 My Wallet</button>
   </div>
 
-  <div class="toolbar">
-    <input class="search" id="search" placeholder="Search store, code, or category…" />
-    <select id="filter">
-      <option value="all">All</option>
-      <option value="valid">Valid only</option>
-      <option value="soon">Expiring soon</option>
-      <option value="expired">Expired</option>
-    </select>
-    <button id="addBtn">+ Add coupon</button>
-  </div>
-
-  <form class="form" id="form" autocomplete="off">
-    <div class="grid">
-      <div>
-        <label>Store *</label>
-        <input id="f-store" required placeholder="e.g. Target" />
-      </div>
-      <div>
-        <label>Code *</label>
-        <input id="f-code" required placeholder="e.g. SAVE20" />
-      </div>
-      <div class="full">
-        <label>Description</label>
-        <input id="f-desc" placeholder="e.g. 20% off one item" />
-      </div>
-      <div>
-        <label>Discount</label>
-        <input id="f-discount" placeholder="e.g. 20% or $5" />
-      </div>
-      <div>
-        <label>Category</label>
-        <input id="f-category" placeholder="e.g. Groceries" />
-      </div>
-      <div>
-        <label>Expiry date</label>
-        <input id="f-expiry" type="date" />
-      </div>
-      <div>
-        <label>Source (where you got it)</label>
-        <input id="f-source" placeholder="e.g. target.com/circle" />
-      </div>
-      <div class="full">
-        <label>Barcode format</label>
-        <select id="f-format">
-          <option value="none">No barcode (type code at register)</option>
-          <option value="code128">Code 128 (most common store coupon)</option>
-        </select>
-      </div>
+  <!-- ============ DISCOVER ============ -->
+  <section id="view-discover" class="view active">
+    <div class="hint">
+      These codes were compiled from <b>public sources</b> (store promo pages &amp; coupon sites), each linked
+      below with the date it was found. Codes expire and change often — <b>we can't guarantee any code still
+      works</b>; tap the source to verify current terms. Most are <b>online codes you type at checkout</b>, not
+      in-store barcodes. Found a code? Tap <b>Save to Wallet</b> to keep it handy.
     </div>
-    <div class="form-actions">
-      <button type="submit" id="saveBtn">Save coupon</button>
-      <button type="button" class="secondary" id="cancelBtn">Cancel</button>
+    <div class="toolbar">
+      <input class="search" id="d-search" placeholder="Search store, code, or category…" />
+      <select id="d-filter"><option value="all">All stores</option></select>
     </div>
-  </form>
+    <div id="d-list"></div>
+  </section>
 
-  <div class="stats" id="stats"></div>
-  <div id="list"></div>
+  <!-- ============ WALLET ============ -->
+  <section id="view-wallet" class="view">
+    <div class="hint" style="border-left-color: var(--accent);">
+      Your saved coupons live only on this device (offline-ready for the checkout line). Mark a coupon as a
+      <b>Code&nbsp;128 barcode</b> if it's a store coupon meant to be scanned; the app renders it full-screen so
+      the register can read it.
+    </div>
+    <div class="toolbar">
+      <input class="search" id="w-search" placeholder="Search your coupons…" />
+      <select id="w-filter">
+        <option value="all">All</option>
+        <option value="valid">Valid only</option>
+        <option value="soon">Expiring soon</option>
+        <option value="expired">Expired</option>
+      </select>
+      <button class="btn-primary" id="addBtn">+ Add</button>
+    </div>
+
+    <form class="form" id="form" autocomplete="off">
+      <div class="grid">
+        <div><label>Store *</label><input id="f-store" required placeholder="e.g. Target" /></div>
+        <div><label>Code *</label><input id="f-code" required placeholder="e.g. SAVE20" /></div>
+        <div class="full"><label>Description</label><input id="f-desc" placeholder="e.g. 20% off one item" /></div>
+        <div><label>Discount</label><input id="f-discount" placeholder="e.g. 20% or $5" /></div>
+        <div><label>Category</label><input id="f-category" placeholder="e.g. Groceries" /></div>
+        <div><label>Expiry date</label><input id="f-expiry" type="date" /></div>
+        <div><label>Source</label><input id="f-source" placeholder="e.g. target.com/circle" /></div>
+        <div class="full">
+          <label>Type</label>
+          <select id="f-format">
+            <option value="online">Online code (type at checkout)</option>
+            <option value="code128">In-store — Code 128 barcode (scannable)</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary" id="saveBtn">Save coupon</button>
+        <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+
+    <div class="stats" id="w-stats"></div>
+    <div id="w-list"></div>
+  </section>
 </div>
 
 <dialog id="scanModal">
@@ -264,26 +226,55 @@
     <div class="desc" id="m-desc" style="color:var(--muted);font-size:13px;margin-bottom:10px;"></div>
     <div class="barcode-wrap" id="m-barcode"></div>
     <div class="big-code" id="m-code"></div>
-    <button class="secondary" id="m-close" style="margin-top:8px;width:100%;">Done</button>
+    <button class="btn-secondary" id="m-close" style="margin-top:8px;width:100%;">Done</button>
   </div>
 </dialog>
 
 <script>
-/* ---------- Storage ---------- */
-const KEY = "coupon-wallet-v1";
+/* =========================================================================
+   PUBLIC COUPON DIRECTORY
+   Compiled 2026-08-10 from public promo pages & coupon aggregators.
+   Each entry links its source. Codes expire — always verify at the source.
+   These are reported (not tested) codes; no merchant systems are contacted.
+   ========================================================================= */
+const CATALOG = [
+  { store: "Nike", code: "DAYONE", discount: "20% off", desc: "20% off sitewide order",
+    category: "Shoes & Apparel", terms: "New/select accounts; exclusions apply",
+    source: "https://simplycodes.com/store/nike.com", sourceName: "SimplyCodes", reported: "2026-08-10" },
+  { store: "Nike", code: "GIFTS", discount: "25% off", desc: "25% off at checkout",
+    category: "Shoes & Apparel", terms: "Select styles; verify eligibility",
+    source: "https://www.whowhatwear.com/promo-codes/nike", sourceName: "WhoWhatWear", reported: "2026-08-10" },
+  { store: "DoorDash", code: "DASH30NOW", discount: "Up to $25 off", desc: "First restaurant order of $30+",
+    category: "Food Delivery", terms: "New customers only",
+    source: "https://www.coupons.com/coupon-codes/doordash", sourceName: "Coupons.com", reported: "2026-08-10" },
+  { store: "DoorDash", code: "JUSTDASHIT", discount: "$5 off", desc: "First food delivery order of $15+",
+    category: "Food Delivery", terms: "New customers only",
+    source: "https://www.coupons.com/coupon-codes/doordash", sourceName: "Coupons.com", reported: "2026-08-10" },
+  { store: "DoorDash", code: "WELCOMEALC", discount: "25% off", desc: "First alcohol delivery order",
+    category: "Food Delivery", terms: "New customers; ID required at drop-off",
+    source: "https://www.coupons.com/coupon-codes/doordash", sourceName: "Coupons.com", reported: "2026-08-10" },
+  { store: "Bath & Body Works", code: "GOODNIGHT", discount: "20% off", desc: "20% off your purchase",
+    category: "Beauty & Home", terms: "Exclusions apply; verify at source",
+    source: "https://couponfollow.com/site/bathandbodyworks.com", sourceName: "CouponFollow", reported: "2026-08-10" },
+  { store: "Old Navy", code: "EXTRA", discount: "Extra 30% off", desc: "Extra 30% off jeans already on sale (online)",
+    category: "Clothing", terms: "Online exclusive; short-dated — verify at source",
+    source: "https://slickdeals.net/f/16588934-old-navy-up-to-50-off-sitewide-extra-30-off-w-promo-code",
+    sourceName: "Slickdeals", reported: "2026-08-10", expiry: "2026-08-09" },
+  { store: "Domino's", code: "", discount: "$8 each", desc: "Large 1-topping, 8pc wings, or boneless chicken — online carryout, no code needed",
+    category: "Food Delivery", terms: "Online carryout order; auto-applied, no code required",
+    source: "https://www.coupons.com/coupon-codes/dominos", sourceName: "Coupons.com", reported: "2026-08-10" },
+];
+
+/* ---------- Wallet storage ---------- */
+const KEY = "couponly-wallet-v1";
 let coupons = load();
 let editingId = null;
 
-function load() {
-  try { return JSON.parse(localStorage.getItem(KEY)) || []; }
-  catch { return []; }
-}
-function save() { localStorage.setItem(KEY, JSON.stringify(coupons)); }
+function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch { return []; } }
+function persist() { localStorage.setItem(KEY, JSON.stringify(coupons)); }
 function uid() { return "c" + Math.random().toString(36).slice(2, 9) + Date.now().toString(36); }
 
-/* ---------- Validity logic ---------- */
-// A coupon's "validity" here means: is it past its printed expiry date, and is the
-// code well-formed? We deliberately do NOT contact any merchant system to test codes.
+/* ---------- Validity ---------- */
 function status(c) {
   if (!c.expiry) return { key: "nodate", label: "No expiry", cls: "nodate" };
   const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -293,26 +284,16 @@ function status(c) {
   if (days <= 7) return { key: "soon", label: days === 0 ? "Expires today" : `${days}d left`, cls: "soon" };
   return { key: "valid", label: "Valid", cls: "valid" };
 }
-
-// Format sanity check: flags codes that no register will accept as typed.
 function formatIssues(code) {
   const issues = [];
-  if (!code) issues.push("empty");
+  if (!code) return issues;
   if (/\s/.test(code)) issues.push("contains spaces");
-  if (code && code.length < 3) issues.push("very short");
+  if (code.length < 3) issues.push("very short");
   return issues;
 }
 
-/* ---------- Code 128 barcode (Code Set B, self-contained) ---------- */
-const C128B = [
-  " ","!","\"","#","$","%","&","'","(",")","*","+",",","-",".","/",
-  "0","1","2","3","4","5","6","7","8","9",":",";","<","=",">","?",
-  "@","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",
-  "P","Q","R","S","T","U","V","W","X","Y","Z","[","\\","]","^","_",
-  "`","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
-  "p","q","r","s","t","u","v","w","x","y","z","{","|","}","~"
-];
-// Bar-width patterns for values 0..106 (each is 6 numbers summing to 11 modules)
+/* ---------- Code 128 (Code Set B, self-contained) ---------- */
+const C128B = " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
 const PATTERNS = [
   "212222","222122","222221","121223","121322","131222","122213","122312","132212","221213",
   "221312","231212","112232","122132","122231","113222","123122","123221","223211","221132",
@@ -327,55 +308,157 @@ const PATTERNS = [
   "114131","311141","411131","211412","211214","211232","2331112"
 ];
 const START_B = 104, STOP = 106;
-
 function code128B(text) {
-  // Only Code Set B printable ASCII (32..126). Fall back gracefully.
   const chars = [...text].filter(ch => ch.charCodeAt(0) >= 32 && ch.charCodeAt(0) <= 126);
   const values = [START_B];
   let checksum = START_B;
   chars.forEach((ch, i) => {
     const v = C128B.indexOf(ch);
     if (v < 0) return;
-    values.push(v);
-    checksum += v * (i + 1);
+    values.push(v); checksum += v * (i + 1);
   });
-  values.push(checksum % 103);
-  values.push(STOP);
+  values.push(checksum % 103); values.push(STOP);
   return values.map(v => PATTERNS[v]).join("");
 }
-
 function barcodeSVG(text) {
   const pattern = code128B(text);
-  let x = 10; // quiet zone
-  const unit = 2, height = 100;
+  let x = 10; const unit = 2, height = 100;
   let bars = "", fill = true;
   for (const ch of pattern) {
     const w = parseInt(ch, 10) * unit;
     if (fill) bars += `<rect x="${x}" y="0" width="${w}" height="${height}" fill="#000"/>`;
-    x += w;
-    fill = !fill;
+    x += w; fill = !fill;
   }
   const total = x + 10;
   return `<svg viewBox="0 0 ${total} ${height}" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">${bars}</svg>`;
 }
 
-/* ---------- Render ---------- */
-const listEl = document.getElementById("list");
-const statsEl = document.getElementById("stats");
-const searchEl = document.getElementById("search");
-const filterEl = document.getElementById("filter");
+function esc(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, m =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m]));
+}
 
-function render() {
-  const q = searchEl.value.trim().toLowerCase();
-  const f = filterEl.value;
+/* ---------- View switch ---------- */
+function switchView(v) {
+  document.getElementById("view-discover").classList.toggle("active", v === "discover");
+  document.getElementById("view-wallet").classList.toggle("active", v === "wallet");
+  document.getElementById("tab-discover").classList.toggle("active", v === "discover");
+  document.getElementById("tab-wallet").classList.toggle("active", v === "wallet");
+}
+window.switchView = switchView;
 
-  // stats
+/* ============ DISCOVER render ============ */
+const dSearch = document.getElementById("d-search");
+const dFilter = document.getElementById("d-filter");
+const dList = document.getElementById("d-list");
+
+(function initStoreFilter() {
+  const stores = [...new Set(CATALOG.map(c => c.store))].sort();
+  stores.forEach(s => {
+    const o = document.createElement("option"); o.value = s; o.textContent = s; dFilter.appendChild(o);
+  });
+})();
+
+function renderDiscover() {
+  const q = dSearch.value.trim().toLowerCase();
+  const store = dFilter.value;
+  let items = CATALOG.filter(c => {
+    if (store !== "all" && c.store !== store) return false;
+    if (!q) return true;
+    return [c.store, c.code, c.category, c.desc].filter(Boolean).join(" ").toLowerCase().includes(q);
+  });
+
+  if (!items.length) { dList.innerHTML = emptyBlock("No codes match your search."); return; }
+
+  // group by store
+  const groups = {};
+  items.forEach(c => { (groups[c.store] ||= []).push(c); });
+
+  dList.innerHTML = Object.keys(groups).sort().map(store => {
+    const cards = groups[store].map(c => {
+      const st = c.expiry ? status(c) : null;
+      const expired = st && st.key === "expired";
+      const hasCode = !!c.code;
+      return `
+      <div class="card ${expired ? "expired" : ""}">
+        <div class="card-top">
+          <div>
+            <div class="desc" style="color:var(--text);font-weight:600;font-size:14px;">${esc(c.desc)}</div>
+            ${c.terms ? `<div class="desc">${esc(c.terms)}</div>` : ""}
+          </div>
+          <div class="badge ${expired ? "expired" : "online"}">${expired ? "Expired" : (c.code ? "Online code" : "No code")}</div>
+        </div>
+        <div class="code-row">
+          <div class="code ${hasCode ? "" : "nocode"}">${hasCode ? esc(c.code) : "No code needed — auto-applied"}</div>
+          ${hasCode ? `<button class="btn-secondary" onclick="copyText('${esc(c.code)}', this)">Copy</button>` : ""}
+        </div>
+        <div class="meta">
+          ${c.discount ? `<span>💸 <b>${esc(c.discount)}</b></span>` : ""}
+          ${c.category ? `<span>🏷 ${esc(c.category)}</span>` : ""}
+          <span>🔎 <a href="${esc(c.source)}" target="_blank" rel="noopener">${esc(c.sourceName)}</a></span>
+          <span>📆 Found ${esc(c.reported)}</span>
+        </div>
+        <div class="tear"></div>
+        <div class="card-actions">
+          <button class="btn-primary" onclick='saveToWallet(${JSON.stringify(c).replace(/'/g, "&#39;")})'>+ Save to Wallet</button>
+          <a href="${esc(c.source)}" target="_blank" rel="noopener"><button class="btn-secondary">Verify at source ↗</button></a>
+        </div>
+      </div>`;
+    }).join("");
+    return `<div class="store-group">
+      <div class="store-head"><h2>${esc(store)}</h2><span class="count">${groups[store].length} offer${groups[store].length > 1 ? "s" : ""}</span></div>
+      ${cards}
+    </div>`;
+  }).join("");
+}
+
+function emptyBlock(msg) {
+  return `<div class="empty">
+    <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+    <path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8Z"/></svg>
+    <p>${msg}</p></div>`;
+}
+
+window.copyText = (text, btn) => {
+  navigator.clipboard?.writeText(text);
+  const t = btn.textContent; btn.textContent = "Copied!"; setTimeout(() => btn.textContent = t, 1200);
+};
+
+window.saveToWallet = (c) => {
+  const dup = coupons.find(x => x.store === c.store && x.code === c.code);
+  if (dup) { switchView("wallet"); renderWallet(); flash("Already in your wallet"); return; }
+  coupons.push({
+    id: uid(), store: c.store, code: c.code || "(no code)", desc: c.desc || "",
+    discount: c.discount || "", category: c.category || "", expiry: c.expiry || "",
+    source: c.sourceName || "", format: "online", added: new Date().toISOString(),
+  });
+  persist(); renderWallet(); switchView("wallet"); flash("Saved to wallet ✓");
+};
+
+function flash(msg) {
+  const el = document.createElement("div");
+  el.textContent = msg;
+  el.style.cssText = "position:fixed;left:50%;bottom:26px;transform:translateX(-50%);background:var(--accent);color:var(--on-accent);padding:10px 16px;border-radius:999px;font-weight:700;font-size:13px;z-index:99;box-shadow:0 6px 20px rgba(0,0,0,.25)";
+  document.body.appendChild(el);
+  setTimeout(() => el.remove(), 1600);
+}
+
+/* ============ WALLET render ============ */
+const wSearch = document.getElementById("w-search");
+const wFilter = document.getElementById("w-filter");
+const wList = document.getElementById("w-list");
+const wStats = document.getElementById("w-stats");
+
+function renderWallet() {
+  const q = wSearch.value.trim().toLowerCase();
+  const f = wFilter.value;
+
   const counts = { valid: 0, soon: 0, expired: 0, nodate: 0 };
   coupons.forEach(c => counts[status(c).key]++);
-  statsEl.innerHTML = `
+  wStats.innerHTML = `
     <div class="pill"><b>${coupons.length}</b> saved</div>
     <div class="pill">✅ <b>${counts.valid}</b> valid</div>
-    <div class="pill">⏳ <b>${counts.soon}</b> expiring soon</div>
+    <div class="pill">⏳ <b>${counts.soon}</b> soon</div>
     <div class="pill">❌ <b>${counts.expired}</b> expired</div>`;
 
   let items = coupons.filter(c => {
@@ -387,21 +470,17 @@ function render() {
     return [c.store, c.code, c.category, c.desc].filter(Boolean).join(" ").toLowerCase().includes(q);
   });
 
-  // sort: soon → valid → nodate → expired, then by expiry
   const order = { soon: 0, valid: 1, nodate: 2, expired: 3 };
   items.sort((a, b) => order[status(a).key] - order[status(b).key] ||
     (a.expiry || "9999").localeCompare(b.expiry || "9999"));
 
   if (!items.length) {
-    listEl.innerHTML = `<div class="empty">
-      <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2a2 2 0 0 0 0-4V8Z"/></svg>
-      <p>${coupons.length ? "No coupons match your filter." : "No coupons yet. Add one to get started."}</p>
-    </div>`;
+    wList.innerHTML = emptyBlock(coupons.length ? "No coupons match your filter." :
+      "No saved coupons yet. Browse Discover and tap “Save to Wallet”, or add your own.");
     return;
   }
 
-  listEl.innerHTML = items.map(c => {
+  wList.innerHTML = items.map(c => {
     const st = status(c);
     const issues = formatIssues(c.code);
     const hasBarcode = c.format === "code128";
@@ -416,7 +495,7 @@ function render() {
       </div>
       <div class="code-row">
         <div class="code">${esc(c.code)}</div>
-        <button class="secondary" onclick="copyCode('${c.id}')">Copy</button>
+        <button class="btn-secondary" onclick="copyText('${esc(c.code)}', this)">Copy</button>
       </div>
       ${issues.length ? `<div class="desc" style="color:var(--warn)">⚠ Code ${issues.join(", ")} — a register may reject it.</div>` : ""}
       <div class="meta">
@@ -427,55 +506,32 @@ function render() {
       </div>
       <div class="tear"></div>
       <div class="card-actions">
-        ${hasBarcode ? `<button onclick="showScan('${c.id}')">📷 Scan at register</button>` : ""}
-        <button class="secondary" onclick="editCoupon('${c.id}')">Edit</button>
-        <button class="ghost" onclick="removeCoupon('${c.id}')">Delete</button>
+        ${hasBarcode ? `<button class="btn-primary" onclick="showScan('${c.id}')">📷 Scan at register</button>` : ""}
+        <button class="btn-secondary" onclick="editCoupon('${c.id}')">Edit</button>
+        <button class="btn-ghost" onclick="removeCoupon('${c.id}')">Delete</button>
       </div>
     </div>`;
   }).join("");
 }
 
-function esc(s) {
-  return String(s).replace(/[&<>"']/g, m =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m]));
-}
-
-/* ---------- Actions ---------- */
-window.copyCode = id => {
-  const c = coupons.find(x => x.id === id);
-  if (!c) return;
-  navigator.clipboard?.writeText(c.code);
-  const btn = event.target; const t = btn.textContent;
-  btn.textContent = "Copied!"; setTimeout(() => btn.textContent = t, 1200);
-};
-
+/* ---------- Wallet actions ---------- */
 window.removeCoupon = id => {
   if (!confirm("Delete this coupon?")) return;
-  coupons = coupons.filter(c => c.id !== id);
-  save(); render();
+  coupons = coupons.filter(c => c.id !== id); persist(); renderWallet();
 };
-
 window.editCoupon = id => {
-  const c = coupons.find(x => x.id === id);
-  if (!c) return;
-  editingId = id;
-  form.classList.add("open");
-  document.getElementById("f-store").value = c.store;
-  document.getElementById("f-code").value = c.code;
-  document.getElementById("f-desc").value = c.desc || "";
-  document.getElementById("f-discount").value = c.discount || "";
-  document.getElementById("f-category").value = c.category || "";
-  document.getElementById("f-expiry").value = c.expiry || "";
-  document.getElementById("f-source").value = c.source || "";
-  document.getElementById("f-format").value = c.format || "none";
+  const c = coupons.find(x => x.id === id); if (!c) return;
+  editingId = id; form.classList.add("open");
+  f_store.value = c.store; f_code.value = c.code; f_desc.value = c.desc || "";
+  f_discount.value = c.discount || ""; f_category.value = c.category || "";
+  f_expiry.value = c.expiry || ""; f_source.value = c.source || ""; f_format.value = c.format || "online";
   document.getElementById("saveBtn").textContent = "Update coupon";
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
 const scanModal = document.getElementById("scanModal");
 window.showScan = id => {
-  const c = coupons.find(x => x.id === id);
-  if (!c) return;
+  const c = coupons.find(x => x.id === id); if (!c) return;
   document.getElementById("m-store").textContent = c.store;
   document.getElementById("m-desc").textContent = c.desc || "";
   document.getElementById("m-code").textContent = c.code;
@@ -486,11 +542,15 @@ window.showScan = id => {
 document.getElementById("m-close").onclick = () => scanModal.close();
 scanModal.addEventListener("click", e => { if (e.target === scanModal) scanModal.close(); });
 
-/* ---------- Form ---------- */
+/* ---------- Add/edit form ---------- */
 const form = document.getElementById("form");
+const f_store = document.getElementById("f-store"), f_code = document.getElementById("f-code"),
+  f_desc = document.getElementById("f-desc"), f_discount = document.getElementById("f-discount"),
+  f_category = document.getElementById("f-category"), f_expiry = document.getElementById("f-expiry"),
+  f_source = document.getElementById("f-source"), f_format = document.getElementById("f-format");
+
 document.getElementById("addBtn").onclick = () => {
-  editingId = null;
-  form.reset();
+  editingId = null; form.reset();
   document.getElementById("saveBtn").textContent = "Save coupon";
   form.classList.toggle("open");
 };
@@ -499,43 +559,24 @@ document.getElementById("cancelBtn").onclick = () => { form.classList.remove("op
 form.addEventListener("submit", e => {
   e.preventDefault();
   const data = {
-    store: document.getElementById("f-store").value.trim(),
-    code: document.getElementById("f-code").value.trim(),
-    desc: document.getElementById("f-desc").value.trim(),
-    discount: document.getElementById("f-discount").value.trim(),
-    category: document.getElementById("f-category").value.trim(),
-    expiry: document.getElementById("f-expiry").value,
-    source: document.getElementById("f-source").value.trim(),
-    format: document.getElementById("f-format").value,
+    store: f_store.value.trim(), code: f_code.value.trim(), desc: f_desc.value.trim(),
+    discount: f_discount.value.trim(), category: f_category.value.trim(),
+    expiry: f_expiry.value, source: f_source.value.trim(), format: f_format.value,
   };
   if (!data.store || !data.code) return;
-  if (editingId) {
-    const c = coupons.find(x => x.id === editingId);
-    Object.assign(c, data);
-  } else {
-    coupons.push({ id: uid(), ...data, added: new Date().toISOString() });
-  }
-  save(); render();
+  if (editingId) { Object.assign(coupons.find(x => x.id === editingId), data); }
+  else { coupons.push({ id: uid(), ...data, added: new Date().toISOString() }); }
+  persist(); renderWallet();
   form.classList.remove("open"); form.reset(); editingId = null;
 });
 
-searchEl.addEventListener("input", render);
-filterEl.addEventListener("change", render);
+dSearch.addEventListener("input", renderDiscover);
+dFilter.addEventListener("change", renderDiscover);
+wSearch.addEventListener("input", renderWallet);
+wFilter.addEventListener("change", renderWallet);
 
-/* ---------- Seed sample on first run ---------- */
-if (!localStorage.getItem(KEY)) {
-  const soon = new Date(Date.now() + 3 * 86400000).toISOString().slice(0, 10);
-  const later = new Date(Date.now() + 40 * 86400000).toISOString().slice(0, 10);
-  coupons = [
-    { id: uid(), store: "Example Grocer", code: "SAVE10NOW", desc: "$10 off $50+", discount: "$10",
-      category: "Groceries", expiry: later, source: "example.com/deals", format: "code128", added: new Date().toISOString() },
-    { id: uid(), store: "Sample Pharmacy", code: "WELLNESS20", desc: "20% off vitamins", discount: "20%",
-      category: "Health", expiry: soon, source: "newsletter email", format: "code128", added: new Date().toISOString() },
-  ];
-  save();
-}
-
-render();
+renderDiscover();
+renderWallet();
 </script>
 </body>
 </html>
