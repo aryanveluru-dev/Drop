@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-08-10T00:00:00.000Z",
+  "count": 4,
+  "disclaimer": "Offers reported from official issuer pages; they rotate often. No barcodes are reproduced — each links to where you print/clip your own valid copy. Verify at source.",
+  "offers": [
+    {
+      "brand": "Tide",
+      "deal": "$3.00 off Tide PODS (102–112 ct) or Tide Power PODS (57–63 ct)",
+      "value": "$3.00",
+      "get": "print",
+      "category": "Laundry",
+      "store": "P&G brandSAVER",
+      "how": "Print your own copy from P&G brandSAVER; it usually expires the day after printing.",
+      "url": "https://www.pgbrandsaver.com/",
+      "host": "pgbrandsaver.com",
+      "reported": "Aug 2026"
+    },
+    {
+      "brand": "all / Persil",
+      "deal": "Save $3 on all® or Persil® laundry detergent",
+      "value": "$3.00",
+      "get": "clip",
+      "category": "Laundry",
+      "store": "Kroger",
+      "how": "Clip in the Kroger app, then scan your Kroger Plus card at checkout.",
+      "url": "https://www.kroger.com/cl/digital-coupons/",
+      "host": "kroger.com",
+      "reported": "Aug 2026"
+    },
+    {
+      "brand": "Kroger — Free Friday Download",
+      "deal": "A free item every Friday (limited-time)",
+      "value": "FREE",
+      "get": "clip",
+      "category": "Grocery",
+      "store": "Kroger",
+      "how": "Clip the Free Friday Download in the Kroger app on Fridays, then scan your Plus card within the redemption window.",
+      "url": "https://www.kroger.com/pr/free-friday-download-deal_ent_0610",
+      "host": "kroger.com",
+      "reported": "Aug 2026"
+    },
+    {
+      "brand": "Multiple brands",
+      "deal": "Fresh printable manufacturer coupons — a new set on the 1st of each month",
+      "value": "varies",
+      "get": "print",
+      "category": "Manufacturer",
+      "store": "Coupons.com",
+      "how": "Print your own copies at Coupons.com; the printed barcode scans at most stores that take paper coupons.",
+      "url": "https://www.coupons.com/printable",
+      "host": "coupons.com",
+      "reported": "Aug 2026"
+    }
+  ]
+}

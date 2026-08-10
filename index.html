@@ -237,7 +237,7 @@
 /* Specific, currently-listed coupon OFFERS (reported Aug 2026 from public coupon
    trackers). We never reproduce a barcode — each links to the official issuer where
    YOU print/clip your own valid, in-the-system copy. Offers rotate; verify at source. */
-const OFFERS = [
+let OFFERS = [
   { brand: "Tide", deal: "$3.00 off Tide PODS (102–112 ct) or Tide Power PODS (57–63 ct)", value: "$3.00",
     get: "print", category: "Laundry", reported: "Aug 2026",
     how: "Sign in to P&G brandSAVER and print your own copy — the printed barcode scans at checkout. Note: P&G coupons expire the day after you print, so print right before your trip.",
@@ -623,6 +623,30 @@ dSearch.addEventListener("input", renderDiscover);
 
 renderWallet();
 renderDiscover();
+
+/* ---------- Live offers: load data/offers.json if hosted with a backend ----------
+   In the offline artifact (no such file) this fails quietly and the baked-in
+   snapshot above is used. When served from a host that runs backend/build.js,
+   the freshest offers load automatically. */
+(async function loadLiveOffers() {
+  try {
+    const res = await fetch("./data/offers.json", { cache: "no-store" });
+    if (!res.ok) return;
+    const data = await res.json();
+    if (data && Array.isArray(data.offers) && data.offers.length) {
+      OFFERS = data.offers;
+      renderDiscover();
+      if (data.generatedAt) {
+        const when = new Date(data.generatedAt);
+        const note = document.createElement("div");
+        note.className = "field-note";
+        note.style.cssText = "text-align:center;margin:-6px 2px 12px;";
+        note.textContent = "Offers updated " + (isNaN(when) ? data.generatedAt : when.toLocaleDateString());
+        dList.parentNode.insertBefore(note, dList);
+      }
+    }
+  } catch { /* offline / no backend — keep the baked-in snapshot */ }
+})();
 </script>
 </body>
 </html>

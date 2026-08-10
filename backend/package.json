@@ -1,0 +1,12 @@
+{
+  "name": "couponly-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offer-refresh pipeline: fetch official coupon pages, normalize with an NVIDIA-hosted LLM, write data/offers.json.",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.js",
+    "build:offers": "node build.js"
+  }
+}
