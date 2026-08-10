@@ -17,7 +17,7 @@
 import { writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { fetchHTML, rscBlob, extractRetailers, extractOffers, parseValue } from "./coupons.js";
+import { fetchHTML, rscBlob, extractRetailers, extractOffers, parseValue, classify } from "./coupons.js";
 import { hasKey, chat } from "./nvidia.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -25,11 +25,16 @@ const OUT = join(__dirname, "..", "data", "offers.json");
 
 const args = process.argv.slice(2);
 const opt = (flag, def) => { const i = args.indexOf(flag); return i > -1 && args[i + 1] ? args[i + 1] : def; };
-const MAX_RETAILERS = +opt("--retailers", 14);
-const PER_RETAILER = +opt("--per", 4);
+const MAX_RETAILERS = +opt("--retailers", 26);
+const PER_RETAILER = +opt("--per", 8);
 const ENRICH = args.includes("--enrich");
 const DIR_URL = "https://www.coupons.com/printable";
 
+const HOW = {
+  instore: "In-store offer — add it in the retailer's app (e.g. Target Circle), then scan your loyalty/app barcode at checkout; it applies automatically.",
+  online: "Reveal the code on Coupons.com, then enter it at online checkout.",
+  deal: "Auto-applied sale — opens the deal at the retailer; the discount is already reflected, no code needed.",
+};
 function hostOf(u) { try { return new URL(u).host.replace(/^www\./, ""); } catch { return "coupons.com"; } }
 function monthLabel() { return new Date().toLocaleString("en-US", { month: "short", year: "numeric" }); }
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
@@ -48,17 +53,15 @@ async function run() {
       const found = extractOffers(blob).slice(0, PER_RETAILER);
       console.log(`  ${r.name}: ${found.length} offer(s)`);
       for (const o of found) {
-        const inStore = o.inStore;
+        const mode = classify(o, r.name); // "online" | "instore" | "deal"
         offers.push({
           brand: r.name,
           store: r.name,
           deal: o.title,
           value: parseValue(o.title),
-          get: inStore ? "clip" : "online",
-          category: "Coupon code",
-          how: inStore
-            ? "In-store offer — add it in the retailer's app, then scan your loyalty/app barcode at checkout."
-            : "Reveal the code on Coupons.com, then enter it at online checkout.",
+          get: mode === "instore" ? "clip" : mode === "online" ? "online" : "deal",
+          category: mode === "instore" ? "In-store offer" : mode === "online" ? "Online code" : "Online sale",
+          how: HOW[mode],
           url: r.url,
           host: hostOf(r.url),
           endsAt: o.endsAt ? o.endsAt.slice(0, 10) : "",

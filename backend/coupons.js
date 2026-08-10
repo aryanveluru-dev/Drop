@@ -72,14 +72,14 @@ export function extractOffers(blob) {
     const title = decode(m[1]);
     if (/^(top offers|mobile offers|printable coupons|browser extension)$/i.test(title)) continue;
     const win = blob.slice(m.index, m.index + 1400);
-    const vt = win.match(/"voucherType":(\d+)/);
+    const typeName = (win.match(/"voucherTypeName":"([^"]*)"/) || [])[1] || "";
     const end = win.match(/"endTime":"([^"]*)"/);
-    const terms = (win.match(/"termsAndConditions":"([^"]{0,400})"/) || [])[1] || "";
-    const inStore = /in[- ]?store|mobile app|scan|at the register|show (?:this|the) (?:coupon|barcode)/i.test(title + " " + terms);
+    const terms = decode((win.match(/"termsAndConditions":"([^"]{0,500})"/) || [])[1] || "");
     out.push({
       title,
-      type: vt && +vt[1] === 2 ? "code" : "deal",
-      inStore,
+      typeName,                       // "Code" (online promo code) or "Deal" (activate/in-store)
+      isCode: /^code$/i.test(typeName),
+      terms,
       endsAt: end ? end[1] : "",
     });
   }
@@ -97,12 +97,31 @@ export function parseValue(title) {
   return "See offer";
 }
 
+// Retailers whose "Deal" offers can be redeemed in-store by scanning a loyalty/app barcode.
+const LOYALTY_RETAILERS = new Set([
+  "Target", "Walmart", "CVS", "Walgreens", "Walgreens Photo", "Kroger",
+  "Safeway / Albertsons", "Publix", "Sephora", "Ulta Beauty", "Kohl's", "Michaels",
+]);
+
+// Decide how an offer is redeemed: "online" (enter code), "instore" (clip to loyalty
+// card, scan in-store), or "deal" (auto-applied online sale, no code).
+export function classify(offer, brand) {
+  if (offer.isCode) return "online";
+  const text = (offer.title + " " + offer.terms).toLowerCase();
+  const inStoreWords = /in[- ]?store|at the register|scan|circle|loyalty|store card|in the app|mobile app/.test(text);
+  const productDeal = /buy\s*\d+.*get|bogo|b\dg\d/.test(text); // grocery/product BOGO
+  if (inStoreWords) return "instore";
+  if (productDeal && LOYALTY_RETAILERS.has(brand)) return "instore";
+  return "deal"; // online sale, discount applies automatically via the link
+}
+
 // ---- helpers ----
 function titleize(s) { return String(s).replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()); }
 function decode(s) {
   return String(s)
     .replace(/\\u0026/g, "&").replace(/&amp;/g, "&")
     .replace(/\\u2019|’/g, "'").replace(/\\'/g, "'")
+    .replace(/\${2,}/g, "$")
     .replace(/\s+/g, " ").trim();
 }
 function dedupeBy(arr, keyFn) {
