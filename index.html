@@ -203,11 +203,11 @@
   <!-- ============ IN-STORE SAVINGS ============ -->
   <section id="view-discover" class="view">
     <div class="hint">
-      Specific coupons you can actually get and scan — the <b>legit</b> way. We don't copy anyone's barcode
-      (that's coupon fraud and wouldn't clear anyway). Instead each offer links to its <b>official issuer</b>,
-      where you <b>print or clip your own valid copy</b> that's really in the store's system. <b>Print your own</b>
-      → the printed barcode scans at checkout. <b>Clip to card</b> → scan your loyalty barcode and it auto-applies.
-      Offers rotate weekly — verify at the source.
+      <b>Live coupon codes</b> pulled from Coupons.com plus each store's official savings program. We link every
+      offer to its source — we never copy a barcode (that's fraud and wouldn't clear). <b>Code at checkout</b> →
+      reveal &amp; enter it online. <b>Clip to card</b> → clip in the store app, then scan your loyalty barcode
+      in-store and it auto-applies. <b>Print your own</b> → the printed barcode scans at checkout. Offers rotate
+      often — verify at the source.
     </div>
     <div class="toolbar">
       <input class="search" id="d-search" placeholder="Search offers, brands &amp; stores…" />
@@ -238,22 +238,630 @@
    trackers). We never reproduce a barcode — each links to the official issuer where
    YOU print/clip your own valid, in-the-system copy. Offers rotate; verify at source. */
 let OFFERS = [
-  { brand: "Tide", deal: "$3.00 off Tide PODS (102–112 ct) or Tide Power PODS (57–63 ct)", value: "$3.00",
-    get: "print", category: "Laundry", reported: "Aug 2026",
-    how: "Sign in to P&G brandSAVER and print your own copy — the printed barcode scans at checkout. Note: P&G coupons expire the day after you print, so print right before your trip.",
-    url: "https://www.pgbrandsaver.com/", host: "pgbrandsaver.com" },
-  { brand: "all / Persil", deal: "Save $3 on all® or Persil® laundry detergent", value: "$3.00",
-    get: "clip", category: "Laundry", reported: "Aug 2026",
-    how: "Clip it in the Kroger app, then scan your Kroger Plus card at checkout — it applies automatically.",
-    url: "https://www.kroger.com/cl/digital-coupons/", host: "kroger.com" },
-  { brand: "Kroger — Free Friday Download", deal: "A free item every Friday (limited-time)", value: "FREE",
-    get: "clip", category: "Grocery", reported: "Aug 2026",
-    how: "Clip the Free Friday Download in the Kroger app on Fridays, then scan your Plus card within the redemption window shown on the offer.",
-    url: "https://www.kroger.com/pr/free-friday-download-deal_ent_0610", host: "kroger.com" },
-  { brand: "Multiple brands", deal: "Fresh printable manufacturer coupons — a new set on the 1st of each month", value: "varies",
-    get: "print", category: "Manufacturer", reported: "Aug 2026",
-    how: "Browse and print your own copies at Coupons.com; the printed barcode scans at most stores that take paper coupons. One legitimate print per household.",
-    url: "https://www.coupons.com/printable", host: "coupons.com" },
+  {
+    "brand": "Macy's",
+    "store": "Macy's",
+    "deal": "Buy 1, Get 1 40% Off Full Priced Sunglasses with Coupon",
+    "value": "40% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/macys",
+    "host": "coupons.com",
+    "endsAt": "2026-09-05",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Macy's",
+    "store": "Macy's",
+    "deal": "Big Home Sale: Up to an Extra 15% Off",
+    "value": "15% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/macys",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Macy's",
+    "store": "Macy's",
+    "deal": "Up to 85% Off Limited-Time Specials",
+    "value": "85% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/macys",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Macy's",
+    "store": "Macy's",
+    "deal": "Up to 85% Off Kitchen & Dining Clearance",
+    "value": "85% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/macys",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "eBay",
+    "store": "eBay",
+    "deal": "Enjoy Extra 10% Off Sitewide",
+    "value": "10% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/ebay",
+    "host": "coupons.com",
+    "endsAt": "2027-01-03",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "eBay",
+    "store": "eBay",
+    "deal": "Extra $15 Off $169+ Order at CTLite-Official-Store",
+    "value": "$15 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/ebay",
+    "host": "coupons.com",
+    "endsAt": "2028-01-20",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "eBay",
+    "store": "eBay",
+    "deal": "Extra $15 Off $159+ Spend at CTLite-Hydro-Growlights",
+    "value": "$15 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/ebay",
+    "host": "coupons.com",
+    "endsAt": "2028-01-11",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "eBay",
+    "store": "eBay",
+    "deal": "Extra $15 Off $159+ Spend at CTLite-Growlights-Factory",
+    "value": "$15 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/ebay",
+    "host": "coupons.com",
+    "endsAt": "2028-01-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Wayfair",
+    "store": "Wayfair",
+    "deal": "Up to 85% Off Bed & Bath Sale",
+    "value": "85% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/wayfair",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Wayfair",
+    "store": "Wayfair",
+    "deal": "Up to 90% Off Rugs Sale",
+    "value": "90% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/wayfair",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Wayfair",
+    "store": "Wayfair",
+    "deal": "Up to 80% Off with Back-to-School Dorm Deals",
+    "value": "80% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/wayfair",
+    "host": "coupons.com",
+    "endsAt": "2026-08-16",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Wayfair",
+    "store": "Wayfair",
+    "deal": "Up to 70% Off Furniture Sale",
+    "value": "70% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/wayfair",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Neiman Marcus",
+    "store": "Neiman Marcus",
+    "deal": "Extra 25% Off Sale Items",
+    "value": "25% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/neimanmarcus",
+    "host": "coupons.com",
+    "endsAt": "2026-09-04",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Neiman Marcus",
+    "store": "Neiman Marcus",
+    "deal": "Earn a $50-$500 Gift Card with Purchase",
+    "value": "$50",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/neimanmarcus",
+    "host": "coupons.com",
+    "endsAt": "2026-08-11",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Neiman Marcus",
+    "store": "Neiman Marcus",
+    "deal": "Free 2 Day Shipping on Orders for Members",
+    "value": "FREE",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/neimanmarcus",
+    "host": "coupons.com",
+    "endsAt": "2027-07-23",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Neiman Marcus",
+    "store": "Neiman Marcus",
+    "deal": "15% Off First Order for App Users",
+    "value": "15% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/neimanmarcus",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Target",
+    "store": "Target",
+    "deal": "25% Off Select Women's Clothing & Accessories with Promo Code",
+    "value": "25% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/target",
+    "host": "coupons.com",
+    "endsAt": "2026-08-20",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Target",
+    "store": "Target",
+    "deal": "15% Off Qualifying School & Office Supplies with Coupon",
+    "value": "15% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/target",
+    "host": "coupons.com",
+    "endsAt": "2026-08-19",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Target",
+    "store": "Target",
+    "deal": "20% Off Eligible Items with Coupon Code",
+    "value": "20% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/target",
+    "host": "coupons.com",
+    "endsAt": "2026-08-18",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Target",
+    "store": "Target",
+    "deal": "Get $50 in Circle Rewards with Target Circle Credit Card Purchase",
+    "value": "$50",
+    "get": "clip",
+    "category": "Coupon code",
+    "how": "In-store offer — add it in the retailer's app, then scan your loyalty/app barcode at checkout.",
+    "url": "https://www.coupons.com/coupon-codes/target",
+    "host": "coupons.com",
+    "endsAt": "2026-09-01",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Sephora",
+    "store": "Sephora",
+    "deal": "4X Points on Clarins Products for Beauty Insiders",
+    "value": "See offer",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/sephora",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Sephora",
+    "store": "Sephora",
+    "deal": "4X Points on Pureology Products for Beauty Insiders Through App",
+    "value": "See offer",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/sephora",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Sephora",
+    "store": "Sephora",
+    "deal": "4X Points on Too Faced Products for Beauty Insiders",
+    "value": "See offer",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/sephora",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Sephora",
+    "store": "Sephora",
+    "deal": "Free K18 Trial Size Mask with $40+ for Beauty Insiders",
+    "value": "$40",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/sephora",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Deluxe",
+    "store": "Deluxe",
+    "deal": "$$50 Off $350+ Order",
+    "value": "$50 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/deluxe",
+    "host": "coupons.com",
+    "endsAt": "2027-01-01",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Deluxe",
+    "store": "Deluxe",
+    "deal": "60% Off First Business Checks Order",
+    "value": "60% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/deluxe",
+    "host": "coupons.com",
+    "endsAt": "2026-08-15",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Deluxe",
+    "store": "Deluxe",
+    "deal": "40% Off Business Checks & Forms for New Customers",
+    "value": "40% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/deluxe",
+    "host": "coupons.com",
+    "endsAt": "2027-01-01",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Deluxe",
+    "store": "Deluxe",
+    "deal": "40% Off First Order of Business Checks, Deposit Tickets, Forms, Stamps & Envelopes",
+    "value": "40% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/deluxe",
+    "host": "coupons.com",
+    "endsAt": "2027-01-01",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Walmart",
+    "store": "Walmart",
+    "deal": "$$20 Off First Three Consecutive $50 Orders",
+    "value": "$20 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/walmart",
+    "host": "coupons.com",
+    "endsAt": "2026-09-16",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Walmart",
+    "store": "Walmart",
+    "deal": "$$150 Off Level Smart Lock",
+    "value": "$150 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/walmart",
+    "host": "coupons.com",
+    "endsAt": "2026-09-04",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Walmart",
+    "store": "Walmart",
+    "deal": "Up to $100 Off in Extra Savings",
+    "value": "$100 off",
+    "get": "clip",
+    "category": "Coupon code",
+    "how": "In-store offer — add it in the retailer's app, then scan your loyalty/app barcode at checkout.",
+    "url": "https://www.coupons.com/coupon-codes/walmart",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Walmart",
+    "store": "Walmart",
+    "deal": "Up to 65% Off Select Fragrances",
+    "value": "65% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/walmart",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Etsy",
+    "store": "Etsy",
+    "deal": "Teacher Essentials Up to 45% Off",
+    "value": "45% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/etsy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-22",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Etsy",
+    "store": "Etsy",
+    "deal": "Dorm Decor Up to 40% Off",
+    "value": "40% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/etsy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-25",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Etsy",
+    "store": "Etsy",
+    "deal": "Up to 75% Off Select Watches",
+    "value": "75% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/etsy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Etsy",
+    "store": "Etsy",
+    "deal": "Up to 75% Discount on Select Women's Costumes",
+    "value": "See offer",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/etsy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-15",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Hotels.com",
+    "store": "Hotels.com",
+    "deal": "$$350 Back in Cash with OneKey+ Card",
+    "value": "$350",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/hotels-com",
+    "host": "coupons.com",
+    "endsAt": "2026-08-22",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Hotels.com",
+    "store": "Hotels.com",
+    "deal": "San Diego Stays Up to $150 Off",
+    "value": "$150 off",
+    "get": "clip",
+    "category": "Coupon code",
+    "how": "In-store offer — add it in the retailer's app, then scan your loyalty/app barcode at checkout.",
+    "url": "https://www.coupons.com/coupon-codes/hotels-com",
+    "host": "coupons.com",
+    "endsAt": "2026-08-13",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Hotels.com",
+    "store": "Hotels.com",
+    "deal": "Up to 50% Off Select Japan Hotel Stays",
+    "value": "50% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/hotels-com",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Hotels.com",
+    "store": "Hotels.com",
+    "deal": "Up to 60% Off Select Mexico Hotel Stays",
+    "value": "60% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/hotels-com",
+    "host": "coupons.com",
+    "endsAt": "2026-08-12",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "DoorDash",
+    "store": "DoorDash",
+    "deal": "25% Off $20+ Spend at Morton Williams",
+    "value": "$20 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/doordash",
+    "host": "coupons.com",
+    "endsAt": "2026-08-31",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "DoorDash",
+    "store": "DoorDash",
+    "deal": "30% Off $70+ Sprouts Farmers Market Orders",
+    "value": "$70 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/doordash",
+    "host": "coupons.com",
+    "endsAt": "2026-10-01",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "DoorDash",
+    "store": "DoorDash",
+    "deal": "25% Off $25+ First Alcohol Order at Quik Stop",
+    "value": "$25 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/doordash",
+    "host": "coupons.com",
+    "endsAt": "2026-10-01",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "DoorDash",
+    "store": "DoorDash",
+    "deal": "Free Delivery on $12+ at Quik Stop",
+    "value": "Free ship",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/doordash",
+    "host": "coupons.com",
+    "endsAt": "2026-08-31",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Chewy",
+    "store": "Chewy",
+    "deal": "$$20 Gift Card for New Customers on $49 Purchase",
+    "value": "$20",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/chewy",
+    "host": "coupons.com",
+    "endsAt": "2027-01-05",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Chewy",
+    "store": "Chewy",
+    "deal": "40% Off First Autoship Order",
+    "value": "40% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/chewy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-15",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Chewy",
+    "store": "Chewy",
+    "deal": "$$20 Off $49 Spend for New Customers",
+    "value": "$20 off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/chewy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-14",
+    "reported": "Aug 2026"
+  },
+  {
+    "brand": "Chewy",
+    "store": "Chewy",
+    "deal": "20% Off Galliprant Tablets for Dogs",
+    "value": "20% off",
+    "get": "online",
+    "category": "Coupon code",
+    "how": "Reveal the code on Coupons.com, then enter it at online checkout.",
+    "url": "https://www.coupons.com/coupon-codes/chewy",
+    "host": "coupons.com",
+    "endsAt": "2026-08-11",
+    "reported": "Aug 2026"
+  }
 ];
 
 const PROGRAMS = [
@@ -399,30 +1007,38 @@ function renderDiscover() {
 
   if (!offers.length && !programs.length) { dList.innerHTML = emptyBlock("No offers or programs match your search."); return; }
 
-  const offersHTML = offers.map(o => {
-    const isPrint = o.get === "print";
+  const GET_META = {
+    print: { cls: "scan", badge: "🖨 Print your own", btn: "Print this coupon ↗" },
+    clip:  { cls: "valid", badge: "✂️ Clip to card",   btn: "Clip this coupon ↗" },
+    online:{ cls: "online", badge: "🏷 Code at checkout", btn: "Get code ↗" },
+  };
+  const offerCard = o => {
+    const g = GET_META[o.get] || GET_META.online;
     return `
     <div class="card">
       <div class="card-top">
-        <div>
-          <div class="store">${esc(o.brand)}</div>
-          <div class="desc" style="color:var(--text);font-weight:600;">${esc(o.deal)}</div>
-        </div>
-        <div class="badge ${isPrint ? "scan" : "valid"}">${isPrint ? "🖨 Print your own" : "✂️ Clip to card"}</div>
+        <div><div class="desc" style="color:var(--text);font-weight:600;font-size:14px;">${esc(o.deal)}</div></div>
+        <div class="badge ${g.cls}">${g.badge}</div>
       </div>
       <div class="how">${esc(o.how)}</div>
       <div class="meta">
         <span>💸 <b>${esc(o.value)}</b></span>
-        <span>🏷 ${esc(o.category)}</span>
+        ${o.category ? `<span>🏷 ${esc(o.category)}</span>` : ""}
+        ${o.endsAt ? `<span>⏳ Ends <b>${esc(o.endsAt)}</b></span>` : ""}
         <span>🔗 <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.host)}</a></span>
-        <span>📆 Seen ${esc(o.reported)}</span>
       </div>
       <div class="tear"></div>
       <div class="card-actions">
-        <a href="${esc(o.url)}" target="_blank" rel="noopener"><button class="btn-primary">${isPrint ? "Print this coupon ↗" : "Clip this coupon ↗"}</button></a>
+        <a href="${esc(o.url)}" target="_blank" rel="noopener"><button class="btn-primary">${g.btn}</button></a>
       </div>
     </div>`;
-  }).join("");
+  };
+  // group offers by brand for a clean directory feel
+  const byBrand = {};
+  offers.forEach(o => { (byBrand[o.brand] || (byBrand[o.brand] = [])).push(o); });
+  const offersHTML = Object.keys(byBrand).map(brand => `
+    <div class="store-head" style="margin-top:14px;"><h2 style="color:var(--text);font-size:17px;">${esc(brand)}</h2><span class="count">${byBrand[brand].length} offer${byBrand[brand].length > 1 ? "s" : ""}</span></div>
+    ${byBrand[brand].map(offerCard).join("")}`).join("");
 
   const programsHTML = programs.map(p => `
     <div class="card">
@@ -448,7 +1064,7 @@ function renderDiscover() {
 
   const secHead = (t, n) => `<div class="store-head" style="margin-top:6px;"><h2>${t}</h2><span class="count">${n}</span></div>`;
   dList.innerHTML =
-    (offers.length ? secHead("This week's offers", offers.length + " to grab") + offersHTML : "") +
+    (offers.length ? secHead("Live coupon codes", offers.length + " offers · via coupons.com") + offersHTML : "") +
     (programs.length ? secHead("Store savings programs", programs.length + " programs") + programsHTML : "");
 }
 window.prefillCard = (store) => {
