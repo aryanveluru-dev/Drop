@@ -1,0 +1,74 @@
+[
+  {
+    "kw": "tib bar tibialis trainer",
+    "total": "87",
+    "organic": 16,
+    "median": 104,
+    "max": 621,
+    "big": 0,
+    "n": 16,
+    "price_lo": 14.99,
+    "price_hi": 204.99,
+    "verdict": "CONTESTED"
+  },
+  {
+    "kw": "cupping therapy set athletes",
+    "total": "204",
+    "organic": 48,
+    "median": 806,
+    "max": 14333,
+    "big": 23,
+    "n": 47,
+    "price_lo": 8.99,
+    "price_hi": 94.24,
+    "verdict": "CLOSED - entrenched incumbents"
+  },
+  {
+    "kw": "toe spacers runners",
+    "total": "427",
+    "organic": 48,
+    "median": 915,
+    "max": 48411,
+    "big": 24,
+    "n": 48,
+    "price_lo": 4.99,
+    "price_hi": 65.0,
+    "verdict": "CLOSED - entrenched incumbents"
+  },
+  {
+    "kw": "hip mobility band prehab",
+    "total": "15",
+    "organic": 25,
+    "median": 1691,
+    "max": 42957,
+    "big": 14,
+    "n": 25,
+    "price_lo": 7.97,
+    "price_hi": 54.95,
+    "verdict": "CLOSED - entrenched incumbents"
+  },
+  {
+    "kw": "compression socks running recovery",
+    "total": "30,000",
+    "organic": 48,
+    "median": 2405,
+    "max": 79121,
+    "big": 33,
+    "n": 48,
+    "price_lo": 2.99,
+    "price_hi": 60.0,
+    "verdict": "CLOSED - entrenched incumbents"
+  },
+  {
+    "kw": "massage gun deep tissue",
+    "total": "1,000",
+    "organic": 48,
+    "median": 3940,
+    "max": 44673,
+    "big": 33,
+    "n": 48,
+    "price_lo": 15.99,
+    "price_hi": 349.0,
+    "verdict": "CLOSED - entrenched incumbents"
+  }
+]

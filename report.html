@@ -1,0 +1,406 @@
+<title>Overnight Product Research — The Winner</title>
+<style>
+  :root {
+    color-scheme: light;
+    --plane: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --rule: #c3c2b7;
+    --border: rgba(11, 11, 11, 0.10);
+    --bar: #2a78d6;
+    --bar-soft: #cde2fb;
+    --good: #0ca30c;
+    --warn: #fab219;
+    --crit: #d03b3b;
+    --good-tint: rgba(12, 163, 12, 0.10);
+    --warn-tint: rgba(250, 178, 25, 0.16);
+    --crit-tint: rgba(208, 59, 59, 0.10);
+    --win-tint: rgba(42, 120, 214, 0.08);
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --display: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --plane: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #ffffff;
+      --ink-2: #c3c2b7;
+      --muted: #898781;
+      --grid: #2c2c2a;
+      --rule: #383835;
+      --border: rgba(255, 255, 255, 0.10);
+      --bar: #3987e5;
+      --bar-soft: #184f95;
+      --good-tint: rgba(12, 163, 12, 0.16);
+      --warn-tint: rgba(250, 178, 25, 0.14);
+      --crit-tint: rgba(208, 59, 59, 0.16);
+      --win-tint: rgba(57, 135, 229, 0.12);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --plane: #0d0d0d;
+    --surface: #1a1a19;
+    --ink: #ffffff;
+    --ink-2: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --rule: #383835;
+    --border: rgba(255, 255, 255, 0.10);
+    --bar: #3987e5;
+    --bar-soft: #184f95;
+    --good-tint: rgba(12, 163, 12, 0.16);
+    --warn-tint: rgba(250, 178, 25, 0.14);
+    --crit-tint: rgba(208, 59, 59, 0.16);
+    --win-tint: rgba(57, 135, 229, 0.12);
+  }
+
+  body {
+    background: var(--plane);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 940px; margin: 0 auto; }
+  .prose { max-width: 68ch; }
+
+  h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.18; margin: 0; }
+  h1 { font-size: clamp(2.1rem, 5.2vw, 3.2rem); letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -0.01em; }
+  h3 { font-size: 1.12rem; }
+  p { margin: 0; }
+  a { color: var(--bar); text-decoration: underline; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--bar); outline-offset: 3px; border-radius: 3px; }
+
+  .eyebrow {
+    font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); font-weight: 600;
+  }
+  header.top { padding: 72px 0 40px; display: flex; flex-direction: column; gap: 18px; }
+  .sub { font-size: 1.06rem; color: var(--ink-2); max-width: 62ch; }
+
+  section { padding: 44px 0; border-top: 1px solid var(--grid); display: flex; flex-direction: column; gap: 22px; }
+  .sec-head { display: flex; flex-direction: column; gap: 8px; }
+
+  /* ---- verdict ---- */
+  .verdict {
+    background: var(--surface); border: 1px solid var(--border);
+    border-left: 3px solid var(--bar);
+    border-radius: 4px; padding: 30px 32px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  .verdict .name { font-family: var(--display); font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1.15; }
+  .verdict .why { color: var(--ink-2); max-width: 60ch; }
+
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--grid); border: 1px solid var(--grid); border-radius: 4px; overflow: hidden; }
+  .tile { background: var(--surface); padding: 18px 20px; display: flex; flex-direction: column; gap: 5px; }
+  .tile .k { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .tile .v { font-size: 1.6rem; font-weight: 650; letter-spacing: -0.02em; }
+  .tile .n { font-size: 0.82rem; color: var(--ink-2); }
+
+  /* ---- bar chart ---- */
+  .chart { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+  .rows { display: flex; flex-direction: column; gap: 11px; }
+  .row { display: grid; grid-template-columns: minmax(120px, 190px) 1fr auto; gap: 14px; align-items: center; }
+  .row .lab { font-size: 0.86rem; color: var(--ink-2); }
+  .track { background: var(--grid); height: 11px; border-radius: 4px; position: relative; overflow: hidden; }
+  .fill { position: absolute; inset: 0 auto 0 0; background: var(--bar); border-radius: 0 4px 4px 0; }
+  .row .val { font-family: var(--mono); font-size: 0.8rem; font-variant-numeric: tabular-nums; color: var(--ink); min-width: 66px; text-align: right; }
+  .cap { font-size: 0.8rem; color: var(--muted); }
+
+  /* ---- pills ---- */
+  .pill { display: inline-flex; align-items: center; gap: 6px; font-size: 0.72rem; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; padding: 3px 9px; border-radius: 100px; white-space: nowrap; color: var(--ink); }
+  .pill::before { content: ""; width: 7px; height: 7px; border-radius: 50%; flex: none; }
+  .pill.open { background: var(--good-tint); } .pill.open::before { background: var(--good); }
+  .pill.mid  { background: var(--warn-tint); } .pill.mid::before  { background: var(--warn); }
+  .pill.shut { background: var(--crit-tint); } .pill.shut::before { background: var(--crit); }
+
+  /* ---- tables ---- */
+  .scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 4px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: 0.87rem; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+  th { font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  tbody tr:last-child td { border-bottom: 0; }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  tr.win td { background: var(--win-tint); font-weight: 600; }
+
+  /* ---- bracket ---- */
+  .bracket { display: flex; flex-direction: column; gap: 10px; }
+  .bout { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 16px 18px; display: flex; flex-direction: column; gap: 9px; }
+  .bout .niche { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  .card-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .cand { font-size: 0.85rem; padding: 5px 11px; border-radius: 3px; border: 1px solid var(--grid); color: var(--ink-2); }
+  .cand.adv { border-color: var(--bar); color: var(--ink); font-weight: 640; }
+  .arrow { color: var(--muted); font-size: 0.85rem; }
+  .bout .note { font-size: 0.83rem; color: var(--ink-2); }
+
+  ul { margin: 0; padding-left: 1.15em; display: flex; flex-direction: column; gap: 8px; }
+  li { color: var(--ink-2); }
+  li strong { color: var(--ink); }
+
+  .runner { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 20px 22px; display: flex; flex-direction: column; gap: 9px; }
+  .runner .rank { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+
+  .risk { border-left: 2px solid var(--rule); padding-left: 16px; display: flex; flex-direction: column; gap: 5px; }
+  .risk .h { font-weight: 650; font-size: 0.95rem; }
+  .risk p { font-size: 0.9rem; color: var(--ink-2); }
+
+  code { font-family: var(--mono); font-size: 0.88em; background: var(--grid); padding: 1px 5px; border-radius: 3px; }
+  footer { padding-top: 34px; border-top: 1px solid var(--grid); font-size: 0.84rem; color: var(--muted); display: flex; flex-direction: column; gap: 8px; }
+  @media (max-width: 620px) {
+    .row { grid-template-columns: 1fr; gap: 5px; }
+    .row .val { text-align: left; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Overnight research · 24 July 2026</div>
+    <h1>Six niches, 45 products, one winner</h1>
+    <p class="sub">Trends screened for rising demand, products screened for saturation and net margin, then a tournament inside each niche and a final across the winners. Everything below is measured, not asserted.</p>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <div class="eyebrow">The winner</div>
+    </div>
+    <div class="verdict">
+      <div class="name">The anti-wrinkle beauty pillow</div>
+      <p class="why">A contoured side-sleeper pillow that holds the face off the pillow surface so it isn't compressed for eight hours a night. Search demand is up <strong>1,503%</strong> in twelve months from a small base — the pre-popular profile you asked for — while the dedicated category's biggest player has only ~1,490 reviews. It needs no FDA clearance, no battery, no sizing, and it clears the margin target across the entire sourcing range.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="k">12-month trend</span><span class="v">+1,503%</span><span class="n">"anti wrinkle pillow"</span></div>
+      <div class="tile"><span class="k">Median reviews</span><span class="v">50</span><span class="n">6 of 44 above 1k</span></div>
+      <div class="tile"><span class="k">Net margin</span><span class="v">25–40%</span><span class="n">across COGS range</span></div>
+      <div class="tile"><span class="k">Unit cost</span><span class="v">$5.20–11.60</span><span class="n">MOQ from 50, OEM/ODM</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>What ran overnight</h2>
+      <p class="prose sub">Three gates, applied in order. A candidate had to pass all three — the failures in earlier rounds each came from skipping one.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><span class="k">Gate 1 · Demand</span><span class="v">37</span><span class="n">terms through Google Trends</span></div>
+      <div class="tile"><span class="k">Gate 2 · Saturation</span><span class="v">45</span><span class="n">Amazon review-density checks</span></div>
+      <div class="tile"><span class="k">Gate 3 · Margin</span><span class="v">9</span><span class="n">finalists modelled to net</span></div>
+      <div class="tile"><span class="k">Source material</span><span class="v">68,273</span><span class="n">words of podcast transcript</span></div>
+    </div>
+    <p class="prose">Seven long-form episodes were ingested in full across the six niches — a dermatologist on female hair loss, a pelvic floor PT, Huberman on the lymphatic system, a postpartum PT, a skin-ageing practitioner, and Mike Mew on facial posture. Tooling is committed alongside this report: <code>trendcheck.py</code> for demand, <code>amzsat.py</code> for saturation.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Gate 1 — which trends are actually rising</h2>
+      <p class="prose sub">Twelve-month change in Google search interest, US. The winner and the two runner-ups all sit in the top band; every one was also checked over five years to separate a real climb from a spike.</p>
+    </div>
+    <div class="chart">
+      <div class="rows">
+        <div class="row"><span class="lab">Anti-wrinkle pillow</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="val">+1,503%</span></div>
+        <div class="row"><span class="lab">Beauty pillow</span><div class="track"><div class="fill" style="width:70%"></div></div><span class="val">+1,049%</span></div>
+        <div class="row"><span class="lab">Cupping / cellulite</span><div class="track"><div class="fill" style="width:57%"></div></div><span class="val">+858%</span></div>
+        <div class="row"><span class="lab">Laser hair growth cap</span><div class="track"><div class="fill" style="width:47%"></div></div><span class="val">+702%</span></div>
+        <div class="row"><span class="lab">Jaw exerciser</span><div class="track"><div class="fill" style="width:37%"></div></div><span class="val">+551%</span></div>
+        <div class="row"><span class="lab">Lymphatic drainage massager</span><div class="track"><div class="fill" style="width:23%"></div></div><span class="val">+353%</span></div>
+        <div class="row"><span class="lab">Scalp health</span><div class="track"><div class="fill" style="width:19%"></div></div><span class="val">+283%</span></div>
+        <div class="row"><span class="lab">Sleep wrinkles</span><div class="track"><div class="fill" style="width:13%"></div></div><span class="val">+198%</span></div>
+        <div class="row"><span class="lab">Pelvic floor</span><div class="track"><div class="fill" style="width:5%"></div></div><span class="val">+73%</span></div>
+        <div class="row"><span class="lab">Face tape (rejected)</span><div class="track"><div class="fill" style="width:2%; background:var(--bar-soft)"></div></div><span class="val">−26%</span></div>
+      </div>
+      <p class="cap">Bars encode 12-month percentage change. Face tape is shown as the control — it was cut for cooling demand despite strong five-year growth.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Gate 2 — what's already owned</h2>
+      <p class="prose sub">Saturation measured as review density of organic listings, not result count. A category with 2,000 results and a median of 30 reviews is more enterable than one with 100 results and a median of 5,000.</p>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Category</th><th>Results</th><th>Median rev</th><th>&gt;1k</th><th>Price</th><th>Read</th></tr></thead>
+        <tbody>
+          <tr class="win"><td>Anti-wrinkle beauty pillow</td><td class="num">433</td><td class="num">50</td><td class="num">6/44</td><td class="num">$10–290</td><td><span class="pill open">Open</span></td></tr>
+          <tr><td>Red light hair cap</td><td class="num">527</td><td class="num">49</td><td class="num">2/58</td><td class="num">$40–2299</td><td><span class="pill open">Open</span></td></tr>
+          <tr><td>Cellulite vacuum cups</td><td class="num">459</td><td class="num">42</td><td class="num">9/47</td><td class="num">$7–135</td><td><span class="pill open">Open</span></td></tr>
+          <tr><td>Kegel exerciser</td><td class="num">104</td><td class="num">52</td><td class="num">16/54</td><td class="num">$13–320</td><td><span class="pill open">Open</span></td></tr>
+          <tr><td>Lymphatic massage tool</td><td class="num">4,000</td><td class="num">105</td><td class="num">10/48</td><td class="num">$5–50</td><td><span class="pill mid">Contested</span></td></tr>
+          <tr><td>Jaw exerciser</td><td class="num">268</td><td class="num">197</td><td class="num">10/48</td><td class="num">$4–80</td><td><span class="pill mid">Contested</span></td></tr>
+          <tr><td>Toilet stool</td><td class="num">228</td><td class="num">857</td><td class="num">24/48</td><td class="num">$9–67</td><td><span class="pill shut">Closed</span></td></tr>
+          <tr><td>Postpartum belly band</td><td class="num">3,000</td><td class="num">1,090</td><td class="num">26/48</td><td class="num">$8–70</td><td><span class="pill shut">Closed</span></td></tr>
+          <tr><td>Diastasis recti splint</td><td class="num">87</td><td class="num">1,374</td><td class="num">27/48</td><td class="num">$9–70</td><td><span class="pill shut">Closed</span></td></tr>
+          <tr><td>Scalp massager brush</td><td class="num">2,000</td><td class="num">1,477</td><td class="num">28/48</td><td class="num">$4–49</td><td><span class="pill shut">Closed</span></td></tr>
+          <tr><td>Silk pillowcase</td><td class="num">484</td><td class="num">2,743</td><td class="num">29/53</td><td class="num">$4–85</td><td><span class="pill shut">Closed</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">The silk pillowcase row matters: the fabric approach to the same problem is completely owned, while the shape approach is wide open.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The tournament</h2>
+      <p class="prose sub">Products competed inside their niche first. Niche winners then met in a final scored on demand slope, review density, net margin, regulatory load, and whether the demo works without a face on camera.</p>
+    </div>
+    <div class="bracket">
+      <div class="bout">
+        <div class="niche">Round 1 · Sleep &amp; skin ageing</div>
+        <div class="card-row">
+          <span class="cand adv">Beauty pillow</span><span class="arrow">beats</span>
+          <span class="cand">Silk pillowcase</span><span class="cand">Silicone chest pads</span><span class="cand">Neck device</span>
+        </div>
+        <p class="note">Pillowcases are owned at 2,743 median reviews. The dermatologist's own mechanism — skin "gripping and holding in place, pushing on lines" — argues for changing the shape, not the fabric.</p>
+      </div>
+      <div class="bout">
+        <div class="niche">Round 1 · Hair &amp; scalp</div>
+        <div class="card-row">
+          <span class="cand adv">Red light hair cap</span><span class="arrow">beats</span>
+          <span class="cand">Scalp massager</span><span class="cand">Derma roller</span><span class="cand">Hair fibers</span><span class="cand">Scalp serum applicator</span>
+        </div>
+        <p class="note">Everything else in the niche is closed. The cap wins the round but carries an FDA 510(k) problem into the final.</p>
+      </div>
+      <div class="bout">
+        <div class="niche">Round 1 · Lymphatic &amp; cellulite</div>
+        <div class="card-row">
+          <span class="cand adv">Cellulite vacuum cups</span><span class="arrow">beats</span>
+          <span class="cand">Rebounder</span><span class="cand">Leg wedge</span><span class="cand">Lymph massage tool</span>
+        </div>
+        <p class="note">Rebounders and leg wedges are crowded and bulky. Cups are open — but five-year trend is −36%, marking this a fad rather than a climb.</p>
+      </div>
+      <div class="bout">
+        <div class="niche">Round 1 · Pelvic floor</div>
+        <div class="card-row">
+          <span class="cand adv">Kegel / pelvic device</span><span class="arrow">beats</span>
+          <span class="cand">Toilet stool</span><span class="cand">Belly band</span><span class="cand">Breathing trainer</span>
+        </div>
+        <p class="note">Strongest human problem found all night — "more women leak urine than have diabetes, hypertension, or osteoporosis." But intimate-category products face organic and ad restrictions on the channel you're selling through.</p>
+      </div>
+      <div class="bout">
+        <div class="niche">Round 1 · Jawline &amp; face · Postpartum</div>
+        <div class="card-row">
+          <span class="cand adv">Jaw exerciser</span><span class="arrow">·</span>
+          <span class="cand">Face lifting strap</span><span class="arrow">|</span>
+          <span class="cand">Postpartum: no candidate advanced</span>
+        </div>
+        <p class="note">Every postpartum product tested came back closed — belly bands at 1,090 median reviews, splints at 1,374. The niche has real demand and no open shelf.</p>
+      </div>
+      <div class="bout" style="border-color: var(--bar);">
+        <div class="niche">Final</div>
+        <div class="card-row">
+          <span class="cand adv">Beauty pillow</span><span class="arrow">defeats</span>
+          <span class="cand">Red light cap</span><span class="cand">Kegel device</span><span class="cand">Cellulite cups</span><span class="cand">Jaw exerciser</span>
+        </div>
+        <p class="note">The cap nets only 13.5% at $99 and needs 510(k) clearance to make hair-growth claims. The kegel device can't be marketed freely on the channel. The cups are a fad on five-year data. The jaw exerciser is already contested at 197 median reviews and tops out near $25. The pillow is the only finalist that clears every gate at once.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Gate 3 — the margin model</h2>
+      <p class="prose sub">Net after landed cost, payment fees at 3%, advertising at 30% of revenue, and returns. Your target was 20–40%.</p>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Scenario</th><th>Retail</th><th>Landed</th><th>Net $</th><th>Net %</th><th></th></tr></thead>
+        <tbody>
+          <tr class="win"><td>Beauty pillow — base</td><td class="num">$69</td><td class="num">$15</td><td class="num">$27.78</td><td class="num">40.3%</td><td><span class="pill open">Pass</span></td></tr>
+          <tr class="win"><td>Beauty pillow — worst-case COGS</td><td class="num">$69</td><td class="num">$23</td><td class="num">$17.02</td><td class="num">24.7%</td><td><span class="pill open">Pass</span></td></tr>
+          <tr class="win"><td>Beauty pillow — premium tier</td><td class="num">$89</td><td class="num">$19</td><td class="num">$35.29</td><td class="num">39.7%</td><td><span class="pill open">Pass</span></td></tr>
+          <tr><td>Red light hair cap</td><td class="num">$99</td><td class="num">$45</td><td class="num">$13.41</td><td class="num">13.5%</td><td><span class="pill shut">Thin</span></td></tr>
+          <tr><td>Red light cap — premium</td><td class="num">$149</td><td class="num">$52</td><td class="num">$35.91</td><td class="num">24.1%</td><td><span class="pill mid">Pass, higher CAC risk</span></td></tr>
+          <tr><td>Jaw exerciser</td><td class="num">$25</td><td class="num">$5</td><td class="num">$10.50</td><td class="num">42.0%</td><td><span class="pill mid">Pass, low AOV</span></td></tr>
+          <tr><td>Cellulite vacuum cups</td><td class="num">$35</td><td class="num">$8</td><td class="num">$13.35</td><td class="num">38.1%</td><td><span class="pill mid">Pass, fad risk</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="cap">The pillow is the only finalist that stays inside the target band even when sourcing comes in at the top of the quoted range.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Why this one and not the others</h2>
+    </div>
+    <ul class="prose">
+      <li><strong>It is genuinely early.</strong> Absolute search volume is still low — the trend index sits at 4–15 out of 100 — while growing four figures year on year. That is the grip-socks shape: rising fast, nobody's brand attached to it yet.</li>
+      <li><strong>The adjacent category proves willingness to pay.</strong> SLEEP &amp; GLOW sells a beauty pillow at $288.99 and has 562 reviews. Flawless Face sits at $79.99. The ceiling is well above where you'd enter.</li>
+      <li><strong>Nothing blocks the build.</strong> No 510(k), no lithium battery, no electrical certification, no sizing chart, no intimate-category ad restriction. Those four constraints eliminated every other finalist.</li>
+      <li><strong>It is white-labelable now.</strong> 85 suppliers, OEM/ODM standard, MOQ from 50 units, OEKO-TEX available, 10–15 day production. You can own the mould and the brand rather than reselling a clone.</li>
+      <li><strong>The demo needs no face.</strong> Two pillows, a weighted mannequin head or a hand, and a side-by-side of skin compressed versus suspended. That works with faceless or AI-generated UGC.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Runner-ups</h2>
+    </div>
+    <div class="runner">
+      <div class="rank">Second</div>
+      <h3>Red light therapy hair cap</h3>
+      <p class="sub">The biggest human problem in the set — female-pattern hair loss affects roughly 30 million US women, and over half of women experience noticeable loss. Dermatologist-validated on the transcript: red and infrared wavelengths do reach follicle depth. Category is open at median 49 reviews with a $40–2,299 spread.</p>
+      <p class="sub"><strong>Why it lost:</strong> hair-growth claims put it in FDA Class II 510(k) territory, and it nets only 13.5% at $99. Viable at $149 with clearance — a real business, but a slower and more capital-heavy one.</p>
+    </div>
+    <div class="runner">
+      <div class="rank">Third</div>
+      <h3>Pelvic floor trainer</h3>
+      <p class="sub">Breakout demand and the most compelling testimony collected: 80% of women affected, and a pelvic floor PT noting that the entire existing product category may be solving the wrong problem — "the narrative has always been to strengthen… that is not necessarily what every woman needs." A down-training product would be genuinely differentiated.</p>
+      <p class="sub"><strong>Why it lost:</strong> intimate-category products are restricted on TikTok organic and paid, which is the channel this business runs on.</p>
+    </div>
+    <div class="runner">
+      <div class="rank">Fourth</div>
+      <h3>Jaw exerciser</h3>
+      <p class="sub">Fastest-rising single product term tested at +551%, cheap to source, hands-only demo. Lost on a $25 ceiling and a category already contested at 197 median reviews with $4 listings present.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Risks — read before spending</h2>
+    </div>
+    <div class="risk">
+      <div class="h">The efficacy claim is soft</div>
+      <p>The dermatologist in the source material said of sleep surfaces: "I don't think it's an anti-aging miracle concept, but I do think it can be beneficial." Market on comfort and morning face-creasing, which is observable overnight, not on long-term wrinkle prevention you cannot substantiate.</p>
+    </div>
+    <div class="risk">
+      <div class="h">Comfort drives returns</div>
+      <p>A contoured pillow is a personal fit. Order samples and sleep on them before committing to a mould. Budget the 5–7% return rate the model already assumes.</p>
+    </div>
+    <div class="risk">
+      <div class="h">Freight is volumetric</div>
+      <p>Foam ships by volume, not weight. Insist on vacuum-compressed packing in the quote or the landed cost moves against you.</p>
+    </div>
+    <div class="risk">
+      <div class="h">Low volume cuts both ways</div>
+      <p>Early means unproven. The same low absolute search volume that makes this available also means the category may not break out. Validate with a small first order, not a container.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Next steps</h2>
+    </div>
+    <ul class="prose">
+      <li>RFQ 3–4 suppliers from the Nantong, Ningbo and Shenzhen clusters; request OEM with your own contour, OEKO-TEX certification, and vacuum-compressed packing.</li>
+      <li>Order samples across two firmness grades and both a side-sleeper cradle and a back-sleeper stabiliser.</li>
+      <li>Check TikTok Shop manually — the saturation tool measures Amazon only, and the two can diverge.</li>
+      <li>Test the creative before the inventory: shoot the compressed-versus-suspended side-by-side and see whether it stops the scroll.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Sources: Google Trends (US, 12-month and 5-year), Amazon organic listing review density, Alibaba supplier listings, and seven full podcast transcripts totalling 68,273 words. Tooling and raw data are committed in the repository as <code>trendcheck.py</code>, <code>amzsat.py</code>, and the saturation JSON files.</p>
+    <p>Saturation figures are point-in-time and move — the hip thrust belt shifted from a median of 48 to 103 reviews between two checks in this same project. Re-run before committing capital.</p>
+  </footer>
+
+</div>

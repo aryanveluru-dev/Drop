@@ -1,0 +1,471 @@
+[
+  {
+    "kw": "red light therapy mask",
+    "g12": 254.1,
+    "g5": 4955.8,
+    "current": 25,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "scalp massager",
+    "g12": 117.8,
+    "g5": 72.1,
+    "current": 21,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "rosemary oil hair",
+    "g12": 93.9,
+    "g5": 123.4,
+    "current": 30,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "posture corrector",
+    "g12": 63.7,
+    "g5": 61.8,
+    "current": 24,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "hair thinning women",
+    "g12": 33.4,
+    "g5": 65.7,
+    "current": 56,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "cortisol face",
+    "g12": 18.9,
+    "g5": 1440.0,
+    "current": 45,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "face tape wrinkles",
+    "g12": -26.2,
+    "g5": 447.5,
+    "current": 29,
+    "verdict": "COOLING"
+  },
+  {
+    "kw": "lymphatic drainage",
+    "g12": null,
+    "g5": 289.9,
+    "current": null,
+    "verdict": "NO DATA"
+  },
+  {
+    "kw": "pelvic floor",
+    "g12": 72.9,
+    "g5": 114.0,
+    "current": 81,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "microcurrent facial device",
+    "g12": 259.2,
+    "g5": 2393.0,
+    "current": 11,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "bloating relief",
+    "g12": 95.4,
+    "g5": 64.9,
+    "current": 32,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "grip socks",
+    "g12": 62.8,
+    "g5": 240.8,
+    "current": 38,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "toe spacers",
+    "g12": 61.1,
+    "g5": 134.3,
+    "current": 53,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "mouth tape sleep",
+    "g12": 28.8,
+    "g5": 546.6,
+    "current": 75,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "vagus nerve",
+    "g12": 23.7,
+    "g5": 103.0,
+    "current": 77,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "perimenopause",
+    "g12": 14.7,
+    "g5": 329.5,
+    "current": 96,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "sleep wrinkles",
+    "g12": 197.9,
+    "g5": 148.7,
+    "current": 27,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "hip dips",
+    "g12": 118.1,
+    "g5": -12.6,
+    "current": 80,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "cellulite treatment",
+    "g12": 63.4,
+    "g5": 2.1,
+    "current": 56,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "jaw exerciser",
+    "g12": 551.1,
+    "g5": 362.9,
+    "current": 18,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "hair growth serum women",
+    "g12": 234.8,
+    "g5": 435.9,
+    "current": 15,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "shapewear",
+    "g12": 37.3,
+    "g5": 10.4,
+    "current": 33,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "dry brushing",
+    "g12": 25.8,
+    "g5": 29.5,
+    "current": 70,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "dowagers hump",
+    "g12": -15.7,
+    "g5": 65.3,
+    "current": 67,
+    "verdict": "COOLING"
+  },
+  {
+    "kw": "scalp health",
+    "g12": 283.3,
+    "g5": 578.9,
+    "current": 18,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "period underwear",
+    "g12": 70.2,
+    "g5": 40.5,
+    "current": 76,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "core strength postpartum",
+    "g12": 999.0,
+    "g5": 999.0,
+    "current": 10,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "menopause weight gain",
+    "g12": 51.4,
+    "g5": 22.5,
+    "current": 55,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "hair loss postpartum",
+    "g12": 36.4,
+    "g5": 18.2,
+    "current": 61,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "diastasis recti",
+    "g12": 30.0,
+    "g5": 12.3,
+    "current": 81,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "under eye bags",
+    "g12": 23.5,
+    "g5": 24.1,
+    "current": 72,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "double chin",
+    "g12": 18.8,
+    "g5": 3.7,
+    "current": 72,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "anti wrinkle pillow",
+    "g12": 1503.4,
+    "g5": 999.0,
+    "current": 15,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "beauty pillow",
+    "g12": 1048.7,
+    "g5": 517.6,
+    "current": 4,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "cupping cellulite",
+    "g12": 858.3,
+    "g5": -35.7,
+    "current": 18,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "laser hair growth cap",
+    "g12": 701.6,
+    "g5": 1467.9,
+    "current": 6,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "jaw exerciser",
+    "g12": 551.1,
+    "g5": 361.4,
+    "current": 18,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "lymphatic drainage massager",
+    "g12": 352.7,
+    "g5": 10381.2,
+    "current": 16,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "kegel trainer",
+    "g12": 54.6,
+    "g5": 1592.4,
+    "current": 17,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "red light therapy hair",
+    "g12": null,
+    "g5": 1232.5,
+    "current": null,
+    "verdict": "NO DATA"
+  },
+  {
+    "kw": "gut health bloating",
+    "g12": 88.8,
+    "g5": 166.0,
+    "current": 31,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "snoring solution",
+    "g12": 1065.2,
+    "g5": 165.5,
+    "current": 9,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "teeth whitening kit",
+    "g12": 441.1,
+    "g5": 45.3,
+    "current": 7,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "height insoles",
+    "g12": 165.7,
+    "g5": 133.9,
+    "current": 12,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "beard growth",
+    "g12": 53.4,
+    "g5": 5.9,
+    "current": 29,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "mewing",
+    "g12": -21.4,
+    "g5": 64.5,
+    "current": 38,
+    "verdict": "COOLING"
+  },
+  {
+    "kw": "red light therapy",
+    "g12": null,
+    "g5": 597.6,
+    "current": null,
+    "verdict": "NO DATA"
+  },
+  {
+    "kw": "nasal breathing strips",
+    "g12": 136.5,
+    "g5": 4198.4,
+    "current": 35,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "vagus nerve stimulator",
+    "g12": 111.7,
+    "g5": 635.6,
+    "current": 32,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "hair loss men",
+    "g12": 81.9,
+    "g5": 114.5,
+    "current": 34,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "eye bags treatment",
+    "g12": 54.9,
+    "g5": 75.9,
+    "current": 41,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "cortisol belly",
+    "g12": 49.8,
+    "g5": 961.6,
+    "current": 80,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "sleep apnea mouthpiece",
+    "g12": 28.1,
+    "g5": 83.5,
+    "current": 23,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "toenail fungus laser",
+    "g12": 23.0,
+    "g5": 4.6,
+    "current": 49,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "excessive sweating",
+    "g12": 7.5,
+    "g5": -1.3,
+    "current": 72,
+    "verdict": "FLAT"
+  },
+  {
+    "kw": "chin strap snoring",
+    "g12": 479.0,
+    "g5": 48.9,
+    "current": 12,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "led face mask",
+    "g12": 429.7,
+    "g5": 676.1,
+    "current": 11,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "lymphatic drainage tool",
+    "g12": 174.5,
+    "g5": 7003.8,
+    "current": 17,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "nasal dilator",
+    "g12": 100.0,
+    "g5": 225.3,
+    "current": 25,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "anti snoring device",
+    "g12": 89.7,
+    "g5": 119.5,
+    "current": 15,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "compression boots recovery",
+    "g12": 751.0,
+    "g5": 3455.2,
+    "current": 24,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "sauna blanket",
+    "g12": 268.9,
+    "g5": 160.4,
+    "current": 7,
+    "verdict": "BREAKOUT - rising fast, near peak now"
+  },
+  {
+    "kw": "breathing trainer device",
+    "g12": 999.0,
+    "g5": 999.0,
+    "current": 11,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "portable humidifier",
+    "g12": 970.4,
+    "g5": 463.2,
+    "current": 2,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "teeth whitening led",
+    "g12": 590.5,
+    "g5": 211.1,
+    "current": 4,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "heated eye mask",
+    "g12": 185.2,
+    "g5": null,
+    "current": 23,
+    "verdict": "RISING"
+  },
+  {
+    "kw": "neck traction device",
+    "g12": 121.2,
+    "g5": 36.3,
+    "current": 18,
+    "verdict": "RISING"
+  }
+]

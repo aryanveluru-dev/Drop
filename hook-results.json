@@ -1,0 +1,3006 @@
+[
+  {
+    "product": "Diabetic foot inspection mirror",
+    "niche": "chronic",
+    "term": "foot inspection mirror",
+    "n": 8,
+    "max": 1161,
+    "median": 308,
+    "total": 4178,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "ZJLrNwH8t7k",
+        "views": 1161,
+        "title": "Examination of Sole Of Foot With Mirror"
+      },
+      {
+        "id": "rgOFWmcwaTQ",
+        "views": 1161,
+        "title": "Telescoping Inspection Mirrors - Unboxing & Review"
+      }
+    ]
+  },
+  {
+    "product": "Migraine cooling head wrap",
+    "niche": "chronic",
+    "term": "migraine cap",
+    "n": 9,
+    "max": 31192,
+    "median": 257,
+    "total": 38857,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "1PQxdESNpO4",
+        "views": 31192,
+        "title": "Migraine PAIN relief: INSTANT RESULTS"
+      },
+      {
+        "id": "v2v3YlOU3Pg",
+        "views": 3715,
+        "title": "Do Migraine Headache Caps Work?"
+      }
+    ]
+  },
+  {
+    "product": "Chronic fatigue shower chair",
+    "niche": "chronic",
+    "term": "shower chair",
+    "n": 8,
+    "max": 55338,
+    "median": 5060,
+    "total": 102501,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "QwkQsbNuPvQ",
+        "views": 55338,
+        "title": "Drive Medical Folding Universal Sliding Transfer Bench - Bath & Shower"
+      },
+      {
+        "id": "ONFQdokkEn4",
+        "views": 22456,
+        "title": "Liberty Folding Shower Chair with Swivel Seat - Platinum Health"
+      }
+    ]
+  },
+  {
+    "product": "IBS heat + vibration pad",
+    "niche": "chronic",
+    "term": "stomach heating pad",
+    "n": 15,
+    "max": 251659,
+    "median": 3164,
+    "total": 313631,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "-A-NNGQgL_0",
+        "views": 251659,
+        "title": "How to Make an Easy Homemade Heating Pad"
+      },
+      {
+        "id": "Al-tyBswZTU",
+        "views": 21711,
+        "title": "Dr Trust USA Orthopaedic Electric Heating Pad with Belt 346"
+      }
+    ]
+  },
+  {
+    "product": "Incontinence bed pad washable",
+    "niche": "chronic",
+    "term": "washable bed pads",
+    "n": 10,
+    "max": 68986,
+    "median": 393,
+    "total": 128562,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "C_W3tuYtKxo",
+        "views": 68986,
+        "title": "DIY Make Your Own Reusable Waterproof Bed Pad Elderly Bedwetting Incon"
+      },
+      {
+        "id": "uW6_w1UArQE",
+        "views": 50589,
+        "title": "MEDPRO\u2122 Reusable Washable Incontinence Bed Pad for Patients/ Elderly/ "
+      }
+    ]
+  },
+  {
+    "product": "Eczema wet-wrap sleeve set",
+    "niche": "skin",
+    "term": "eczema sleeves",
+    "n": 5,
+    "max": 75683,
+    "median": 386,
+    "total": 77463,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "nQimo9nQNEA",
+        "views": 75683,
+        "title": "Wet Wrap Therapy"
+      },
+      {
+        "id": "_ogdHlT5aMI",
+        "views": 921,
+        "title": "Avoid skin problems and eczema"
+      }
+    ]
+  },
+  {
+    "product": "Rosacea LED redness device",
+    "niche": "skin",
+    "term": "led mask rosacea",
+    "n": 2,
+    "max": 34738,
+    "median": 17422,
+    "total": 34844,
+    "verdict": "WEAK (low-n)",
+    "top": [
+      {
+        "id": "YZDAbHmAabk",
+        "views": 34738,
+        "title": "Treating rosacea with an LED light mask?!"
+      },
+      {
+        "id": "WNgVbu2MwgE",
+        "views": 106,
+        "title": "Use An LED Light Treatment To Improve Rosacea"
+      }
+    ]
+  },
+  {
+    "product": "Silicone scar sheets",
+    "niche": "skin",
+    "term": "silicone scar sheets",
+    "n": 10,
+    "max": 158338,
+    "median": 43091,
+    "total": 606186,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "3k2Iu2ipZO8",
+        "views": 158338,
+        "title": "Silicone Strips for Scar Treatment"
+      },
+      {
+        "id": "9OgSyGBwJSM",
+        "views": 127622,
+        "title": "How to apply silicone sheet to scars? | Topical Silicone Sheet Therapy"
+      }
+    ]
+  },
+  {
+    "product": "Keratosis pilaris body kit",
+    "niche": "skin",
+    "term": "keratosis pilaris treatment",
+    "n": 4,
+    "max": 167821,
+    "median": 114382,
+    "total": 432674,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "rtVETZij2fM",
+        "views": 167821,
+        "title": "How to treat keratosis pilaris at home"
+      },
+      {
+        "id": "MKXxcCyzr6M",
+        "views": 148487,
+        "title": "Keratosis Pilaris Clear + Brilliant Treatment FT. Eric Smith | BLUSH B"
+      }
+    ]
+  },
+  {
+    "product": "Hyperpigmentation LED spot device",
+    "niche": "skin",
+    "term": "dark spot device",
+    "n": 3,
+    "max": 92976,
+    "median": 92816,
+    "total": 270668,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "7hk0OuerKW8",
+        "views": 92976,
+        "title": "Aesthetic Myth: Can pigmentation be removed with just one laser sessio"
+      },
+      {
+        "id": "X9115Xci5Lg",
+        "views": 92816,
+        "title": "How to use the Neatcell Picosecond Laser"
+      }
+    ]
+  },
+  {
+    "product": "Tattoo aftercare film kit",
+    "niche": "skin",
+    "term": "tattoo aftercare film",
+    "n": 9,
+    "max": 253680,
+    "median": 3545,
+    "total": 533240,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "R6Xn48KpPUY",
+        "views": 253680,
+        "title": "How Long Should You Keep Your Tattoo Wrapped? *Cling vs Tattoo Film* |"
+      },
+      {
+        "id": "hQU5HMqPsE4",
+        "views": 141333,
+        "title": "How to apply tattoo aftercare bandage FixDerm bandage"
+      }
+    ]
+  },
+  {
+    "product": "Microcurrent facial device",
+    "niche": "face",
+    "term": "microcurrent facial device",
+    "n": 3,
+    "max": 46334,
+    "median": 34351,
+    "total": 111782,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "rxIIvOh_sDs",
+        "views": 46334,
+        "title": "Microcurrent facial giving faces a workout"
+      },
+      {
+        "id": "ON9r2ScSD_I",
+        "views": 34351,
+        "title": "How To Use MAGNITONE LiftOff Microcurrent Facial Toning Device"
+      }
+    ]
+  },
+  {
+    "product": "Red light face mask",
+    "niche": "face",
+    "term": "led face mask",
+    "n": 6,
+    "max": 192779,
+    "median": 41160,
+    "total": 371323,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "drW9Huw3u9g",
+        "views": 192779,
+        "title": "How to Use a LED Light Therapy Mask | Dr. Pen Australia | Light Therap"
+      },
+      {
+        "id": "WWh8eaYGL3s",
+        "views": 82613,
+        "title": "TheraFace Mask Quick Start Guide"
+      }
+    ]
+  },
+  {
+    "product": "Under-eye microcurrent wand",
+    "niche": "face",
+    "term": "under eye wand",
+    "n": 7,
+    "max": 24942,
+    "median": 633,
+    "total": 32266,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "mKLicJTE9yA",
+        "views": 24942,
+        "title": "How To: Use The Peep Club Eye Wand"
+      },
+      {
+        "id": "zmm_kB5ahGg",
+        "views": 4230,
+        "title": "GLO24K Triple Action LED Eye Care Therapy Wand"
+      }
+    ]
+  },
+  {
+    "product": "Jaw exerciser",
+    "niche": "face",
+    "term": "jaw exerciser",
+    "n": 8,
+    "max": 401524,
+    "median": 26018,
+    "total": 869012,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "qAmpyMlaOAI",
+        "views": 401524,
+        "title": "JAWLINER Jaw muscle workout - how it works - mewing"
+      },
+      {
+        "id": "9xMt8-yGkX8",
+        "views": 348124,
+        "title": "Jawzrsize Before & After | Eric West's Jawline Transformation | Do Jaw"
+      }
+    ]
+  },
+  {
+    "product": "Facial steamer",
+    "niche": "face",
+    "term": "facial steamer",
+    "n": 8,
+    "max": 730069,
+    "median": 140673,
+    "total": 1537620,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "ERWqwMvfD3k",
+        "views": 730069,
+        "title": "Dr Trust USA HomeSpa Facial Steamer and Vaporizer/Vapourizer Machine 9"
+      },
+      {
+        "id": "piYisAOetcA",
+        "views": 273655,
+        "title": "How to Naturally Remove Blackheads (Steam and Towel Method)"
+      }
+    ]
+  },
+  {
+    "product": "Face yoga tool kit",
+    "niche": "face",
+    "term": "face yoga tool",
+    "n": 5,
+    "verdict": "MODERATE",
+    "max": 167177,
+    "median": 40711,
+    "total": 276410,
+    "top": [
+      {
+        "id": "QO-OI9YyCjU",
+        "views": 167177,
+        "title": "Difference between face tools 24k Face Massager, HOB Sculptor & 3D Fac"
+      },
+      {
+        "id": "1MMg5EDWJmQ",
+        "views": 66552,
+        "title": "How to use 24K Face Massager? Directions to use? FaceYoga tool"
+      }
+    ]
+  },
+  {
+    "product": "LED neck & d\u00e9collet\u00e9 device",
+    "niche": "face",
+    "term": "neck firming device",
+    "n": 5,
+    "max": 449491,
+    "median": 98005,
+    "total": 769347,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "65bxc7ncxmE",
+        "views": 449491,
+        "title": "How to Use The Neck and Face Anti Wrinkle Massager | Luxelle Pure Livi"
+      },
+      {
+        "id": "lBcwKmSZN48",
+        "views": 155190,
+        "title": "Neck & Face Massager Review and How To -Electric LED Anti-Aging Device"
+      }
+    ]
+  },
+  {
+    "product": "Magnetic nasal dilator",
+    "niche": "sleep",
+    "term": "nasal dilator",
+    "n": 8,
+    "max": 429357,
+    "median": 13546,
+    "total": 605567,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "vV0BU1x5EiQ",
+        "views": 429357,
+        "title": "Balloon Sinuplasty animation"
+      },
+      {
+        "id": "Tp-_Wq1Of3c",
+        "views": 111350,
+        "title": "How to use Mute"
+      }
+    ]
+  },
+  {
+    "product": "Internal nasal vent",
+    "niche": "sleep",
+    "term": "nose vents snoring",
+    "n": 12,
+    "max": 134993,
+    "median": 5772,
+    "total": 384897,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "5Qo6pG3v1-k",
+        "views": 134993,
+        "title": "How To Fit A Nozovent Nasal Dilator"
+      },
+      {
+        "id": "-G1aT7-_3wE",
+        "views": 95881,
+        "title": "SleepEase Snore Stopper Vents - Tested & Reviewed"
+      }
+    ]
+  },
+  {
+    "product": "Jaw support strap",
+    "niche": "sleep",
+    "term": "chin strap snoring",
+    "n": 14,
+    "max": 96262,
+    "median": 675,
+    "total": 191359,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "Dy96tt480pE",
+        "views": 96262,
+        "title": "How To Fit Snore Calm Chin-Up Strips"
+      },
+      {
+        "id": "SFmH1wKB_YM",
+        "views": 31622,
+        "title": "SHUT UP and Sleep!! CPAP Chin Straps Guide"
+      }
+    ]
+  },
+  {
+    "product": "Cooling mattress topper",
+    "niche": "sleep",
+    "term": "cooling mattress topper",
+    "n": 6,
+    "max": 4130,
+    "median": 880,
+    "total": 8477,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "vNdKmj2dKTA",
+        "views": 4130,
+        "title": "SL408 Electric Cooling Mattress Pad for Hot Sleepers \u2013 3-Speed Adjusta"
+      },
+      {
+        "id": "Mu7DPXgk9MM",
+        "views": 2180,
+        "title": "Ultra Cooling Mattress Topper: Comfort Boost"
+      }
+    ]
+  },
+  {
+    "product": "Smart sleep tracker mat",
+    "niche": "sleep",
+    "term": "sleep tracker mat",
+    "n": 4,
+    "max": 51868,
+    "median": 6645,
+    "total": 66945,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "L7DK5kNbcTI",
+        "views": 51868,
+        "title": "[EN] Sleep Analyzer \u2014 Get medical grade sleep apnea detection, without"
+      },
+      {
+        "id": "aUoLo2m5ZfA",
+        "views": 10889,
+        "title": "[EN] Sleep Analyzer \u2014 How to set up your device"
+      }
+    ]
+  },
+  {
+    "product": "Bed wedge pillow",
+    "niche": "sleep",
+    "term": "wedge pillow",
+    "n": 11,
+    "max": 65940,
+    "median": 884,
+    "total": 159727,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "6hY-QmT5Q_k",
+        "views": 65940,
+        "title": "Bed Wedge Pillow by Cushy Form - GERD, Acid Reflux, Anti Snore and Sle"
+      },
+      {
+        "id": "L0BWnU0nvPw",
+        "views": 45919,
+        "title": "Folding Wedge Cushion Helps Sleeping with Acid Reflux"
+      }
+    ]
+  },
+  {
+    "product": "CPAP cleaning device",
+    "niche": "sleep",
+    "term": "cpap cleaner",
+    "n": 4,
+    "max": 168048,
+    "median": 59763,
+    "total": 290610,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "K9Bb7MzvVuM",
+        "views": 168048,
+        "title": "Watch This Before Using Ozone Gas or UV Light CPAP Cleaning Devices"
+      },
+      {
+        "id": "EOxQynxN4Rg",
+        "views": 99343,
+        "title": "How to Dry Your CPAP Tube | Can you use your machine to dry?"
+      }
+    ]
+  },
+  {
+    "product": "Knee pillow side sleeper",
+    "niche": "sleep",
+    "term": "knee pillow",
+    "n": 8,
+    "max": 17601,
+    "median": 2488,
+    "total": 44819,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "-_bE8Sf8MmY",
+        "views": 17601,
+        "title": "Dr Trust USA Knee Pillow cushion for sleeping Perfect Shape for Knee P"
+      },
+      {
+        "id": "fQ92sdtB5Co",
+        "views": 15260,
+        "title": "Everlasting Comfort Knee Pillow Review | by a Physical Therapist"
+      }
+    ]
+  },
+  {
+    "product": "Sleep headphone headband",
+    "niche": "sleep",
+    "term": "sleep headphones headband",
+    "n": 9,
+    "max": 43592,
+    "median": 3862,
+    "total": 95299,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "yLkaWSvHHg4",
+        "views": 43592,
+        "title": "FreakinReviews - SleepBand Review"
+      },
+      {
+        "id": "Wpa5FYGt8YE",
+        "views": 18616,
+        "title": "How to Wash the MusiCozy Bluetooth Headband: Demo"
+      }
+    ]
+  },
+  {
+    "product": "Lymphatic drainage body tool",
+    "niche": "body",
+    "term": "lymphatic drainage tool",
+    "n": 6,
+    "max": 79968,
+    "median": 22110,
+    "total": 167627,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "asa-7I-YyOM",
+        "views": 79968,
+        "title": "How To Use the Gua Sha Facial Lifting Tool by Mount Lai - Promote Lymp"
+      },
+      {
+        "id": "U7TRDIPtw-Y",
+        "views": 40711,
+        "title": "Dry Face Lymphatic Brush Honest Review - Is It Just a Scam Or Must-Hav"
+      }
+    ]
+  },
+  {
+    "product": "Ice bath tub",
+    "niche": "body",
+    "term": "ice bath tub",
+    "n": 4,
+    "max": 93436,
+    "median": 14441,
+    "total": 122366,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "l5UmkgEkrZk",
+        "views": 93436,
+        "title": "Polar Recovery Tub - The worlds first portable ice bath!"
+      },
+      {
+        "id": "iEAMWbD57Yg",
+        "views": 28298,
+        "title": "How to do a Face Ice Bath with the Icy-Mojo Facial Cold Plunge\u2122"
+      }
+    ]
+  },
+  {
+    "product": "Sauna blanket",
+    "niche": "body",
+    "term": "sauna blanket",
+    "n": 6,
+    "verdict": "WEAK",
+    "max": 12444,
+    "median": 4398,
+    "total": 33798,
+    "top": [
+      {
+        "id": "KWvVE9JTNgo",
+        "views": 12444,
+        "title": "How to Use Sauna blanket ?"
+      },
+      {
+        "id": "rWt924KqrH0",
+        "views": 8231,
+        "title": "How To Use The Heat Healer Sauna Blanket"
+      }
+    ]
+  },
+  {
+    "product": "Stretch mark microneedle roller",
+    "niche": "body",
+    "term": "stretch mark roller",
+    "n": 4,
+    "max": 79276,
+    "median": 41771,
+    "total": 163772,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "Xhe8z8DDoBg",
+        "views": 79276,
+        "title": "Is Dermarolling Good For Stretch Marks"
+      },
+      {
+        "id": "KufgslQm2jg",
+        "views": 50072,
+        "title": "STRETCH MARKS MICRONEEDLING PROCEDURE | MDPEN TRAINING"
+      }
+    ]
+  },
+  {
+    "product": "Back acne treatment applicator",
+    "niche": "body",
+    "term": "back acne applicator",
+    "n": 9,
+    "max": 20770,
+    "median": 993,
+    "total": 57081,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "JrBkEmIaFy0",
+        "views": 20770,
+        "title": "Lifehack- Lotion Applicator"
+      },
+      {
+        "id": "hmneXo5b_Yg",
+        "views": 18109,
+        "title": "The Vive Health Lotion Applicator"
+      }
+    ]
+  },
+  {
+    "product": "Ingrown hair treatment roller",
+    "niche": "body",
+    "term": "ingrown hair treatment",
+    "n": 9,
+    "max": 8459103,
+    "median": 143393,
+    "total": 11193748,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "k5OFK4WxssI",
+        "views": 8459103,
+        "title": "Laser Zaps Out Ingrown Hairs | Art Insider"
+      },
+      {
+        "id": "laevAwpnPjc",
+        "views": 1781281,
+        "title": "What Are Ingrown Hairs \u2014\u00a0And How To Treat Them"
+      }
+    ]
+  },
+  {
+    "product": "Hand & foot paraffin bath",
+    "niche": "body",
+    "term": "paraffin wax bath",
+    "n": 10,
+    "max": 102192,
+    "median": 14288,
+    "total": 298056,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "Qirw0UhH-7I",
+        "views": 102192,
+        "title": "Paraffin Wax Therapy for Hand Injuries"
+      },
+      {
+        "id": "hbsSAOPLank",
+        "views": 70238,
+        "title": "Paraffin Wax Therapy Treatment for finger, hand, and wrist pain : Impr"
+      }
+    ]
+  },
+  {
+    "product": "Neck traction device",
+    "niche": "pain",
+    "term": "neck traction device",
+    "n": 4,
+    "max": 50000,
+    "median": 27762,
+    "total": 111606,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "_pCuRjk8AFY",
+        "views": 50000,
+        "title": "Cervical traction device"
+      },
+      {
+        "id": "RI2QRJQypoE",
+        "views": 29045,
+        "title": "How to Use At Home Cervical Traction"
+      }
+    ]
+  },
+  {
+    "product": "TMJ jaw massage device",
+    "niche": "pain",
+    "term": "tmj massager",
+    "n": 10,
+    "max": 54203,
+    "median": 653,
+    "total": 126354,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "L_7-NVVtSwA",
+        "views": 54203,
+        "title": "Facial Massage For TMJ And Jaw Tension"
+      },
+      {
+        "id": "7G4XFk6l60A",
+        "views": 51639,
+        "title": "Self Massage & Release the Lateral Pterygoid - Priya Mistry, DDS (the "
+      }
+    ]
+  },
+  {
+    "product": "Spinal decompression back stretcher",
+    "niche": "pain",
+    "term": "back stretcher",
+    "n": 7,
+    "max": 13015949,
+    "median": 12843,
+    "total": 13310156,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "_3u8O7KL6bM",
+        "views": 13015949,
+        "title": "Back On Trac Decompression"
+      },
+      {
+        "id": "P5RdlvzhLzg",
+        "views": 256529,
+        "title": "How To Use A Back Stretcher (For Lower Back Pain)"
+      }
+    ]
+  },
+  {
+    "product": "Sciatica seat cushion",
+    "niche": "pain",
+    "term": "sciatica cushion",
+    "n": 12,
+    "max": 362715,
+    "median": 402,
+    "total": 410371,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "PtYTysrd8t4",
+        "views": 362715,
+        "title": "How to Correctly Use the Original McKenzie Coccyx Cushion - Relieve Ta"
+      },
+      {
+        "id": "kztJuAqK0zA",
+        "views": 25048,
+        "title": "Back Pain Seat Cushion Review"
+      }
+    ]
+  },
+  {
+    "product": "Heat + vibration back belt",
+    "niche": "pain",
+    "term": "heated back massager belt",
+    "n": 11,
+    "max": 45200,
+    "median": 841,
+    "total": 79200,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "LNVsLePKt0I",
+        "views": 45200,
+        "title": "What you need to know before you buy the Neck Massager, Electric Neck "
+      },
+      {
+        "id": "rX7_lCyKZPc",
+        "views": 15306,
+        "title": "Hy-Impact Massage Belt"
+      }
+    ]
+  },
+  {
+    "product": "Compression recovery boots",
+    "niche": "recovery",
+    "term": "compression boots recovery",
+    "n": 3,
+    "max": 7868,
+    "median": 4156,
+    "total": 13707,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "q4vzM58bN5A",
+        "views": 7868,
+        "title": "Aquilo - Full Ice and Compression Boots -  How do they work?"
+      },
+      {
+        "id": "HHzoXjOx9os",
+        "views": 4156,
+        "title": "Compression Boots Explained: Recovery Benefits & Why You Should Try Th"
+      }
+    ]
+  },
+  {
+    "product": "Heated shiatsu neck massager",
+    "niche": "recovery",
+    "term": "neck massager",
+    "n": 7,
+    "max": 449491,
+    "median": 45200,
+    "total": 768375,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "65bxc7ncxmE",
+        "views": 449491,
+        "title": "How to Use The Neck and Face Anti Wrinkle Massager | Luxelle Pure Livi"
+      },
+      {
+        "id": "lBcwKmSZN48",
+        "views": 155190,
+        "title": "Neck & Face Massager Review and How To -Electric LED Anti-Aging Device"
+      }
+    ]
+  },
+  {
+    "product": "Foot circulation massager",
+    "niche": "recovery",
+    "term": "foot circulation massager",
+    "n": 8,
+    "max": 268635,
+    "median": 2383,
+    "total": 493706,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "fP4vxsuuyv4",
+        "views": 268635,
+        "title": "Bio-EMS Foot Circulation Massager,  Relax Stiffness Muscles & Relieve "
+      },
+      {
+        "id": "kEbQULkJvDM",
+        "views": 198650,
+        "title": "Getting Started with the REVITIVE Circulation Booster"
+      }
+    ]
+  },
+  {
+    "product": "Contrast therapy foot spa",
+    "niche": "recovery",
+    "term": "foot spa massager",
+    "n": 10,
+    "max": 731896,
+    "median": 26816,
+    "total": 1128386,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "USkpAE0V8Is",
+        "views": 731896,
+        "title": "How to Give a Foot Massage"
+      },
+      {
+        "id": "Aj8ZI0zvGEo",
+        "views": 188493,
+        "title": "Visiq Bubble Foot Spa - Argos Review"
+      }
+    ]
+  },
+  {
+    "product": "Menstrual heat patch belt",
+    "niche": "womens",
+    "term": "period heating pad",
+    "n": 10,
+    "max": 374608,
+    "median": 17990,
+    "total": 824837,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "i7eaAtJ1-ds",
+        "views": 374608,
+        "title": "Menstruation Crustacean Heating Pad | Cuddly Lobster Heating Pad"
+      },
+      {
+        "id": "-A-NNGQgL_0",
+        "views": 251672,
+        "title": "How to Make an Easy Homemade Heating Pad"
+      }
+    ]
+  },
+  {
+    "product": "Breast pump wearable",
+    "niche": "womens",
+    "term": "wearable breast pump",
+    "n": 6,
+    "max": 57097,
+    "median": 23338,
+    "total": 163810,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "Z_rXtqzIWfE",
+        "views": 57097,
+        "title": "The world\u2019s first silent wearable breast pump - Elvie Pump"
+      },
+      {
+        "id": "JFEkQg-FJWA",
+        "views": 48176,
+        "title": "eufy Wearable Breast Pump | Pump Warm for a Better Flow"
+      }
+    ]
+  },
+  {
+    "product": "Menopause cooling neck wrap",
+    "niche": "womens",
+    "term": "cooling neck wrap",
+    "n": 7,
+    "max": 3235,
+    "median": 389,
+    "total": 6858,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "_isXwM-PiIk",
+        "views": 3235,
+        "title": "COLD FACTOR Cooling Neck Wrap"
+      },
+      {
+        "id": "ydlcC3xOWok",
+        "views": 1954,
+        "title": "Stay Cool With Cool Downz\u00ae Neck Wraps"
+      }
+    ]
+  },
+  {
+    "product": "Derma stamp scalp roller",
+    "niche": "hair",
+    "term": "derma stamp hair",
+    "n": 2,
+    "verdict": "WEAK (low-n)",
+    "max": 16200,
+    "median": 11277,
+    "total": 22554,
+    "top": [
+      {
+        "id": "heLd8S80E2I",
+        "views": 16200,
+        "title": "Unlock the secret  with the Bio Needle Adjustable Derma Stamp Micro Ne"
+      },
+      {
+        "id": "NmpxopE4KUE",
+        "views": 6354,
+        "title": "#AskDrJohnWatts | Will using DERMA STAMP improve hair growth? | Hair S"
+      }
+    ]
+  },
+  {
+    "product": "Scalp SPF spray",
+    "niche": "hair",
+    "term": "scalp sunscreen",
+    "n": 7,
+    "max": 2169,
+    "median": 402,
+    "total": 4505,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "AqNJ_vLWBJU",
+        "views": 2169,
+        "title": "Introducing New SPF 50 Sunscreen Scalp & Face"
+      },
+      {
+        "id": "NeMjyGARFkg",
+        "views": 1271,
+        "title": "Sunscreens For Your Scalp: 365 Days of SPF"
+      }
+    ]
+  },
+  {
+    "product": "Hair steamer cap",
+    "niche": "hair",
+    "term": "hair steamer cap",
+    "n": 5,
+    "max": 14150,
+    "median": 1394,
+    "total": 26643,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "irG-6iZobbI",
+        "views": 14150,
+        "title": "How to use a Thermal Heated Hair Cap for Home Spa Steamer Treatment?"
+      },
+      {
+        "id": "XBt86QhmpN4",
+        "views": 9272,
+        "title": "SISWOW Hair Steamer"
+      }
+    ]
+  },
+  {
+    "product": "Scalp exfoliating serum applicator",
+    "niche": "hair",
+    "term": "scalp serum applicator",
+    "n": 11,
+    "max": 13962,
+    "median": 110,
+    "total": 15285,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "tmODvIYt-cI",
+        "views": 13962,
+        "title": "How to use Better Not Younger's Superpower Fortifying Hair & Scalp Ser"
+      },
+      {
+        "id": "v_-zSulRd6s",
+        "views": 542,
+        "title": "Adjustable Microneedle Derma Stamp, Hydra Stamp with Serum Applicator"
+      }
+    ]
+  },
+  {
+    "product": "Beard growth roller",
+    "niche": "mens",
+    "term": "beard roller",
+    "n": 8,
+    "max": 1139765,
+    "median": 72284,
+    "total": 2087292,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "ZR0ItMn_RP8",
+        "views": 1139765,
+        "title": "Minoxidil Beard Growth - 3 Month Transformation - BEFORE and AFTER"
+      },
+      {
+        "id": "MQdUAOhKDwQ",
+        "views": 644140,
+        "title": "How To Use The Derma Roller For Beard Growth | Beard Club"
+      }
+    ]
+  },
+  {
+    "product": "Forearm/grip trainer",
+    "niche": "mens",
+    "term": "grip strengthener",
+    "n": 10,
+    "max": 3765358,
+    "median": 82756,
+    "total": 4801580,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "A8-HlnhMjI0",
+        "views": 3765358,
+        "title": "3 Years Hand Gripper Transformation"
+      },
+      {
+        "id": "YAWTMzZnIM4",
+        "views": 485292,
+        "title": "How to Use Grippers"
+      }
+    ]
+  },
+  {
+    "product": "Breathwork/CO2 trainer",
+    "niche": "nerve",
+    "term": "breathing trainer device",
+    "n": 9,
+    "max": 548502,
+    "median": 30378,
+    "total": 795477,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "nd5U7mDhFi4",
+        "views": 548502,
+        "title": "POWERbreathe - How it works."
+      },
+      {
+        "id": "GJf4St8-raY",
+        "views": 124523,
+        "title": "Does it Make Your Lungs Better? | O2 Trainer Review!"
+      }
+    ]
+  },
+  {
+    "product": "Red light + sound meditation lamp",
+    "niche": "nerve",
+    "term": "meditation light",
+    "n": 1,
+    "verdict": "STRONG (low-n)",
+    "max": 7470744,
+    "median": 7470744,
+    "total": 7470744,
+    "top": [
+      {
+        "id": "thcEuMDWxoI",
+        "views": 7470744,
+        "title": "Meditation Is Easier Than You Think"
+      }
+    ]
+  },
+  {
+    "product": "Biofeedback stress ring",
+    "niche": "nerve",
+    "term": "stress ring",
+    "n": 12,
+    "max": 542983,
+    "median": 1164,
+    "total": 709564,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "lokvnyofrU8",
+        "views": 542983,
+        "title": "FinGears tricks: Magnetic rings"
+      },
+      {
+        "id": "VfXfTHVcyjU",
+        "views": 156321,
+        "title": "Why Platinum Turns Dull Faster Than White Gold"
+      }
+    ]
+  },
+  {
+    "product": "SAD light therapy lamp",
+    "niche": "mood",
+    "term": "light therapy lamp",
+    "n": 5,
+    "max": 123381,
+    "median": 12446,
+    "total": 250781,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "Q2PNfggehgM",
+        "views": 123381,
+        "title": "How Blue Light Therapy Works To Treat Acne"
+      },
+      {
+        "id": "D4peUlUQ3zI",
+        "views": 95472,
+        "title": "Mayo Clinic Minute: Lift your mood with light therapy"
+      }
+    ]
+  },
+  {
+    "product": "Mood tracking journal + prompts",
+    "niche": "mood",
+    "term": "mood journal",
+    "n": 4,
+    "max": 561,
+    "median": 40,
+    "total": 646,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "Sd7MpngIHKI",
+        "views": 561,
+        "title": "If You Feel Overwhelmed, Watch this Before Buying Another Journal. Emo"
+      },
+      {
+        "id": "eAQfo0IEtHE",
+        "views": 76,
+        "title": "Mood Charting for Depression and Bipolar - Learn the Basics and How It"
+      }
+    ]
+  },
+  {
+    "product": "Anxiety weighted lap pad",
+    "niche": "mood",
+    "term": "weighted lap pad",
+    "n": 12,
+    "max": 5615,
+    "median": 152,
+    "total": 8929,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "ylcuddl2o-A",
+        "views": 5615,
+        "title": "Weighted Lap Pad Tutorial"
+      },
+      {
+        "id": "aUHA_E4SZ6s",
+        "views": 1894,
+        "title": "A Weighted Lap Pad that Washes Easily? (Ep. 6 - Weighted Washable Lap "
+      }
+    ]
+  },
+  {
+    "product": "Smart body composition scale",
+    "niche": "metab",
+    "term": "body composition scale",
+    "n": 5,
+    "max": 105130,
+    "median": 22602,
+    "total": 176621,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "7AoOoeNrjCU",
+        "views": 105130,
+        "title": "How to Use Omron Body Composition Scale"
+      },
+      {
+        "id": "NDH03NW9JiI",
+        "views": 35955,
+        "title": "\u2605\u2605\u2605\u2605\u2605 Review: Comparing Doctor's InBody Scale to Renpho for Body Weigh"
+      }
+    ]
+  },
+  {
+    "product": "Food scale nutrition tracker",
+    "niche": "metab",
+    "term": "nutrition food scale",
+    "n": 7,
+    "verdict": "WEAK",
+    "max": 42087,
+    "median": 505,
+    "total": 66931,
+    "top": [
+      {
+        "id": "fTuH_ZgRe3s",
+        "views": 42087,
+        "title": "Etekcity Food Kitchen Smart Scale Review"
+      },
+      {
+        "id": "cJ3064QxtDA",
+        "views": 22503,
+        "title": "Revolutionary Nutrition Label Food Scale | by Greater Goods"
+      }
+    ]
+  },
+  {
+    "product": "Calf/leg elevation wedge",
+    "niche": "metab",
+    "term": "leg elevation pillow",
+    "n": 11,
+    "max": 8163,
+    "median": 348,
+    "total": 16656,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "ApWoiSN0U-M",
+        "views": 8163,
+        "title": "FOVERA Leg Elevation Pillow - Relieves Leg, Hip & Knee Pain, Ideal for"
+      },
+      {
+        "id": "29FMQZOGpT0",
+        "views": 5383,
+        "title": "Lounge Doctor | Elevating Leg Rest"
+      }
+    ]
+  },
+  {
+    "product": "Post-op shower cast cover",
+    "niche": "medical",
+    "term": "cast cover shower",
+    "n": 15,
+    "max": 391089,
+    "median": 2771,
+    "total": 644925,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "ZwjCz8gj82A",
+        "views": 391089,
+        "title": "How to Shower with a Cast or Splint"
+      },
+      {
+        "id": "HmOW2SflyTU",
+        "views": 115768,
+        "title": "Showering or Bathing with Your Splint or Cast"
+      }
+    ]
+  },
+  {
+    "product": "Sock aid + dressing stick",
+    "niche": "medical",
+    "term": "sock aid",
+    "n": 16,
+    "max": 419577,
+    "median": 28293,
+    "total": 1564054,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "Us0bcyyoAaE",
+        "views": 419577,
+        "title": "Using a Sock Aid"
+      },
+      {
+        "id": "yfifUoSTunk",
+        "views": 386294,
+        "title": "Sock Slider - How to Video"
+      }
+    ]
+  },
+  {
+    "product": "Ice therapy shoulder wrap",
+    "niche": "medical",
+    "term": "shoulder ice wrap",
+    "n": 15,
+    "max": 173233,
+    "median": 1043,
+    "total": 233812,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "md8UJveZr-Q",
+        "views": 173233,
+        "title": "Breg Polar Care\u00ae Cold Therapy Shoulder Pad Application"
+      },
+      {
+        "id": "0l1hoye1nfA",
+        "views": 29916,
+        "title": "Shoulder Ice Pack/Cold Wrap Therapy - Rotator Cuff, Tendonitis, Baseba"
+      }
+    ]
+  },
+  {
+    "product": "Leg elevation post-surgery pillow",
+    "niche": "medical",
+    "term": "post surgery leg pillow",
+    "n": 5,
+    "max": 123357,
+    "median": 2596,
+    "total": 212724,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "FsBr4H9inb0",
+        "views": 123357,
+        "title": "How to correctly elevate leg after knee surgery - Patient Education Un"
+      },
+      {
+        "id": "ce1QvbeiFKs",
+        "views": 86459,
+        "title": "Chair height after hip or knee replacement surgery"
+      }
+    ]
+  },
+  {
+    "product": "Lip plumping device",
+    "niche": "beauty",
+    "term": "lip plumper device",
+    "n": 7,
+    "max": 92247,
+    "median": 3331,
+    "total": 174559,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "gpL3PiSVGpc",
+        "views": 92247,
+        "title": "Does This 2-Minute Lip Plump Work?"
+      },
+      {
+        "id": "rlldn18pVkI",
+        "views": 65988,
+        "title": "JuvaLips #1 Lip Plumper Device \ud83d\ude18 Made in USA \ud83c\uddfa\ud83c\uddf8"
+      }
+    ]
+  },
+  {
+    "product": "Eyebrow microblading pen kit",
+    "niche": "beauty",
+    "term": "eyebrow pen",
+    "n": 5,
+    "max": 2886704,
+    "median": 179508,
+    "total": 3523308,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "yXHIDbeQ9K8",
+        "views": 2886704,
+        "title": "30 Years of Brow Innovation | MicroStroke Brow Pen by Anastasia Beverl"
+      },
+      {
+        "id": "RblQpdSmNx4",
+        "views": 357277,
+        "title": "Sculpt your brows like never before | REN\u00c9E Cosmetics"
+      }
+    ]
+  },
+  {
+    "product": "Hair removal IPL device",
+    "niche": "beauty",
+    "term": "ipl hair removal",
+    "n": 3,
+    "max": 1109926,
+    "median": 162568,
+    "total": 1333385,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "ug9me3cAR1E",
+        "views": 1109926,
+        "title": "Premier Laser Clinic - How laser hair removal works"
+      },
+      {
+        "id": "FHR-N4RmGbU",
+        "views": 162568,
+        "title": "HOW TO | IPL LASER HAIR REMOVAL AT HOME! | LANVEZA"
+      }
+    ]
+  },
+  {
+    "product": "LED teeth whitening kit",
+    "niche": "oral",
+    "term": "teeth whitening kit",
+    "n": 5,
+    "max": 435657,
+    "median": 55473,
+    "total": 556924,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "q_P2p0nBGRA",
+        "views": 435657,
+        "title": "Teeth Whitening With Laser | Fastest & Safest way"
+      },
+      {
+        "id": "soUnsoOPnn8",
+        "views": 60998,
+        "title": "What A REALISTIC Teeth Whitening Result Looks Like!"
+      }
+    ]
+  },
+  {
+    "product": "Teeth-grinding night guard",
+    "niche": "oral",
+    "term": "night guard teeth grinding",
+    "n": 3,
+    "max": 353978,
+    "median": 166282,
+    "total": 633535,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "1pD9QtZQHyk",
+        "views": 353978,
+        "title": "How To Fit Your DenTek Professional Fit Dental Guard"
+      },
+      {
+        "id": "R12FYIeKVyw",
+        "views": 166282,
+        "title": "Night Guard for teeth \ud83d\udee1\ufe0f -How it's made and fitted."
+      }
+    ]
+  },
+  {
+    "product": "Heated eye mask",
+    "niche": "eyes",
+    "term": "heated eye mask",
+    "n": 5,
+    "max": 75348,
+    "median": 3264,
+    "total": 87762,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "hv9V7Sv9xWs",
+        "views": 75348,
+        "title": "Bruder Moist Heat Eye Compress"
+      },
+      {
+        "id": "vihZMr0MsMY",
+        "views": 5859,
+        "title": "Beat Dry Eyes Fast: How a Heated Eye Mask Melts Oil Blocked in Meibomi"
+      }
+    ]
+  },
+  {
+    "product": "Ear wax removal camera tool",
+    "niche": "ear",
+    "term": "ear wax removal camera",
+    "n": 9,
+    "max": 3812618,
+    "median": 124634,
+    "total": 5602473,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "kWjSfG02giM",
+        "views": 3812618,
+        "title": "Ear wax removal"
+      },
+      {
+        "id": "PNYgaK_LMwg",
+        "views": 1278166,
+        "title": "Ear Doctor teaches Ear Wax Removal - Doctor Sina"
+      }
+    ]
+  },
+  {
+    "product": "Musician ear plugs",
+    "niche": "ear",
+    "term": "musician ear plugs",
+    "n": 15,
+    "max": 53504,
+    "median": 9328,
+    "total": 235988,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "ZZBJ2JL9FhI",
+        "views": 53504,
+        "title": "EARasers Musicians Earplugs Inserting Instructions / Hearing Protectio"
+      },
+      {
+        "id": "RazdvU1tYJ4",
+        "views": 46083,
+        "title": "How to Insert and Remove Eargasm Earplugs"
+      }
+    ]
+  },
+  {
+    "product": "Ear dryer for swimmers",
+    "niche": "ear",
+    "term": "ear dryer",
+    "n": 15,
+    "max": 1080061,
+    "median": 7344,
+    "total": 2413022,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "c3usO0CccWE",
+        "views": 1080061,
+        "title": "Ear Problems & Infections : How to Drain Liquid From Behind the Ear Dr"
+      },
+      {
+        "id": "iXoE_ea9Y-o",
+        "views": 405368,
+        "title": "Swimmers Ear"
+      }
+    ]
+  },
+  {
+    "product": "Kids noise-cancelling earmuffs",
+    "niche": "ear",
+    "term": "kids ear defenders",
+    "n": 9,
+    "max": 7183,
+    "median": 1682,
+    "total": 27217,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "ZQGnAYqS70s",
+        "views": 7183,
+        "title": "WALKERS CHILDREN'S EAR PROTECTION OVERVIEW"
+      },
+      {
+        "id": "Twwwg919ViQ",
+        "views": 6671,
+        "title": "The BEST Kid's Hearing Protection? (Dr Meter Kids Ear Muff REVIEW)"
+      }
+    ]
+  },
+  {
+    "product": "Nasal irrigation system",
+    "niche": "allergy",
+    "term": "nasal irrigation",
+    "n": 6,
+    "max": 10700704,
+    "median": 1248774,
+    "total": 19189241,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "4f6WOib_pnw",
+        "views": 10700704,
+        "title": "Can Saline Irrigation Help Nasal Allergies? Animated Guide to Saline N"
+      },
+      {
+        "id": "IpTVVwEny30",
+        "views": 5223851,
+        "title": "Sinus Rinse Animation"
+      }
+    ]
+  },
+  {
+    "product": "Dust mite mattress encasement",
+    "niche": "allergy",
+    "term": "dust mite mattress cover",
+    "n": 15,
+    "max": 79722,
+    "median": 302,
+    "total": 97287,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "9T8qNAMb2YA",
+        "views": 79722,
+        "title": "Reducing dust mites"
+      },
+      {
+        "id": "e_vBBccJXWY",
+        "views": 5282,
+        "title": "How To Put A Dust Mite Cover On Your Mattress - AllergyStore.Com"
+      }
+    ]
+  },
+  {
+    "product": "Steam inhaler",
+    "niche": "allergy",
+    "term": "steam inhaler",
+    "n": 11,
+    "max": 260288,
+    "median": 22635,
+    "total": 703273,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "WqIGAJR5mJ4",
+        "views": 260288,
+        "title": "Vicks Sinus Inhaler VIH200 - Features"
+      },
+      {
+        "id": "dt6Mcxl9U00",
+        "views": 135735,
+        "title": "Medtech Life - Steam Inhaler - Product Demo"
+      }
+    ]
+  },
+  {
+    "product": "Heated abdominal belt",
+    "niche": "gut",
+    "term": "heating pad belt",
+    "n": 9,
+    "max": 122497,
+    "median": 1293,
+    "total": 187684,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "asXigPvEfEg",
+        "views": 122497,
+        "title": "Best Electric Heating Pads for Back Pain\ud83d\udd25Best Heating Belt For Back Pa"
+      },
+      {
+        "id": "PkOVk2h4p4A",
+        "views": 35387,
+        "title": "\"Best electric heating pad for back pain \ud83d\udd25 Best heating belt for back "
+      }
+    ]
+  },
+  {
+    "product": "Posture + core breathing trainer",
+    "niche": "gut",
+    "term": "breathing exerciser",
+    "n": 6,
+    "max": 1181472,
+    "median": 143847,
+    "total": 2003401,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "y3LUlag7W1s",
+        "views": 1181472,
+        "title": "Proper Breathing Exercise to Strengthen Lungs to Keep Healthy - Dr Man"
+      },
+      {
+        "id": "eZBa63NZbbE",
+        "views": 374885,
+        "title": "Breathing exercise for stress and anxiety"
+      }
+    ]
+  },
+  {
+    "product": "Bed rail assist handle",
+    "niche": "senior",
+    "term": "bed rail for elderly",
+    "n": 10,
+    "max": 36196,
+    "median": 4926,
+    "total": 83476,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "7seckNviPuo",
+        "views": 36196,
+        "title": "Bed Rail Safety Assist Handle Bed Railing for Elderly & Seniors, Adult"
+      },
+      {
+        "id": "E-7lVdNUELs",
+        "views": 14267,
+        "title": "Bedside Safety Handle And Pouch - Bed Rails For Elderly"
+      }
+    ]
+  },
+  {
+    "product": "Shower grab bar suction",
+    "niche": "senior",
+    "term": "suction grab bar",
+    "n": 12,
+    "max": 57481,
+    "median": 1368,
+    "total": 120262,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "2ZTCIHKCV_s",
+        "views": 57481,
+        "title": "Triple Suction Grab Bar Reviewed"
+      },
+      {
+        "id": "mSR5jID5-OU",
+        "views": 42751,
+        "title": "How To Install A Suction Cup Grab Bar - Ace Hardware"
+      }
+    ]
+  },
+  {
+    "product": "Adjustable kettlebell",
+    "niche": "fit",
+    "term": "adjustable kettlebell",
+    "n": 3,
+    "max": 7443,
+    "median": 812,
+    "total": 9039,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "fYuP3X1VoDg",
+        "views": 7443,
+        "title": "40 lb Adjustable Kettlebell | Titan Fitness"
+      },
+      {
+        "id": "H_QfV27tKfk",
+        "views": 812,
+        "title": "Polyfit Adjustable Kettlebell For Home Workouts - 30, 40, & 50 LBS"
+      }
+    ]
+  },
+  {
+    "product": "Resistance band door anchor system",
+    "niche": "fit",
+    "term": "resistance bands door anchor",
+    "n": 8,
+    "max": 153624,
+    "median": 17286,
+    "total": 269351,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "8hAAN2JO5rM",
+        "views": 153624,
+        "title": "TRX Door Anchor Set Up"
+      },
+      {
+        "id": "WEbwuvs3l2A",
+        "views": 42809,
+        "title": "Door Anchor Strap Resistance Bands Set, Multi Point Door Anchor Exerci"
+      }
+    ]
+  },
+  {
+    "product": "Balance board trainer",
+    "niche": "fit",
+    "term": "balance board",
+    "n": 12,
+    "max": 1216122,
+    "median": 7217,
+    "total": 1398106,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "_sKkJtXcWSQ",
+        "views": 1216122,
+        "title": "Balance Board Tricks - Training | Bredder"
+      },
+      {
+        "id": "Lx5ykCjizpk",
+        "views": 62085,
+        "title": "How to use a Therapy in Motion Balance Wobble Board"
+      }
+    ]
+  },
+  {
+    "product": "Golf swing tempo trainer",
+    "niche": "sport",
+    "term": "golf swing trainer",
+    "n": 6,
+    "max": 73878,
+    "median": 21780,
+    "total": 193356,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "NuLtVE3yuw4",
+        "views": 73878,
+        "title": "Masters Golf - Warm Up Swing And Grip Trainer (PE042)"
+      },
+      {
+        "id": "Ccjv6VsR-qE",
+        "views": 63294,
+        "title": "Haydn Reay demos the Sure-Set Golf Training Aid"
+      }
+    ]
+  },
+  {
+    "product": "Running gait sensor insole",
+    "niche": "sport",
+    "term": "running insole sensor",
+    "n": 13,
+    "max": 5955,
+    "median": 1414,
+    "total": 27115,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "N3BQ4E2EFSo",
+        "views": 5955,
+        "title": "Insoles with foot pressure sensors (FSR)"
+      },
+      {
+        "id": "zhlQbatUo8g",
+        "views": 5486,
+        "title": "Sensor Insole"
+      }
+    ]
+  },
+  {
+    "product": "Climbing hangboard portable",
+    "niche": "sport",
+    "term": "portable hangboard",
+    "n": 10,
+    "max": 357221,
+    "median": 10170,
+    "total": 602818,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "Cu-MrncHpJo",
+        "views": 357221,
+        "title": "How to Install a Portable Hangboard with Zero Damage to Your Wall"
+      },
+      {
+        "id": "Tw2hQllnWDc",
+        "views": 171910,
+        "title": "GRAVITYstick - a portable hangboard | DUDES vs GRAVITY"
+      }
+    ]
+  },
+  {
+    "product": "Ski/snowboard boot dryer",
+    "niche": "sport",
+    "term": "boot dryer",
+    "n": 7,
+    "max": 61135,
+    "median": 5174,
+    "total": 91493,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "iWGe5LVXtbU",
+        "views": 61135,
+        "title": "DIY Boot Dryer | REI"
+      },
+      {
+        "id": "tvBbhvCz3Rw",
+        "views": 16552,
+        "title": "ISPO 2019 - Therm-ic Refresher Shoe & Boot Dryer Review"
+      }
+    ]
+  },
+  {
+    "product": "Pomodoro focus timer cube",
+    "niche": "focus",
+    "term": "pomodoro timer",
+    "n": 2,
+    "verdict": "WEAK (low-n)",
+    "max": 5229,
+    "median": 2618,
+    "total": 5237,
+    "top": [
+      {
+        "id": "b00xEEp0pvk",
+        "views": 5229,
+        "title": "TK3 Pomodoro Timer Cube Review | Simple Desk Gadget That Boosts Produc"
+      },
+      {
+        "id": "ZqMaWxUfrh4",
+        "views": 8,
+        "title": "I Tried Pomodoro Technique for 30 Days Here's What Happened"
+      }
+    ]
+  },
+  {
+    "product": "Phone lockbox timer",
+    "niche": "focus",
+    "term": "phone lock box",
+    "n": 4,
+    "max": 615783,
+    "median": 985,
+    "total": 617988,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "CNx1lA2eMYg",
+        "views": 615783,
+        "title": "[1440] Pocket EMP vs. Smartphone Timer Lockbox"
+      },
+      {
+        "id": "FTFxSMSHgsc",
+        "views": 1733,
+        "title": "Mindsight Timed Lock Box Review \u2013 Boost Your Mental Wellness"
+      }
+    ]
+  },
+  {
+    "product": "Noise-masking desk speaker",
+    "niche": "focus",
+    "term": "white noise machine office",
+    "n": 5,
+    "max": 106000,
+    "median": 152,
+    "total": 166788,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "PcVVg3bJt0Y",
+        "views": 106000,
+        "title": "Are white noise machines effective?"
+      },
+      {
+        "id": "9fXqhfGjFsc",
+        "views": 60614,
+        "title": "How effective are white noise machines?"
+      }
+    ]
+  },
+  {
+    "product": "Dehumidifier compact",
+    "niche": "home",
+    "term": "small dehumidifier",
+    "n": 6,
+    "max": 126842,
+    "median": 12485,
+    "total": 268845,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "erUSYGz-VWg",
+        "views": 126842,
+        "title": "Dehumidifier for Basement or laundry room - What you should know."
+      },
+      {
+        "id": "iD9bIGOAQNU",
+        "views": 112254,
+        "title": "Does A Dehumidifier Cool Or Warm A Room?"
+      }
+    ]
+  },
+  {
+    "product": "Wireless portable humidifier",
+    "niche": "home",
+    "term": "portable humidifier",
+    "n": 5,
+    "max": 497436,
+    "median": 3996,
+    "total": 567282,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "Opba8K_5cY4",
+        "views": 497436,
+        "title": "Vicks Filter-Free Ultrasonic Cool Mist Humidifier V4600 - Getting Star"
+      },
+      {
+        "id": "IWajg5E_pgs",
+        "views": 63490,
+        "title": "Mini Air Cooler Mini Portable Air Conditioner, Humidifier, Purifier | "
+      }
+    ]
+  },
+  {
+    "product": "Steam cleaner handheld",
+    "niche": "home",
+    "term": "handheld steam cleaner",
+    "n": 4,
+    "max": 15295,
+    "median": 8888,
+    "total": 34618,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "vgtIxQCW38Q",
+        "views": 15295,
+        "title": "Steam Shot\u2122 OmniReach\u2122Handheld Steam Cleaner & Sanitizer | Feature Ove"
+      },
+      {
+        "id": "1g6BXNQSHzM",
+        "views": 14703,
+        "title": "Beldray Handheld Steam Cleaner"
+      }
+    ]
+  },
+  {
+    "product": "Mattress vacuum UV",
+    "niche": "home",
+    "term": "mattress vacuum",
+    "n": 8,
+    "max": 20424,
+    "median": 473,
+    "total": 37432,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "f0vdLnkoEbM",
+        "views": 20424,
+        "title": "Does it SUCK? - Jimmy BX7 Pro is AMAZING for Hidden Dust! #vacuum #dus"
+      },
+      {
+        "id": "see-g9lehso",
+        "views": 14699,
+        "title": "Dyson vacuum cleans a mattress!"
+      }
+    ]
+  },
+  {
+    "product": "Hand therapy putty + grip kit",
+    "niche": "nails",
+    "term": "therapy putty",
+    "n": 5,
+    "max": 4572,
+    "median": 552,
+    "total": 7758,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "3rw7w9qKxyE",
+        "views": 4572,
+        "title": "Therapy Putty Hand Strength Exercises"
+      },
+      {
+        "id": "4yGwFHxQ_2E",
+        "views": 1844,
+        "title": "Stroke, Hand 105, Putty"
+      }
+    ]
+  },
+  {
+    "product": "Truck driver lumbar cushion",
+    "niche": "work",
+    "term": "lumbar support cushion car",
+    "n": 13,
+    "max": 23250,
+    "median": 1418,
+    "total": 44561,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "3QEKJG5pujA",
+        "views": 23250,
+        "title": "McCarty's Sacro-Ease Auto Back Support | Relax The Back"
+      },
+      {
+        "id": "xRcjSlgD8F8",
+        "views": 6608,
+        "title": "SAMSONITE - Lumbar Support Pillow Review"
+      }
+    ]
+  },
+  {
+    "product": "Teleprompter phone rig",
+    "niche": "creator",
+    "term": "teleprompter for phone",
+    "n": 6,
+    "max": 10751,
+    "median": 2528,
+    "total": 26061,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "lVXvSbSn8RI",
+        "views": 10751,
+        "title": "RECOMMENDED: The Best Mobile Teleprompter for iPhone or Android"
+      },
+      {
+        "id": "_YtkzS3j_50",
+        "views": 9078,
+        "title": "Simple tip: Using Teleprompter and iPhone for Interviews"
+      }
+    ]
+  },
+  {
+    "product": "Lavalier wireless mic",
+    "niche": "creator",
+    "term": "wireless lavalier mic",
+    "n": 3,
+    "max": 118103,
+    "median": 1586,
+    "total": 120301,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "0WZuFzZN_lI",
+        "views": 118103,
+        "title": "Step by step instructions Wireless Lavalier Microphone For Phone Andro"
+      },
+      {
+        "id": "8ZPu9fINuz8",
+        "views": 1586,
+        "title": "No Bluetooth? No Problem! Testing the WARM BOX Wireless Lavalier Mic \ud83c\udfa7"
+      }
+    ]
+  },
+  {
+    "product": "Pet deshedding vacuum attachment",
+    "niche": "pet",
+    "term": "pet grooming vacuum",
+    "n": 5,
+    "max": 12173,
+    "median": 7456,
+    "total": 33349,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "8zXGKJDS3M8",
+        "views": 12173,
+        "title": "Why this pet groomer kit is amazing: Simple Way Pet Grooming Vacuum"
+      },
+      {
+        "id": "mlaM3YtuHq8",
+        "views": 10392,
+        "title": "FurMe Grooming Vacuum Kits | Our Point Of View"
+      }
+    ]
+  },
+  {
+    "product": "Pet stroller",
+    "niche": "pet",
+    "term": "pet stroller",
+    "n": 7,
+    "max": 14956,
+    "median": 3249,
+    "total": 40862,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "dHxC6x_CNV0",
+        "views": 14956,
+        "title": "This stroller helps an aging dog go on adventures with his owner"
+      },
+      {
+        "id": "BBPXGgjfHwM",
+        "views": 13195,
+        "title": "The ULTIMATE Big Dog Stroller | Built-In Ramp For Dogs Up to 133lbs! |"
+      }
+    ]
+  },
+  {
+    "product": "Under-desk treadmill",
+    "niche": "desk",
+    "term": "under desk treadmill",
+    "n": 7,
+    "max": 7850616,
+    "median": 48726,
+    "total": 8510513,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "Uuw-7RAk-EE",
+        "views": 7850616,
+        "title": "HomeFitnessCode -  2 in 1 Folding Treadmill 1-10km/h, Under Desk Tread"
+      },
+      {
+        "id": "6Jcd5XV4VL8",
+        "views": 460019,
+        "title": "We Tried A Treadmill Desk Because Sitting At Work Is Killing Us"
+      }
+    ]
+  },
+  {
+    "product": "Food dehydrator",
+    "niche": "kitchen",
+    "term": "food dehydrator",
+    "n": 6,
+    "max": 277070,
+    "median": 3558,
+    "total": 306773,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "9DSGcVhjHEc",
+        "views": 277070,
+        "title": "How to use \u2022 Food Dehydrator FDK 500GCW \u2022 Gorenje"
+      },
+      {
+        "id": "Kdg-bdvTQ_0",
+        "views": 18124,
+        "title": "LT-91 Commercial Food Dehydrator"
+      }
+    ]
+  },
+  {
+    "product": "Kitchen composter electric",
+    "niche": "kitchen",
+    "term": "electric composter",
+    "n": 4,
+    "max": 4947,
+    "median": 223,
+    "total": 5495,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "UFbTitjB-GU",
+        "views": 4947,
+        "title": "4L Larger Capacity Electric Kitchen Composter,Smart Compost Bin Indoor"
+      },
+      {
+        "id": "iukcNeu94Z8",
+        "views": 263,
+        "title": "Up Close Look at Upgraded 2026 Electric Composter"
+      }
+    ]
+  },
+  {
+    "product": "Garden kneeler seat",
+    "niche": "garden",
+    "term": "garden kneeler",
+    "n": 11,
+    "max": 29434,
+    "median": 199,
+    "total": 31874,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "IgDHykW2hB0",
+        "views": 29434,
+        "title": "A Closer Look at the Garden Kneeler | Gardener's Supply"
+      },
+      {
+        "id": "JtbCDZN5UZ4",
+        "views": 760,
+        "title": "Home2Garden - Kneeling Pad"
+      }
+    ]
+  },
+  {
+    "product": "Soil moisture/pH meter",
+    "niche": "garden",
+    "term": "soil ph meter",
+    "n": 11,
+    "max": 22542,
+    "median": 6057,
+    "total": 99100,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "116lgbXTKi4",
+        "views": 22542,
+        "title": "Soil pH and Moisture Meter (Analog)"
+      },
+      {
+        "id": "jyvHsH7yTu8",
+        "views": 21157,
+        "title": "How to test soil ph easy tips to better garden"
+      }
+    ]
+  },
+  {
+    "product": "Electric weed burner",
+    "niche": "garden",
+    "term": "weed burner",
+    "n": 7,
+    "max": 56426,
+    "median": 29675,
+    "total": 219348,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "FRudUZfoU7g",
+        "views": 56426,
+        "title": "Flame King Heavy Duty Propane Torch Weed Burner 500,000 BTU Flint Push"
+      },
+      {
+        "id": "kPG23_BfDfQ",
+        "views": 53613,
+        "title": "Gas Weed Burner In Use"
+      }
+    ]
+  },
+  {
+    "product": "Hose splitter smart timer",
+    "niche": "garden",
+    "term": "hose timer",
+    "n": 8,
+    "max": 302941,
+    "median": 2442,
+    "total": 354245,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "B7o_O7d8fAI",
+        "views": 302941,
+        "title": "Rain Bird Electronic Garden Hose Sprinkler Timer"
+      },
+      {
+        "id": "tbZZ5tXmyy8",
+        "views": 33629,
+        "title": "Orbit Mechanical Hose Timer  62034"
+      }
+    ]
+  },
+  {
+    "product": "Automatic chicken coop door",
+    "niche": "home2",
+    "term": "automatic chicken door",
+    "n": 3,
+    "max": 11040,
+    "median": 4513,
+    "total": 16229,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "-IaUICkVQss",
+        "views": 11040,
+        "title": "Solar Powered Automatic Chicken Coop Door - Install & Review"
+      },
+      {
+        "id": "VX_Fi_fEWV0",
+        "views": 4513,
+        "title": "Run Chicken Automatic Door Review | Reliable & Easy to Install!"
+      }
+    ]
+  },
+  {
+    "product": "Water storage + filter kit",
+    "niche": "home2",
+    "term": "emergency water filter",
+    "n": 5,
+    "max": 41152,
+    "median": 1926,
+    "total": 51620,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "c8krh-WDst0",
+        "views": 41152,
+        "title": "LifeStraw: The Original Water Filter Straw"
+      },
+      {
+        "id": "LHlS5yw0YDc",
+        "views": 6999,
+        "title": "Every Household Needs This! High Capacity Emergency Survival Water Str"
+      }
+    ]
+  },
+  {
+    "product": "Seed starting heat mat",
+    "niche": "home2",
+    "term": "seedling heat mat",
+    "n": 4,
+    "max": 353443,
+    "median": 1345,
+    "total": 356420,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "6ICXJ90Ueh4",
+        "views": 353443,
+        "title": "How to use the VIVOSUN heat mat?"
+      },
+      {
+        "id": "qOnQNotTpBo",
+        "views": 1680,
+        "title": "Lumanux Seed Propagating Seedling Heating Mat - 10\"x20\""
+      }
+    ]
+  },
+  {
+    "product": "Solar generator panel kit",
+    "niche": "home2",
+    "term": "solar generator",
+    "n": 1,
+    "verdict": "MODERATE (low-n)",
+    "max": 67632,
+    "median": 67632,
+    "total": 67632,
+    "top": [
+      {
+        "id": "-FABqWw3jFg",
+        "views": 67632,
+        "title": "How To Use EcoFlow Portable Solar Panels"
+      }
+    ]
+  },
+  {
+    "product": "RV tank level monitor",
+    "niche": "rv",
+    "term": "rv tank monitor",
+    "n": 6,
+    "max": 124214,
+    "median": 2222,
+    "total": 141395,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "0PXDzDxY5hA",
+        "views": 124214,
+        "title": "12. How to operate a RV Monitor Panel"
+      },
+      {
+        "id": "ELgW5y10WuM",
+        "views": 12170,
+        "title": "STAR-tank Battery Bluetooth saves Installation costs links Victron GX "
+      }
+    ]
+  },
+  {
+    "product": "Van life diesel heater",
+    "niche": "rv",
+    "term": "diesel heater van",
+    "n": 4,
+    "max": 313038,
+    "median": 203288,
+    "total": 733752,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "_dAIzvh4IaQ",
+        "views": 313038,
+        "title": "Chinese diesel heater controller functions - A quick guide"
+      },
+      {
+        "id": "AQjEEzKeSt8",
+        "views": 260752,
+        "title": "5 Things you need to know about diesel heaters"
+      }
+    ]
+  },
+  {
+    "product": "Portable compost toilet",
+    "niche": "rv",
+    "term": "composting toilet",
+    "n": 8,
+    "max": 176925,
+    "median": 24849,
+    "total": 429087,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "rmZKxXG_U8k",
+        "views": 176925,
+        "title": "Composting Toilets: How do they work?"
+      },
+      {
+        "id": "JQU7lvBpTOw",
+        "views": 95411,
+        "title": "Easy & Elegant DIY COMPOSTING TOILET - Better Than the Expensive Ones!"
+      }
+    ]
+  },
+  {
+    "product": "12V portable fridge",
+    "niche": "rv",
+    "term": "12v fridge",
+    "n": 4,
+    "max": 62576,
+    "median": 38474,
+    "total": 140930,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "QUHwxxwNuOQ",
+        "views": 62576,
+        "title": "Everchill 12V Fridge Time-lapse Battery Test"
+      },
+      {
+        "id": "AhQ6PrNssYM",
+        "views": 60513,
+        "title": "Watch This Before Buying a Portable Fridge | BougeRV 23QT"
+      }
+    ]
+  },
+  {
+    "product": "Motorcycle bluetooth helmet intercom",
+    "niche": "moto",
+    "term": "motorcycle bluetooth headset",
+    "n": 3,
+    "max": 656653,
+    "median": 32021,
+    "total": 715418,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "Y7TjsIGTLz8",
+        "views": 656653,
+        "title": "Full face helmet installation KY-PRO/ FreedConn Motorcycle Bluetooth I"
+      },
+      {
+        "id": "vpZBoMm4SZA",
+        "views": 32021,
+        "title": "XGP Motorcycle Bluetooth Headset Helmet Installation"
+      }
+    ]
+  },
+  {
+    "product": "Bike seat pressure-relief saddle",
+    "niche": "moto",
+    "term": "comfort bike saddle",
+    "n": 4,
+    "max": 274444,
+    "median": 67129,
+    "total": 418543,
+    "verdict": "GOOD",
+    "top": [
+      {
+        "id": "f3UaHAyUI4Q",
+        "views": 274444,
+        "title": "Introducing vabsRider bike seat by ataraxyBSC"
+      },
+      {
+        "id": "K6Wz9BUy428",
+        "views": 100901,
+        "title": "The Bikeroo Oversized Bike Seat is the most COMFORTABLE bicycle seat I"
+      }
+    ]
+  },
+  {
+    "product": "Silent practice drum pad set",
+    "niche": "music",
+    "term": "practice drum pad",
+    "n": 6,
+    "max": 6410118,
+    "median": 49064,
+    "total": 6592306,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "8ilwDR0ttyM",
+        "views": 6410118,
+        "title": "10 year old drummer -Darius riles practices Paradiddles on his drum pa"
+      },
+      {
+        "id": "-0-zXyZi1JQ",
+        "views": 71669,
+        "title": "TAMA True Touch Training Kit -#1"
+      }
+    ]
+  },
+  {
+    "product": "Vocal steam inhaler",
+    "niche": "music",
+    "term": "vocal steamer",
+    "n": 3,
+    "max": 25343,
+    "median": 18092,
+    "total": 44054,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "O-4vOvhA4fY",
+        "views": 25343,
+        "title": "How To Use Your VocalMist"
+      },
+      {
+        "id": "CHsJDAak4Yw",
+        "views": 18092,
+        "title": "MABIS Facial Steamer, Steam Inhaler, Vaporizer or Vocal Steamer with A"
+      }
+    ]
+  },
+  {
+    "product": "3D printer filament dryer",
+    "niche": "maker",
+    "term": "filament dryer",
+    "n": 3,
+    "max": 94612,
+    "median": 8825,
+    "total": 104136,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "koFBnmyTioQ",
+        "views": 94612,
+        "title": "How to quickly check if you PLA filament is wet"
+      },
+      {
+        "id": "yCtQHF8-SV8",
+        "views": 8825,
+        "title": "Creality Space Pi Filament Dryer - The Complete Walkthrough"
+      }
+    ]
+  },
+  {
+    "product": "Airbrush cleaning station",
+    "niche": "maker",
+    "term": "airbrush cleaning pot",
+    "n": 5,
+    "max": 107464,
+    "median": 3492,
+    "total": 152674,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "LbtTseEjE_g",
+        "views": 107464,
+        "title": "Using the Creative Air Airbrush Cleaning Pot"
+      },
+      {
+        "id": "zKWl586i9S4",
+        "views": 38314,
+        "title": "How to Clean Your Airbrush in 2 Minutes"
+      }
+    ]
+  },
+  {
+    "product": "Aquarium auto water changer",
+    "niche": "aqua",
+    "term": "aquarium water changer",
+    "n": 7,
+    "max": 60280,
+    "median": 13107,
+    "total": 161001,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "7OG7tHC7Qh4",
+        "views": 60280,
+        "title": "Red Sea Reefer pt9: How to do a Water Change on a Nano Aquarium"
+      },
+      {
+        "id": "bZqGsONKb8s",
+        "views": 44650,
+        "title": "How to use a Water Changer and Siphon"
+      }
+    ]
+  },
+  {
+    "product": "Reptile thermostat controller",
+    "niche": "aqua",
+    "term": "reptile thermostat",
+    "n": 4,
+    "max": 26616,
+    "median": 2675,
+    "total": 33437,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "P8ey3ReXLmw",
+        "views": 26616,
+        "title": "Thermostat probe placement"
+      },
+      {
+        "id": "_r-hLkxskc0",
+        "views": 3764,
+        "title": "ReptiTemp\u00ae Dimming Thermostat"
+      }
+    ]
+  },
+  {
+    "product": "Smart water leak sensor",
+    "niche": "security",
+    "term": "water leak detector",
+    "n": 12,
+    "verdict": "MODERATE",
+    "max": 199995,
+    "median": 7628,
+    "total": 389662,
+    "top": [
+      {
+        "id": "vv4NAdCUUp4",
+        "views": 199995,
+        "title": "Leak Detection with the D-Tect 200 C Professional"
+      },
+      {
+        "id": "7BdAR76gbYo",
+        "views": 85346,
+        "title": "Bucket Test For Pool Leaks Detection"
+      }
+    ]
+  },
+  {
+    "product": "Window vibration alarm",
+    "niche": "security",
+    "term": "window alarm",
+    "n": 6,
+    "max": 96660,
+    "median": 12744,
+    "total": 198748,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "sxTTYneg4B4",
+        "views": 96660,
+        "title": "Wireless door, window entry alarm"
+      },
+      {
+        "id": "ZIW-FgmHlhw",
+        "views": 65614,
+        "title": "GE Personal Security Window/Door Alarm"
+      }
+    ]
+  },
+  {
+    "product": "Pilates reformer bar home",
+    "niche": "yoga",
+    "term": "pilates bar home",
+    "n": 8,
+    "verdict": "GOOD",
+    "max": 349339,
+    "median": 1104,
+    "total": 429613,
+    "top": [
+      {
+        "id": "B5qekyoZoh0",
+        "views": 349339,
+        "title": "The Pilates Board: Worth the Hype?"
+      },
+      {
+        "id": "1nB6pdTf6DU",
+        "views": 75360,
+        "title": "The Official Multifunctional Pilates Bar"
+      }
+    ]
+  },
+  {
+    "product": "Splits/flexibility trainer",
+    "niche": "yoga",
+    "term": "leg stretcher machine",
+    "n": 6,
+    "max": 42417,
+    "median": 8061,
+    "total": 83404,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "X6zQ26_6uAQ",
+        "views": 42417,
+        "title": "The Century Martial Arts Versa Flex System..."
+      },
+      {
+        "id": "7YfgrKSK1UU",
+        "views": 22855,
+        "title": "Are Leg Stretchers Useful To Learn the Split? & Ripping out of my PANT"
+      }
+    ]
+  },
+  {
+    "product": "Spaced repetition flashcard box",
+    "niche": "learn",
+    "term": "flashcard box",
+    "n": 9,
+    "max": 216705,
+    "median": 301,
+    "total": 320254,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "C20EvKtdJwQ",
+        "views": 216705,
+        "title": "How to study flashcards using the Leitner system"
+      },
+      {
+        "id": "uvF1XuseZFE",
+        "views": 100706,
+        "title": "The Leitner Box\u2014How to Remember Anything Forever"
+      }
+    ]
+  },
+  {
+    "product": "Toddler step stool foldable",
+    "niche": "baby2",
+    "term": "toddler step stool",
+    "n": 14,
+    "max": 17797,
+    "median": 137,
+    "total": 21033,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "jO3yLI0DU90",
+        "views": 17797,
+        "title": "ECR4Kids Hardwood Folding Step Stool"
+      },
+      {
+        "id": "udGAhTUD-XA",
+        "views": 741,
+        "title": "Foldable Kitchen Step Stool Assembly Instruction"
+      }
+    ]
+  },
+  {
+    "product": "Ultrasonic cleaner",
+    "niche": "clean2",
+    "term": "ultrasonic cleaner",
+    "n": 6,
+    "max": 160237,
+    "median": 57804,
+    "total": 413047,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "hutlNVgq2Jg",
+        "views": 160237,
+        "title": "Ultrasonic cleaning - underwater view"
+      },
+      {
+        "id": "7SGIcG1QJAA",
+        "views": 98113,
+        "title": "How to test your ultrasonic cleaner efficiency"
+      }
+    ]
+  },
+  {
+    "product": "Tyre inflator portable",
+    "niche": "car",
+    "term": "portable tire inflator",
+    "n": 5,
+    "max": 88681,
+    "median": 13283,
+    "total": 130727,
+    "verdict": "MODERATE",
+    "top": [
+      {
+        "id": "_6TSYjUR1u4",
+        "views": 88681,
+        "title": "Does a Portable Tire Inflator Actually Work?"
+      },
+      {
+        "id": "ZJPXessz6p0",
+        "views": 21249,
+        "title": "This Portable Tire Inflator is the easiest way to pump up your tires!"
+      }
+    ]
+  },
+  {
+    "product": "Portable power station",
+    "niche": "outdoor",
+    "term": "portable power station",
+    "n": 2,
+    "verdict": "GOOD (low-n)",
+    "max": 414814,
+    "median": 211545,
+    "total": 423090,
+    "top": [
+      {
+        "id": "uo5aOWS_XCE",
+        "views": 414814,
+        "title": "DELTA 2 Tutorials - How to Use DELTA 2"
+      },
+      {
+        "id": "BuR-2el2KQo",
+        "views": 8276,
+        "title": "150W lead-acid portable Power Station"
+      }
+    ]
+  },
+  {
+    "product": "Diamond painting kit",
+    "niche": "hobby",
+    "term": "diamond painting",
+    "n": 3,
+    "max": 3811349,
+    "median": 331369,
+    "total": 4212928,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "CjXOwHBlIMQ",
+        "views": 3811349,
+        "title": "Diamond Painting Instructions: How to Do Diamond Painting"
+      },
+      {
+        "id": "jb024uJeO-Q",
+        "views": 331369,
+        "title": "Diamond Art Club Instructions How-To Diamond Paint"
+      }
+    ]
+  },
+  {
+    "product": "Bridal emergency kit",
+    "niche": "event",
+    "term": "bridal emergency kit",
+    "n": 7,
+    "max": 924,
+    "median": 93,
+    "total": 1729,
+    "verdict": "WEAK",
+    "top": [
+      {
+        "id": "Y3FeHexDQjk",
+        "views": 924,
+        "title": "Bridesmaid Fashion Emergency Kit - Brides Survival Kit - Secret Fashio"
+      },
+      {
+        "id": "RgDRx-PTD3E",
+        "views": 456,
+        "title": "Last minute Essential Bridal emergency kit with name ||THE TRENDY GIRL"
+      }
+    ]
+  },
+  {
+    "product": "Alcohol-free spirit sampler",
+    "niche": "habit",
+    "term": "non alcoholic spirits",
+    "n": 3,
+    "max": 2628225,
+    "median": 269780,
+    "total": 2964128,
+    "verdict": "STRONG",
+    "top": [
+      {
+        "id": "a0cFQYyK-C4",
+        "views": 2628225,
+        "title": "Non-Alcoholic Beer - SNL"
+      },
+      {
+        "id": "Ns3qgwG1F8E",
+        "views": 269780,
+        "title": "Lyre's Non-Alcoholic Spirits | The most awarded non-alcoholic spirits "
+      }
+    ]
+  }
+]
