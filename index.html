@@ -6,17 +6,47 @@
 <title>Coupon Wallet &amp; Validator</title>
 <style>
   :root {
-    --bg: #0f1420;
-    --card: #1a2130;
-    --card-2: #222c3f;
-    --text: #e8edf6;
-    --muted: #93a1b8;
-    --accent: #4fd1a5;
-    --accent-2: #5b8cff;
-    --danger: #ff6b6b;
-    --warn: #ffc857;
-    --border: #2c3852;
+    --bg: #faf7f0;
+    --card: #ffffff;
+    --card-2: #f2ece0;
+    --text: #2b2620;
+    --muted: #8a8175;
+    --accent: #1f7a5c;
+    --accent-2: #1f7a5c;
+    --on-accent: #ffffff;
+    --danger: #c0392b;
+    --warn: #b5790f;
+    --border: #ddd4c2;
     --radius: 14px;
+    --font-display: -apple-system, "Arial Narrow", "Helvetica Neue Condensed", Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14171c;
+      --card: #1c2129;
+      --card-2: #242b35;
+      --text: #eef1f5;
+      --muted: #8b93a3;
+      --accent: #2ee6a0;
+      --accent-2: #2ee6a0;
+      --on-accent: #0d1a14;
+      --danger: #ff5b48;
+      --warn: #ffcf6b;
+      --border: #2c333d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14171c;
+    --card: #1c2129;
+    --card-2: #242b35;
+    --text: #eef1f5;
+    --muted: #8b93a3;
+    --accent: #2ee6a0;
+    --accent-2: #2ee6a0;
+    --on-accent: #0d1a14;
+    --danger: #ff5b48;
+    --warn: #ffcf6b;
+    --border: #2c333d;
   }
   * { box-sizing: border-box; }
   body {
@@ -30,8 +60,11 @@
     padding: 18px 16px 8px;
     text-align: center;
   }
-  header h1 { margin: 0; font-size: 20px; letter-spacing: .3px; }
-  header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+  header h1 {
+    margin: 0; font-size: 21px; font-weight: 800;
+    font-family: var(--font-display); letter-spacing: .5px; text-transform: uppercase;
+  }
+  header p { margin: 5px 0 0; color: var(--muted); font-size: 13px; }
   .wrap { max-width: 760px; margin: 0 auto; padding: 12px 14px 60px; }
 
   .toolbar {
@@ -52,10 +85,11 @@
   button {
     cursor: pointer;
     background: var(--accent-2);
+    color: var(--on-accent);
     border: none;
-    font-weight: 600;
+    font-weight: 700;
   }
-  button.secondary { background: var(--card-2); border: 1px solid var(--border); font-weight: 500; }
+  button.secondary { background: var(--card-2); color: var(--text); border: 1px solid var(--border); font-weight: 500; }
   button.ghost { background: transparent; border: 1px solid var(--border); color: var(--muted); }
   button:active { transform: translateY(1px); }
   .search { flex: 1 1 180px; }
@@ -91,16 +125,16 @@
   }
   .card.expired { opacity: .62; }
   .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
-  .store { font-size: 16px; font-weight: 700; }
+  .store { font-size: 16px; font-weight: 800; font-family: var(--font-display); letter-spacing: .3px; text-transform: uppercase; }
   .desc { color: var(--muted); font-size: 13px; margin-top: 2px; }
   .badge {
     font-size: 11px; font-weight: 700; padding: 4px 9px; border-radius: 999px;
     white-space: nowrap;
   }
-  .badge.valid { background: rgba(79,209,165,.15); color: var(--accent); }
-  .badge.soon { background: rgba(255,200,87,.15); color: var(--warn); }
-  .badge.expired { background: rgba(255,107,107,.15); color: var(--danger); }
-  .badge.nodate { background: rgba(147,161,184,.15); color: var(--muted); }
+  .badge.valid { background: color-mix(in srgb, var(--accent) 16%, transparent); color: var(--accent); }
+  .badge.soon { background: color-mix(in srgb, var(--warn) 18%, transparent); color: var(--warn); }
+  .badge.expired { background: color-mix(in srgb, var(--danger) 16%, transparent); color: var(--danger); }
+  .badge.nodate { background: color-mix(in srgb, var(--muted) 16%, transparent); color: var(--muted); }
 
   .code-row {
     display: flex; align-items: center; gap: 8px; margin: 12px 0 6px;
@@ -114,7 +148,21 @@
   }
   .meta { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); margin-top: 8px; }
   .meta span b { color: var(--text); font-weight: 600; }
-  .card-actions { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+  .tear {
+    position: relative;
+    height: 1px;
+    margin: 14px -14px 12px;
+    background-image: linear-gradient(to right, var(--border) 60%, transparent 0%);
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+  }
+  .tear::before, .tear::after {
+    content: ""; position: absolute; top: 50%; width: 16px; height: 16px;
+    background: var(--bg); border-radius: 50%; transform: translateY(-50%);
+  }
+  .tear::before { left: -8px; }
+  .tear::after { right: -8px; }
+  .card-actions { display: flex; gap: 8px; flex-wrap: wrap; }
   .card-actions button { padding: 8px 12px; font-size: 13px; }
 
   .barcode-wrap { background: #fff; border-radius: 10px; padding: 14px 10px 8px; margin-top: 12px; text-align: center; }
@@ -377,6 +425,7 @@ function render() {
         ${c.expiry ? `<span>📅 Expires <b>${esc(c.expiry)}</b></span>` : ""}
         ${c.source ? `<span>🔗 ${esc(c.source)}</span>` : ""}
       </div>
+      <div class="tear"></div>
       <div class="card-actions">
         ${hasBarcode ? `<button onclick="showScan('${c.id}')">📷 Scan at register</button>` : ""}
         <button class="secondary" onclick="editCoupon('${c.id}')">Edit</button>
