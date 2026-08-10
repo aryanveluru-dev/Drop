@@ -61,6 +61,10 @@
           border-left: 3px solid var(--warn); border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; line-height: 1.55; }
   .hint.good { border-left-color: var(--accent); }
 
+  .store-head { display: flex; align-items: baseline; gap: 8px; margin: 0 2px 8px; }
+  .store-head h2 { margin: 0; font-family: var(--font-display); text-transform: uppercase;
+                   letter-spacing: .5px; font-size: 15px; font-weight: 800; color: var(--muted); }
+  .store-head .count { font-size: 12px; color: var(--muted); }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
           padding: 14px; margin-bottom: 12px; }
   .card.expired { opacity: .6; }
@@ -199,13 +203,14 @@
   <!-- ============ IN-STORE SAVINGS ============ -->
   <section id="view-discover" class="view">
     <div class="hint">
-      There's no universal pool of scannable discount barcodes — so instead, here's the <b>legitimate</b> way to
-      get discounts that scan at each store: <b>clip that store's digital coupons</b> (free, in their app), then
-      scan <b>your loyalty barcode</b> at the register and they apply automatically. Each program links to its
-      official page. Save your loyalty barcode in the Scan Wallet so it's ready to scan.
+      Specific coupons you can actually get and scan — the <b>legit</b> way. We don't copy anyone's barcode
+      (that's coupon fraud and wouldn't clear anyway). Instead each offer links to its <b>official issuer</b>,
+      where you <b>print or clip your own valid copy</b> that's really in the store's system. <b>Print your own</b>
+      → the printed barcode scans at checkout. <b>Clip to card</b> → scan your loyalty barcode and it auto-applies.
+      Offers rotate weekly — verify at the source.
     </div>
     <div class="toolbar">
-      <input class="search" id="d-search" placeholder="Search stores &amp; programs…" />
+      <input class="search" id="d-search" placeholder="Search offers, brands &amp; stores…" />
     </div>
     <div id="d-list"></div>
   </section>
@@ -229,6 +234,28 @@
    scanning YOUR loyalty barcode after clipping offers in the store's app.
    No fabricated codes; no merchant systems contacted.
    ========================================================================= */
+/* Specific, currently-listed coupon OFFERS (reported Aug 2026 from public coupon
+   trackers). We never reproduce a barcode — each links to the official issuer where
+   YOU print/clip your own valid, in-the-system copy. Offers rotate; verify at source. */
+const OFFERS = [
+  { brand: "Tide", deal: "$3.00 off Tide PODS (102–112 ct) or Tide Power PODS (57–63 ct)", value: "$3.00",
+    get: "print", category: "Laundry", reported: "Aug 2026",
+    how: "Sign in to P&G brandSAVER and print your own copy — the printed barcode scans at checkout. Note: P&G coupons expire the day after you print, so print right before your trip.",
+    url: "https://www.pgbrandsaver.com/", host: "pgbrandsaver.com" },
+  { brand: "all / Persil", deal: "Save $3 on all® or Persil® laundry detergent", value: "$3.00",
+    get: "clip", category: "Laundry", reported: "Aug 2026",
+    how: "Clip it in the Kroger app, then scan your Kroger Plus card at checkout — it applies automatically.",
+    url: "https://www.kroger.com/cl/digital-coupons/", host: "kroger.com" },
+  { brand: "Kroger — Free Friday Download", deal: "A free item every Friday (limited-time)", value: "FREE",
+    get: "clip", category: "Grocery", reported: "Aug 2026",
+    how: "Clip the Free Friday Download in the Kroger app on Fridays, then scan your Plus card within the redemption window shown on the offer.",
+    url: "https://www.kroger.com/pr/free-friday-download-deal_ent_0610", host: "kroger.com" },
+  { brand: "Multiple brands", deal: "Fresh printable manufacturer coupons — a new set on the 1st of each month", value: "varies",
+    get: "print", category: "Manufacturer", reported: "Aug 2026",
+    how: "Browse and print your own copies at Coupons.com; the printed barcode scans at most stores that take paper coupons. One legitimate print per household.",
+    url: "https://www.coupons.com/printable", host: "coupons.com" },
+];
+
 const PROGRAMS = [
   { store: "Target", program: "Target Circle", scan: "Target Circle barcode (in the Target app Wallet)",
     how: "Clip Circle offers in the Target app, then scan your Circle barcode — or the app Wallet — at checkout.",
@@ -365,10 +392,39 @@ const dSearch = document.getElementById("d-search");
 const dList = document.getElementById("d-list");
 function renderDiscover() {
   const q = dSearch.value.trim().toLowerCase();
-  const items = PROGRAMS.filter(p => !q ||
+  const offers = OFFERS.filter(o => !q ||
+    [o.brand, o.deal, o.category].join(" ").toLowerCase().includes(q));
+  const programs = PROGRAMS.filter(p => !q ||
     [p.store, p.program, p.category, p.scan].join(" ").toLowerCase().includes(q));
-  if (!items.length) { dList.innerHTML = emptyBlock("No programs match your search."); return; }
-  dList.innerHTML = items.map(p => `
+
+  if (!offers.length && !programs.length) { dList.innerHTML = emptyBlock("No offers or programs match your search."); return; }
+
+  const offersHTML = offers.map(o => {
+    const isPrint = o.get === "print";
+    return `
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <div class="store">${esc(o.brand)}</div>
+          <div class="desc" style="color:var(--text);font-weight:600;">${esc(o.deal)}</div>
+        </div>
+        <div class="badge ${isPrint ? "scan" : "valid"}">${isPrint ? "🖨 Print your own" : "✂️ Clip to card"}</div>
+      </div>
+      <div class="how">${esc(o.how)}</div>
+      <div class="meta">
+        <span>💸 <b>${esc(o.value)}</b></span>
+        <span>🏷 ${esc(o.category)}</span>
+        <span>🔗 <a href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.host)}</a></span>
+        <span>📆 Seen ${esc(o.reported)}</span>
+      </div>
+      <div class="tear"></div>
+      <div class="card-actions">
+        <a href="${esc(o.url)}" target="_blank" rel="noopener"><button class="btn-primary">${isPrint ? "Print this coupon ↗" : "Clip this coupon ↗"}</button></a>
+      </div>
+    </div>`;
+  }).join("");
+
+  const programsHTML = programs.map(p => `
     <div class="card">
       <div class="card-top">
         <div>
@@ -389,6 +445,11 @@ function renderDiscover() {
         <button class="btn-secondary" onclick="prefillCard('${esc(p.store)}')">+ Add my card</button>
       </div>
     </div>`).join("");
+
+  const secHead = (t, n) => `<div class="store-head" style="margin-top:6px;"><h2>${t}</h2><span class="count">${n}</span></div>`;
+  dList.innerHTML =
+    (offers.length ? secHead("This week's offers", offers.length + " to grab") + offersHTML : "") +
+    (programs.length ? secHead("Store savings programs", programs.length + " programs") + programsHTML : "");
 }
 window.prefillCard = (store) => {
   switchView("wallet");
