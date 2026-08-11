@@ -35,7 +35,19 @@ const DIR_URL = "https://www.coupons.com/printable";
 async function getRetailers() {
   if (MODE === "all") {
     console.log("· fetching FULL sitemap universe…");
-    return (await fetchSitemapRetailers()).slice(0, MAX_RETAILERS);
+    const universe = await fetchSitemapRetailers();
+    // Always lead with the curated popular names, then sample the rest EVENLY across
+    // the (alphabetical) sitemap so coverage spans A–Z instead of just A–C.
+    const popular = POPULAR_SLUGS.map((slug) => ({
+      name: prettyName(slug), slug, url: "https://www.coupons.com/coupon-codes/" + slug,
+    }));
+    const have = new Set(popular.map((r) => r.slug));
+    const rest = universe.filter((r) => !have.has(r.slug));
+    const need = Math.max(0, MAX_RETAILERS - popular.length);
+    const step = need > 0 ? Math.max(1, Math.floor(rest.length / need)) : 1;
+    const sampled = [];
+    for (let i = 0; i < rest.length && sampled.length < need; i += step) sampled.push(rest[i]);
+    return [...popular, ...sampled].slice(0, MAX_RETAILERS);
   }
   if (MODE === "popular") {
     console.log(`· using ${POPULAR_SLUGS.length} curated popular retailers…`);
