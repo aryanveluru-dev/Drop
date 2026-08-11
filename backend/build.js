@@ -17,7 +17,8 @@
 import { writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
-import { fetchHTML, rscBlob, extractRetailers, extractOffers, parseValue, classify } from "./coupons.js";
+import { fetchHTML, rscBlob, extractRetailers, extractOffers, parseValue, classify, fetchSitemapRetailers, prettyName } from "./coupons.js";
+import { POPULAR_SLUGS } from "./config.js";
 import { hasKey, chat } from "./nvidia.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -25,10 +26,27 @@ const OUT = join(__dirname, "..", "data", "offers.json");
 
 const args = process.argv.slice(2);
 const opt = (flag, def) => { const i = args.indexOf(flag); return i > -1 && args[i + 1] ? args[i + 1] : def; };
-const MAX_RETAILERS = +opt("--retailers", 26);
+const MODE = args.includes("--all") ? "all" : args.includes("--popular") ? "popular" : "home";
+const MAX_RETAILERS = +opt("--retailers", MODE === "all" ? 150 : MODE === "popular" ? 80 : 26);
 const PER_RETAILER = +opt("--per", 8);
 const ENRICH = args.includes("--enrich");
 const DIR_URL = "https://www.coupons.com/printable";
+
+async function getRetailers() {
+  if (MODE === "all") {
+    console.log("· fetching FULL sitemap universe…");
+    return (await fetchSitemapRetailers()).slice(0, MAX_RETAILERS);
+  }
+  if (MODE === "popular") {
+    console.log(`· using ${POPULAR_SLUGS.length} curated popular retailers…`);
+    return POPULAR_SLUGS.slice(0, MAX_RETAILERS).map((slug) => ({
+      name: prettyName(slug), slug, url: "https://www.coupons.com/coupon-codes/" + slug,
+    }));
+  }
+  console.log("· fetching retailer directory…");
+  const dirBlob = rscBlob(await fetchHTML(DIR_URL));
+  return extractRetailers(dirBlob).slice(0, MAX_RETAILERS);
+}
 
 const HOW = {
   instore: "In-store offer — add it in the retailer's app (e.g. Target Circle), then scan your loyalty/app barcode at checkout; it applies automatically.",
@@ -40,9 +58,7 @@ function monthLabel() { return new Date().toLocaleString("en-US", { month: "shor
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
 async function run() {
-  console.log("· fetching retailer directory…");
-  const dirBlob = rscBlob(await fetchHTML(DIR_URL));
-  const retailers = extractRetailers(dirBlob).slice(0, MAX_RETAILERS);
+  const retailers = await getRetailers();
   console.log(`  ${retailers.length} retailers`);
   if (!retailers.length) { keepExisting("no retailers parsed"); return; }
 

@@ -44,6 +44,28 @@ export function rscBlob(html) {
   return blob;
 }
 
+// Full retailer universe from the sitemap (1600+ pages).
+export async function fetchSitemapRetailers(limit = Infinity) {
+  const xml = await fetchHTML("https://www.coupons.com/sitemap.xml", 30_000);
+  const urls = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1])
+    .filter((u) => /\/coupon-codes\/[^/]+$/.test(u));
+  return urls.slice(0, limit).map((url) => {
+    const slug = url.split("/").pop();
+    return { name: prettyName(slug), url, slug };
+  });
+}
+
+// Nice display names for slugs that don't titleize cleanly.
+const NAME_OVERRIDES = {
+  cvs: "CVS", hp: "HP", gnc: "GNC", rei: "REI", llbean: "L.L.Bean", "hotels-com": "Hotels.com",
+  "best-buy": "Best Buy", homedepot: "Home Depot", jcpenney: "JCPenney", samsclub: "Sam's Club",
+  ubereats: "Uber Eats", vitaminshoppe: "Vitamin Shoppe", victoriassecret: "Victoria's Secret",
+  tacobell: "Taco Bell", "old-navy": "Old Navy", "papa-johns": "Papa John's", "dollar-general": "Dollar General",
+  "nordstrom-rack": "Nordstrom Rack", underarmour: "Under Armour", ulta: "Ulta Beauty",
+  bathandbodyworks: "Bath & Body Works", "discount-tire": "Discount Tire",
+};
+export function prettyName(slug) { return NAME_OVERRIDES[slug] || titleize(slug); }
+
 // Retailer directory from the homepage / printable page.
 export function extractRetailers(blob) {
   const re = /"activeVouchersCount":(\d+),"activeGiftCard":[^,]*,"activeCashback":\{[^}]*\},"__typename":"Retailer"\},"retailerLandingPage":\{"url":"(coupon-codes\/[^"]+)"/g;

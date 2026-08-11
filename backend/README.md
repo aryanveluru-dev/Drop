@@ -19,18 +19,26 @@ the **official issuer**, where each user prints/clips their own valid, in-system
 
 ## Run it
 
-1. Get a free API key at **https://build.nvidia.com** → pick any model → **Get API Key**
-   (looks like `nvapi-...`).
-2. Export it (never commit it):
-   ```bash
-   export NVIDIA_API_KEY=nvapi-xxxxxxxx
-   ```
-3. Build:
-   ```bash
-   node backend/build.js
-   ```
-   Writes `data/offers.json`. If the key is missing or every source fails, the existing
-   file is left untouched — it never overwrites good data with nothing.
+The scraper needs **no API key** — it reads Coupons.com's embedded data directly.
+
+```bash
+node backend/build.js               # homepage retailers (~26)
+node backend/build.js --popular     # curated ~66 popular national retailers (shipped snapshot)
+node backend/build.js --all         # FULL sitemap universe (1600+ retailers; capped by --retailers)
+node backend/build.js --all --retailers 400 --per 10   # go big
+```
+
+Writes `data/offers.json`. If every fetch fails, the existing file is left untouched —
+it never overwrites good data with nothing.
+
+### Optional NVIDIA enrichment
+
+Pass `--enrich` to sharpen the in-store/online classification and categories with an
+NVIDIA-hosted LLM:
+
+1. Get a free key at **https://build.nvidia.com** → pick any model → **Get API Key** (`nvapi-...`).
+2. `export NVIDIA_API_KEY=nvapi-xxxxxxxx` (never commit it).
+3. `node backend/build.js --popular --enrich`
 
 Optional overrides: `NVIDIA_BASE_URL`, `NVIDIA_MODEL` (default `meta/llama-3.3-70b-instruct`).
 

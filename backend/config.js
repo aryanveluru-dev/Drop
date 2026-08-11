@@ -71,3 +71,16 @@ export const SOURCES = [
     scanNote: "Print your own copy from P&G brandSAVER; it usually expires the day after printing.",
   },
 ];
+
+// Curated popular national retailers (slugs present on Coupons.com) for the shipped
+// snapshot. The backend can also scrape the FULL sitemap universe with --all.
+export const POPULAR_SLUGS = [
+  "target","walmart","amazon","cvs","walgreens","kohls","macys","nike","adidas","sephora",
+  "ulta","best-buy","homedepot","lowes","wayfair","chewy","doordash","ubereats","grubhub",
+  "expedia","hotels-com","priceline","old-navy","gap","jcpenney","michaels","petco","petsmart",
+  "gamestop","nordstrom","express","dominos","papa-johns","dell","hp","samsung","ebay","etsy",
+  "nordstrom-rack","academy","gnc","vitaminshoppe","victoriassecret","abercrombie","shein","temu",
+  "autozone","discount-tire","instacart","shutterfly","vistaprint","dollar-general","kroger",
+  "safeway","publix","costco","samsclub","tacobell","carters","crocs","vans","underarmour",
+  "reebok","columbia","llbean","rei",
+];
